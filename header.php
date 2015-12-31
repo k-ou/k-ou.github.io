@@ -3,6 +3,15 @@
 <html>
 
 <body>
+    
+    <div upper>
+        <div class="headpic col-md-3">
+            <a href="/index.html"><img src="http://i.imgur.com/dE4jgEn.gif" border=0></a>
+        </div>
+        <div class="title col-md-9">
+            <p>Kelly Ou</p>
+        </div>
+    </div>
         
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">

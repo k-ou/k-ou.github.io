@@ -1,0 +1,38 @@
+.logo, .name {
+    width: 100%;
+}
+
+.row {
+    position: relative;
+}
+
+.name {
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 14vw;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 1500px;
+    margin-top: 25%;
+    margin-bottom: 30%;
+    margin-left: 20%;
+    width: 23vw;
+}
+
+.icon {
+    max-width: 20%;
+}
+
+.banner {
+    width: 100%;
+    position: absolute;
+}
+
+.body {
+    font-family: "Liberation Mono", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
