@@ -1,0 +1,3 @@
+<FilesMatch "^(index)\.html$">
+  AddType application/x-httpd-php .html
+</FilesMatch>
