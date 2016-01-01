@@ -8,11 +8,11 @@
 
 .name {
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
     color: white;
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 14vw;
-    width: 100%;
+    font-size: 15vw;
+    width: 80%;
     text-align: center;
 }
 
@@ -24,10 +24,6 @@
     width: 23vw;
 }
 
-.icon {
-    max-width: 20%;
-}
-
 .banner {
     width: 100%;
     position: absolute;
@@ -35,4 +31,5 @@
 
 .body {
     font-family: "Liberation Mono", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: green;
 }
