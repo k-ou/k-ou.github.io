@@ -37,16 +37,27 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="./index.html">Hello</a></li>
-                    <li><a href="./about.html">It's me</a></li>
-                    <li><a href="./index.html">I was wondering if after all these years you'd like to meet</a></li>
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./about.html">Me</a></li>
+                            <li><a href="./books.html">Books I've Read</a></li>
+                            <li><a href="./travel.html">Where I've Been</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="./resume.html">Resume</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
     <!--END NAV BAR-->
     
-    <?php include('footer.php') ?>
+    <!--FOOTER-->
+
+    <!--END FOOTER-->
     
 </body>
 
