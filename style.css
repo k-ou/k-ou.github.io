@@ -29,7 +29,49 @@
     position: absolute;
 }
 
-.body {
+.navbar {
+    border-radius: 0px !important;
+    width:100%;
+    color: darkslategrey;
+}
+
+.navbar-nav {
+  display: table;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav > li {
+    display:table-cell;
+    text-align:center;
+}
+
+.bookimg {
+    width: 200px;
+}
+
+.page {
+    width: 100%;
+}
+
+.pagecontent {
+    display:block;
+    margin: 0 auto;
+    float:none;
+}
+
+body {
     font-family: "Liberation Mono", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: green;
+}
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
 }
