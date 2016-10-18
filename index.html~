@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <link href='https://fonts.googleapis.com/css?family=Satisfy|Give+You+Glory|La+Belle+Aurore|Over+the+Rainbow|Cedarville+Cursive|Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -16,14 +16,12 @@
                 <a href="./index.html"><img class="logo" src="http://i.imgur.com/bu2Sbmp.png"></a>
             </div>
             <div class="col-xs-9 col-md-9">
-                <a href="./index.html">
-                    <p class="name">kelly ou</p>
-                </a>
+                <a href="./index.html"><p class="name">kelly ou</p></a>
             </div>
         </div>
     </div>
     <!--END HEADER BANNER-->
-
+        
     <!--NAVIGATION BAR-->
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -52,21 +50,15 @@
                     </li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
     <!--END NAV BAR-->
-
-    <div>
-        <p><b>Hey.</b> You've arrived at my personal page.</p>
-    </div>
-
+    
     <!--FOOTER-->
 
     <!--END FOOTER-->
-
+    
 </body>
 
 </html>
