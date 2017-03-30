@@ -184,22 +184,22 @@ a:hover {
         padding-bottom: 100%;
     }
     .proj_thumb1 {
-        background-image: url(../img/nwirp.png);
+        background-image: url(../img/thumbnails/nwirp.png);
     }
     .proj_thumb2 {
-        background-image: url(../img/acmw_shirt.png);
+        background-image: url(../img/thumbnails/acmw_shirt.png);
     }
     .proj_thumb3 {
-        background-image: url(../img/carbcat.JPG);
+        background-image: url(../img/thumbnails/carbcat.JPG);
     }
     .proj_thumb4 {
-        background-image: url(../img/Hillbilly_Elegy_sm.png);
+        background-image: url(../img/thumbnails/Hillbilly_Elegy.png);
     }
     .proj_thumb5 {
         background-image: url(../img/thumbnails/save_rock_and_roll.png);
     }
     .proj_thumb6 {
-        background-image: url(../img/illustration_boba.png);
+        background-image: url(../img/thumbnails/illustration_boba.png);
     }
     .caption {
         display: none;
