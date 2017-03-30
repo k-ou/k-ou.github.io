@@ -70,7 +70,8 @@ a:hover {
         width: 100%;
     }
     .nav_bar,
-    .social_media {
+    .social_media,
+    .footer_social_media {
         text-decoration: none;
         list-style: none;
         vertical-align: middle;
@@ -152,15 +153,37 @@ a:hover {
     .project_page {
         margin-top: 165px;
     }
-    /* footer */
+    /* FOOTER */
     .footer {
+        margin-top: 20px;
+        margin-bottom: 20px;
         text-align: center;
-        vertical-align: middle;
-        line-height: 75px;
-        height: 75px;
         text-transform: uppercase;
+        width: 100%;
     }
-    .footer p {
+    .footer_media_bar,
+    .footer_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    /* footer social media */
+    .footer_media_bar ul {
+        width: 40%;
+        display: block;
+    }
+    .footer_social_media li {
+        display: block;
+        float: left;
+        width: 33%;
+        padding: 4px;
+    }
+    .footer_social_media li img {
+        max-width: 100%;
+    }
+    /* footer text */
+    .footer_text p {
         font-size: 12px;
     }
     /* PROJECT GRID / HOME / INDEX */
@@ -217,20 +240,20 @@ a:hover {
         max-width: 100%;
     }
     .project_page_full {
-        padding-top: 40px;
+        padding-top: 30px;
     }
     .project_page_full div img {
         width: 100%;
         max-width: 100%;
     }
     .description {
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
     .description h4 {
         margin-top: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-weight: 100;
+        font-weight: 400;
     }
     .description_title p {
         font-size: 14px;
@@ -473,6 +496,18 @@ a:hover {
     .project_page {
         margin-top: 140px;
     }
+    /* FOOTER */
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .footer_media_bar {
+        display: none;
+    }
     /* PROJ GRID */
     .proj_thumb1 {
         background-position: top;
@@ -617,6 +652,9 @@ a:hover {
         margin-left: 6%;
         margin-right: 6%;
     }
+    .project_page_full {
+        padding-top: 40px;
+    }
     /* ABOUT */
     .hero {
         height: 450px;
@@ -642,6 +680,9 @@ a:hover {
     }
     .current div {
         width: 30%;
+    }
+    .description {
+        margin-top: 0px;
     }
 }
 
@@ -713,7 +754,6 @@ a:hover {
     }
     /* footer */
     .footer {
-        line-height: 100px;
         height: 100px;
     }
     /* --------------------*/
