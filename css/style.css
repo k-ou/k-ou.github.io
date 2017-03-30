@@ -10,7 +10,7 @@ ul {
     -webkit-padding-start: 0px;
 }
 
-.no-gutter > [class*='col-'] {
+.no-gutter>[class*='col-'] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -40,12 +40,17 @@ a:hover {
     /* GENERAL */
     /* nav bar */
     .header,
-    .nav_bar {
+    .header.smaller {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
         background-color: rgba(255, 255, 255, 0.95);
     }
     .nav_bar a {
         color: var(--off_black);
-        font-weight: 100;
+        font-weight: 300;
         font-size: 12px;
         letter-spacing: 2px;
     }
@@ -87,7 +92,6 @@ a:hover {
         text-align: center;
         width: 50%;
         height: 40px;
-        font-size: 16px;
     }
     .nav_bar .current {
         color: white;
@@ -113,11 +117,8 @@ a:hover {
     .social_media {
         display: none;
     }
-    .social_media a li img:hover {
+    .social_media li a img:hover {
         opacity: 0.8;
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
     }
     .nav_right {
         display: none;
@@ -129,8 +130,21 @@ a:hover {
         margin-top: 0;
         padding-top: 0;
         font-size: 12px;
-        text-transform: uppercase;
         letter-spacing: 1px;
+    }
+    /* minimize navbar on scroll */
+    .header.smaller {
+        padding: 0px;
+    }
+    .header.smaller .logo_md {
+        width: 20%;
+    }
+    .header.smaller .logo_container {
+        margin: 15px 0px;
+        margin-bottom: 5px;
+    }
+    .header.smaller .nav_bar li {
+        height: 20px;
     }
     /* displace for header size */
     .thumb,
@@ -310,8 +324,7 @@ a:hover {
     /* nav bar */
     .header {
         position: fixed;
-        padding: 30px 20px;
-        height: 140px;
+        padding: 15px 20px;
         text-align: left;
         width: 100%;
     }
@@ -327,6 +340,7 @@ a:hover {
         display: block;
         width: 75%;
         float: left;
+        background-color: rgba(255, 255, 255, 0.0);
     }
     .nav_bar li {
         display: block;
@@ -334,7 +348,6 @@ a:hover {
         text-transform: uppercase;
         text-align: center;
         width: 40%;
-        font-size: 16px;
     }
     .nav_bar a {
         color: var(--off_black);
@@ -365,7 +378,6 @@ a:hover {
         left: 13%;
         width: 74%;
         height: 4px;
-        background: rgba(0, 0, 0, 0.1);
         content: '';
         opacity: 0;
         -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
@@ -399,6 +411,10 @@ a:hover {
     }
     .nav_right {
         display: block;
+        width: 80%;
+    }
+    .nav_right p {
+        font-size: 14px;
     }
     .nav_right_text {
         width: 100%;
@@ -415,13 +431,38 @@ a:hover {
         display: block;
         float: left;
         width: 33%;
-        padding: 5px 5px;
+        padding: 4px;
     }
     .social_media li img {
         max-width: 100%;
     }
+    /**/
+    /* minimize navbar on scroll */
+    .header.smaller {
+        padding: 20px;
+    }
+    .header.smaller .logo_md {
+        width: 50%;
+        max-width: 50%;
+    }
+    .header.smaller .logo_container {
+        margin: 10px 0px;
+        margin-bottom: 5px;
+    }
+    .header.smaller .nav_bar {
+        margin-top: 10px;
+    }
+    .header.smaller .nav_bar a {
+        font-size: 12px;
+    }
+    .header.smaller .social_media {
+        display: none;
+    }
+    /**/
     /* displace for header */
-    .thumb {
+    .bio,
+    .thumb,
+    .project_page {
         margin-top: 140px;
     }
     .thumb,
@@ -429,7 +470,6 @@ a:hover {
         max-height: 100px;
         width: auto;
     }
-    /*    .bio,*/
     .project_page {
         margin-top: 140px;
     }
@@ -485,18 +525,9 @@ a:hover {
     /**/
     /**/
     /* for caption feature */
-    .proj_box:hover .caption {
-        opacity: 1;
-    }
-    .proj_box:hover .caption-text {
-        height: 65%;
-        width: 65%;
-    }
-    .proj_box:hover .caption-text h3 {
-        font-size: 16px;
-    }
     .caption,
-    .caption-text {
+    .caption-text,
+    .caption-text h3 {
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
@@ -527,6 +558,25 @@ a:hover {
         padding: 20px;
         text-align: center;
         color: white;
+        opacity: 0;
+    }
+    .caption-text h3 {
+        -webkit-transition-delay: 0.05s;
+        transition-delay: 0.05s;
+        opacity: 0;
+        font-size: 0px;
+    }
+    .proj_box:hover .caption {
+        opacity: 1;
+    }
+    .proj_box:hover .caption-text {
+        opacity: 1;
+        height: 65%;
+        width: 65%;
+    }
+    .proj_box:hover .caption-text h3 {
+        opacity: 1;
+        font-size: 16px;
     }
     /**/
     /* for zoom feature */
@@ -602,8 +652,7 @@ a:hover {
     /* GENERAL */
     /* nav bar */
     .header {
-        height: 175px;
-        padding: 40px 20px;
+        padding: 20px;
     }
     /* logo */
     .logo {
@@ -614,7 +663,11 @@ a:hover {
         max-height: 100px;
         width: auto;
     }
+    .logo_container {
+        padding-top: 20px;
+    }
     .nav_bar {
+        padding-top: 15px;
         width: 70%;
         position: relative;
     }
@@ -634,9 +687,23 @@ a:hover {
         width: 75%;
     }
     .nav_right p {
+        font-size: 16px;
         display: block;
         margin-top: 0;
         padding-top: 0;
+    }
+    /* minimize navbar on scroll */
+    .header.smaller {
+        padding: 20px;
+    }
+    .header.smaller .social_media {
+        display: none;
+    }
+    .header.smaller .logo_container {
+        padding-top: 5px;
+    }
+    .header.smaller .nav_bar {
+        padding-top: 5px;
     }
     /* displace for header */
     .thumb,
@@ -654,13 +721,6 @@ a:hover {
     .proj_box {
         max-width: 100%;
     }
-    /*
-    .proj_box:after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-    }
-*/
     .thumb div:hover {
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
@@ -669,21 +729,6 @@ a:hover {
     }
     /**/
     /* for caption feature */
-    .proj_box:hover .caption {
-        opacity: 1;
-    }
-    .proj_box:hover .caption-text {
-        height: 65%;
-        width: 65%;
-    }
-    .caption,
-    .caption-text {
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
-        -ms-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
-    }
     .caption {
         display: flex;
         align-items: center;
@@ -704,40 +749,26 @@ a:hover {
         color: white;
         width: 20%;
         height: 20%;
+        opacity: 0;
     }
-    /**/
-    /* for zoom feature */
-    .proj_thumb1,
-    .proj_thumb2,
-    .proj_thumb3,
-    .proj_thumb4,
-    .proj_thumb5,
-    .proj_thumb6 {
-        height: 500px;
-        transition: all 0.25s ease;
-        -moz-transition: all 0.25s ease;
-        -ms-transition: all 0.25s ease;
-        -webkit-transition: all 0.25s ease;
-        -o-transition: all 0.25s ease;
+    .caption-text h3 {
+        -webkit-transition-delay: 0.05s;
+        transition-delay: 0.05s;
+        opacity: 0;
+        font-size: 0px;
     }
-    .thumb a:hover .proj_thumb1,
-    .thumb a:hover .proj_thumb2,
-    .thumb a:hover .proj_thumb3,
-    .thumb a:hover .proj_thumb4,
-    .thumb a:hover .proj_thumb5,
-    .thumb a:hover .proj_thumb6 {
-        transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        /* IE 9 */
-        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=.5, M12=0, M21=0, M22=.5, SizingMethod='auto expand')";
-        /* IE8 */
-        filter: progid: DXImageTransform.Microsoft.Matrix(M11=1.05, M12=0, M21=0, M22=1.05, SizingMethod='auto expand');
-        /* IE6 and 7 */
+    .proj_box:hover .caption {
+        opacity: 1;
     }
-    /* end zoom feature */
+    .proj_box:hover .caption-text {
+        opacity: 1;
+        width: 65%;
+        height: 65%;
+    }
+    .proj_box:hover .caption-text h3 {
+        opacity: 1;
+        font-size: 16px;
+    }
     /* PROJECT PAGE */
     .project img {
         width: 100%;
@@ -751,11 +782,6 @@ a:hover {
         height: 650px;
     }
     .about_me {
-        /*
-        display: flex;
-        align-items: center;
-        justify-content: center;
-*/
         height: 600px;
         width: 40%;
         position: absolute;

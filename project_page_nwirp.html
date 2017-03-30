@@ -30,7 +30,8 @@
                 <div class="logo">
                     <a href="index.html">
                         <img class="logo_md" src="img/ko_logo.png">
-                        <h1>Kelly Ou</h1></a>
+                        <h1>Kelly Ou</h1>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-8">
@@ -48,15 +49,21 @@
             <div class="col-sm-3 col-md-2">
                 <div class="nav_right">
                     <ul class="social_media">
-                        <a href="https://www.instagram.com/oukellyh" target="_blank">
-                            <li><img src="icons/instagram.png"></li>
-                        </a>
-                        <a>
-                            <li><img src="icons/linkedin.png"></li>
-                        </a>
-                        <a href="mailto:oukellyh@gmail.com" target="_blank">
-                            <li><img src="icons/email.png"></li>
-                        </a>
+                        <li>
+                            <a href="https://www.instagram.com/oukellyh" target="_blank">
+                                <img src="icons/instagram.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="icons/linkedin.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:oukellyh@gmail.com" target="_blank">
+                                <img src="icons/email.png">
+                            </a>
+                        </li>
                     </ul>
                     <div class="nav_right_text">
                         <p>
@@ -125,6 +132,24 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e) {
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 100,
+                    header = document.querySelector(".header");
+                if (distanceY > shrinkOn) {
+                    $(".header").addClass("smaller");
+                } else {
+                    if ($(".header").hasClass("smaller")) {
+                        $(".header").removeClass("smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+
+    </script>
 </body>
 
 </html>

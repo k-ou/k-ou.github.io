@@ -11,8 +11,8 @@
     <meta name="description" content="Official Website of Kelly Ou, graphic designer, illustrator, and a generally weird person.">
     <meta name="author" content="Kelly Ou">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Open+Sans|Arimo|Caveat|Homemade+Apple|Leckerli+One|Over+the+Rainbow|Pacifico|Pangolin" rel="stylesheet">
 
@@ -30,7 +30,8 @@
                 <div class="logo">
                     <a href="index.html">
                         <img class="logo_md" src="img/ko_logo.png">
-                        <h1>Kelly Ou</h1></a>
+                        <h1>Kelly Ou</h1>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 col-md-8">
@@ -46,20 +47,26 @@
             <div class="col-sm-3 col-md-2">
                 <div class="nav_right">
                     <ul class="social_media">
-                        <a href="https://www.instagram.com/oukellyh" target="_blank">
-                            <li><img src="icons/instagram.png"></li>
-                        </a>
-                        <a>
-                            <li><img src="icons/linkedin.png"></li>
-                        </a>
-                        <a href="mailto:oukellyh@gmail.com" target="_blank">
-                            <li><img src="icons/email.png"></li>
-                        </a>
+                        <li>
+                            <a href="https://www.instagram.com/oukellyh" target="_blank">
+                                <img src="icons/instagram.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="icons/linkedin.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:oukellyh@gmail.com" target="_blank">
+                                <img src="icons/email.png">
+                            </a>
+                        </li>
                     </ul>
                     <div class="nav_right_text">
                         <p>
                             Let's work together:
-                            <br> oukellyh@gmail.com
+                            <br> <a href="mailto:oukellyh@gmail.com" target="_blank">oukellyh@gmail.com</a>
                         </p>
                     </div>
                 </div>
@@ -102,7 +109,7 @@
                 </a>
             </div>
             -->
-            <div class="col-xs-6 col-sm-4 col-md-4 proj_box">
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a href="project_page_nwirp.html">
                     <div class="proj_thumb1"></div>
                     <div class="caption">
@@ -112,7 +119,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-4 proj_box">
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a href="project_page_w.html">
                     <div class="proj_thumb2"></div>
                     <div class="caption">
@@ -122,7 +129,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-4 proj_box">
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a href="project_page_carbcat.html">
                     <div class="proj_thumb3"></div>
                     <div class="caption">
@@ -132,7 +139,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-4 proj_box">
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a>
                     <div class="proj_thumb4"></div>
                     <div class="caption">
@@ -142,7 +149,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-4 proj_box">
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a href="project_page_saverockandroll.html">
                     <div class="proj_thumb5"></div>
                     <div class="caption">
@@ -152,7 +159,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-4 proj_box">
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a href="project_page_illustrations.html">
                     <div class="proj_thumb6"></div>
                     <div class="caption">
@@ -176,6 +183,24 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e) {
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 100,
+                    header = document.querySelector(".header");
+                if (distanceY > shrinkOn) {
+                    $(".header").addClass("smaller");
+                } else {
+                    if ($(".header").hasClass("smaller")) {
+                        $(".header").removeClass("smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+
+    </script>
 </body>
 
 </html>
