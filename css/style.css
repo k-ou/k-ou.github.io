@@ -316,10 +316,14 @@ a:hover {
     .hide-bullets li {
         height: 0;
         padding-bottom: 33%;
+        overflow: hidden;
     }
     .carousel-control.right,
     .carousel-control.left {
         background-image: none;
+    }
+    .carousel-inner {
+        /*        overflow: visible;*/
     }
     .carousel-inner>.item>img,
     .carousel-inner>.item>a>img {
@@ -328,6 +332,7 @@ a:hover {
     .carousel-inner>.active {
         height: 0;
         padding-bottom: 100%;
+        /*        display: inline;*/
     }
     .thumbnail>img {
         max-height: 100%;
@@ -337,6 +342,25 @@ a:hover {
     }
     #carousel-bounding-box {
         padding-right: 0px;
+    }
+    /*    */
+/*
+    .carousel-inner div img {
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+    }
+*/
+    .slick-prev,
+    .slick-next {
+        color: rgba(0, 0, 0, .5);
+        width: 80px;
+        height: 50%;
+        z-index: 10;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: rgba(0, 0, 0, .5);
     }
 }
 
