@@ -224,15 +224,58 @@ a:hover {
     .proj_thumb6 {
         background-image: url(../img/thumbnails/illustration_boba.png);
     }
+    /* for caption feature */
     .caption {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 1.0);
+        bottom: 0px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+    }
+    .caption-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        height: 80%;
+        width: 80%;
+        border: 2px white solid;
+        border-radius: 100%;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        opacity: 0;
     }
     .caption-text h3 {
+        font-size: 14px;
         font-weight: 100;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 0px;
     }
+    .proj_box:hover .caption {
+        animation: fadeIn .25s;
+        -moz-animation: fadeIn .25s;
+        -webkit-animation: fadeIn .25s;
+        -o-animation: fadeIn .25s;
+        opacity: 1;
+    }
+    .proj_box:hover .caption-text {
+        animation: zoomIn .5s;
+        -moz-animation: zoomIn .5s;
+        -webkit-animation: zoomIn .5s;
+        -o-animation: zoomIn .5s;
+        opacity: 1;
+    }
+    /*    */
     /* PROJECT PAGE */
     .project img {
         margin: 0 auto;
@@ -344,7 +387,7 @@ a:hover {
         padding-right: 0px;
     }
     /*    */
-/*
+    /*
     .carousel-inner div img {
         max-width: 100%;
         width: auto;
@@ -362,6 +405,117 @@ a:hover {
     .slick-next:before {
         color: rgba(0, 0, 0, .5);
     }
+    /* fade in index */
+    .proj_thumb1 {
+        animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+    }
+    .proj_thumb2 {
+        animation: fadeIn 1.5s;
+        -moz-animation: fadeIn 1.5s;
+        -webkit-animation: fadeIn 1.5s;
+        -o-animation: fadeIn 1.5s;
+    }
+    .proj_thumb3 {
+        animation: fadeIn 2s;
+        -moz-animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+        -o-animation: fadeIn 2s;
+    }
+    .proj_thumb4 {
+        animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -webkit-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+    }
+    .proj_thumb5 {
+        animation: fadeIn 3s;
+        -moz-animation: fadeIn 3s;
+        -webkit-animation: fadeIn 3s;
+        -o-animation: fadeIn 3s;
+    }
+    .proj_thumb6 {
+        animation: fadeIn 3.5s;
+        -moz-animation: fadeIn 3.5s;
+        -webkit-animation: fadeIn 3.5s;
+        -o-animation: fadeIn 3.5s;
+    }
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    @-webkit-keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+    .zoomIn {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+    }
+    /*
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+*/
 }
 
 
@@ -542,12 +696,6 @@ a:hover {
         overflow: hidden;
         max-width: 100%;
     }
-    .thumb div:hover {
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        opacity: 0.9;
-    }
     /* for caption feature */
     /*.proj_box:hover .caption {
         opacity: 1.0;
@@ -584,60 +732,13 @@ a:hover {
     /**/
     /**/
     /* for caption feature */
-    .caption,
-    .caption-text,
-    .caption-text h3 {
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
-        -ms-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
-    }
-    .caption {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 1.0);
-        opacity: 0;
-        bottom: 0px;
-    }
     .caption-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-        width: 20%;
-        height: 20%;
-        font-size: 0px;
-        border: 2px white solid;
-        border-radius: 100%;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        opacity: 0;
-    }
-    .caption-text h3 {
-        -webkit-transition-delay: 0.05s;
-        transition-delay: 0.05s;
-        opacity: 0;
-        font-size: 0px;
-    }
-    .proj_box:hover .caption {
-        opacity: 1;
-    }
-    .proj_box:hover .caption-text {
-        opacity: 1;
         height: 65%;
         width: 65%;
     }
-    .proj_box:hover .caption-text h3 {
-        opacity: 1;
+    .caption-text h3 {
         font-size: 16px;
     }
-    /**/
     /* for zoom feature */
     .proj_thumb1,
     .proj_thumb2,
@@ -791,48 +892,7 @@ a:hover {
         transition: all 0.25s ease-in-out;
         opacity: 0.95;
     }
-    /**/
     /* for caption feature */
-    .caption {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 1.0);
-        opacity: 0;
-        bottom: 0px;
-    }
-    .caption-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        width: 20%;
-        height: 20%;
-        opacity: 0;
-    }
-    .caption-text h3 {
-        -webkit-transition-delay: 0.05s;
-        transition-delay: 0.05s;
-        opacity: 0;
-        font-size: 0px;
-    }
-    .proj_box:hover .caption {
-        opacity: 1;
-    }
-    .proj_box:hover .caption-text {
-        opacity: 1;
-        width: 65%;
-        height: 65%;
-    }
-    .proj_box:hover .caption-text h3 {
-        opacity: 1;
-        font-size: 16px;
-    }
     /* PROJECT PAGE */
     .project img {
         width: 100%;
