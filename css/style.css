@@ -50,7 +50,7 @@ a:hover {
     }
     .nav_bar a {
         color: var(--off_black);
-        font-weight: 300;
+        font-weight: 400;
         font-size: 12px;
         letter-spacing: 2px;
     }
