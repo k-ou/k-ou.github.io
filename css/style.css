@@ -31,6 +31,7 @@ a,
 a:hover {
     cursor: pointer;
     text-decoration: none;
+    color: var(--main_color);
 }
 
 
@@ -123,7 +124,7 @@ a:hover {
     }
     .nav_right {
         display: none;
-        color: var(--main_color);
+        color: var(--description_title);
         width: 100%;
         float: right;
     }
@@ -537,7 +538,7 @@ a:hover {
         position: relative;
     }
     .nav_bar {
-        margin-top: 30px;
+        margin-top: 25px;
         display: block;
         width: 75%;
         float: left;
@@ -549,6 +550,7 @@ a:hover {
         text-transform: uppercase;
         text-align: center;
         width: 40%;
+        height: 30px;
     }
     .nav_bar a {
         color: var(--off_black);
@@ -570,7 +572,8 @@ a:hover {
     .current div {
         margin: 0 auto;
         height: 100%;
-        width: 50%;
+        display: inline-block;
+        width: auto;
         border-bottom: 2px var(--main_color) solid;
     }
     .nav_bar li:not(.current)::after {
@@ -655,6 +658,9 @@ a:hover {
     }
     .header.smaller .nav_bar a {
         font-size: 12px;
+    }
+    .header.smaller .nav_bar li {
+        height: 25px;
     }
     .header.smaller .social_media {
         display: none;
@@ -803,9 +809,6 @@ a:hover {
         max-height: 100px;
         width: auto;
     }
-    .current div {
-        width: 30%;
-    }
     .description {
         margin-top: 0px;
     }
@@ -833,7 +836,7 @@ a:hover {
         padding-top: 20px;
     }
     .nav_bar {
-        padding-top: 15px;
+        padding-top: 20px;
         width: 70%;
         position: relative;
     }
@@ -843,7 +846,8 @@ a:hover {
         width: 25%;
     }
     .current div {
-        width: 40%;
+        display: inline-block;
+        width: auto;
     }
     .social_media li {
         margin-top: 0px;
@@ -861,6 +865,9 @@ a:hover {
     /* minimize navbar on scroll */
     .header.smaller {
         padding: 20px;
+    }
+    .header.smaller .nav_bar li {
+        height: 35px;
     }
     .header.smaller .social_media {
         display: none;
