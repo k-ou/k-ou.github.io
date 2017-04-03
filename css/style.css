@@ -48,23 +48,7 @@ a:hover {
         -o-transition: all 0.3s;
         transition: all 0.3s;
         background-color: rgba(255, 255, 255, 0.95);
-    }
-    .nav_bar a {
-        color: var(--off_black);
-        font-weight: 400;
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-    .nav_bar .current a {
-        color: var(--main_color);
-    }
-    .nav_bar a:hover {
-        color: white;
-    }
-    /*starts exper*/
-    /* nav bar */
-    .header {
-        z-index: 1;
+        z-index: 30;
         text-align: center;
         position: fixed;
         padding: 15px 0px;
@@ -95,10 +79,15 @@ a:hover {
         width: 50%;
         height: 40px;
     }
-    .nav_bar .current {
-        color: white;
+    .nav_bar a {
+        color: var(--off_black);
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 2px;
     }
-    /**/
+    .nav_bar .current a {
+        color: var(--main_color);
+    }
     /* logo */
     .logo_container {
         margin-top: 20px;
@@ -149,7 +138,7 @@ a:hover {
         height: 20px;
     }
     /* displace for header size */
-    .thumb,
+    .mission,
     .bio,
     .project_page {
         margin-top: 165px;
@@ -188,6 +177,18 @@ a:hover {
         font-size: 12px;
     }
     /* PROJECT GRID / HOME / INDEX */
+    .mission {
+        background-color: var(--off_black);
+        color: white;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mission p {
+        letter-spacing: .5px;
+        font-weight: 100;
+    }
     .proj_box {
         overflow: hidden;
     }
@@ -487,6 +488,38 @@ a:hover {
         -webkit-animation-name: zoomIn;
         animation-name: zoomIn;
     }
+    @-webkit-keyframes slideInDown {
+        from {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+            visibility: visible;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes slideInDown {
+        from {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+            visibility: visible;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+    }
+    .mission {
+        animation: fadeIn 1.0s;
+        -moz-animation: fadeIn 1.0s;
+        -webkit-animation: fadeIn 1.0s;
+        -o-animation: fadeIn 1.0s;
+    }
     /*
     @-webkit-keyframes fadeInUp {
         from {
@@ -625,6 +658,8 @@ a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
+        line-height: 1.2;
+        margin-top: 10px;
     }
     .social_media {
         width: 100%;
@@ -665,10 +700,13 @@ a:hover {
     .header.smaller .social_media {
         display: none;
     }
+    .header.smaller .nav_right_text {
+        margin-top: 10px;
+    }
     /**/
     /* displace for header */
     .bio,
-    .thumb,
+    .mission,
     .project_page {
         margin-top: 140px;
     }
@@ -879,7 +917,7 @@ a:hover {
         padding-top: 5px;
     }
     /* displace for header */
-    .thumb,
+    .mission,
     .bio,
     .project_page {
         margin-top: 175px;
