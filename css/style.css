@@ -141,7 +141,7 @@ a:hover {
     .mission,
     .bio,
     .project_page {
-        margin-top: 165px;
+        margin-top: 160px;
     }
     /* FOOTER */
     .footer {
@@ -180,10 +180,12 @@ a:hover {
     .mission {
         background-color: var(--off_black);
         color: white;
-        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        padding: 20px 15px;
     }
     .mission p {
         letter-spacing: .5px;
@@ -552,6 +554,14 @@ a:hover {
 */
 }
 
+@media only screen and (min-width: 415px) {
+    .mission,
+    .bio,
+    .project_page {
+        margin-top: 190px;
+    }
+}
+
 
 /* TABLET */
 
@@ -731,6 +741,10 @@ a:hover {
         display: none;
     }
     /* PROJ GRID */
+    .mission {
+        font-size: 16px;
+        padding: 20px;
+    }
     .proj_thumb1 {
         background-position: top;
     }
@@ -928,6 +942,10 @@ a:hover {
     }
     /* --------------------*/
     /* PROJECT GRID / HOME / INDEX */
+    .mission {
+        font-size: 16px;
+        padding: 30px;
+    }
     .proj_box {
         max-width: 100%;
     }
