@@ -1,1 +1,13 @@
+.header {
+    background-color: yellow;
+    color: black;
+}
 
+.section {
+    min-height: 200px;
+    border: 2px black solid;
+}
+
+.section .no {
+    background-color: yellow;
+}
