@@ -85,7 +85,7 @@ a:hover {
         font-size: 12px;
         letter-spacing: 2px;
     }
-    .nav_bar .current a {
+    .nav_bar a .current {
         color: var(--main_color);
     }
     /* logo */
@@ -187,9 +187,31 @@ a:hover {
         font-size: 14px;
         padding: 20px 15px;
     }
+    .mission_text {
+        display: block;
+        width: 100%;
+    }
     .mission p {
         letter-spacing: .5px;
         font-weight: 100;
+    }
+    .mission_cta_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mission_cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        text-align: center;
+        padding: 5px 5px;
+        background-color: var(--main_color);
+    }
+    .mission_cta p {
+        color: white;
+        margin-bottom: 0px;
     }
     .proj_box {
         overflow: hidden;
@@ -352,6 +374,7 @@ a:hover {
     .shout_out h3 {
         font-size: 28px;
         font-weight: 100;
+        margin: 0px;
     }
     /* ILLUSTRATIONS PAGE carousel, thumbnails*/
     /*http://bootsnipp.com/snippets/featured/carousel-with-gallery-thumbs*/
@@ -610,7 +633,7 @@ a:hover {
         transform: translateY(0px);
     }
     .nav_bar .current {
-        color: #fff;
+        color: var(--main_color);
     }
     .current div {
         margin: 0 auto;
@@ -743,7 +766,13 @@ a:hover {
     /* PROJ GRID */
     .mission {
         font-size: 16px;
-        padding: 20px;
+        padding: 25px;
+    }
+    .mission p {
+        margin-bottom: 0px;
+    }
+    .mission_cta {
+        display: none;
     }
     .proj_thumb1 {
         background-position: top;
