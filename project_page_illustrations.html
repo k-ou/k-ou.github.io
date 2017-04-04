@@ -37,6 +37,26 @@
 
 <body>
 
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '298143810604267',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();   
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="container-fluid">
         <!-- HEADER -->
         <div class="row header no-gutter">
@@ -240,6 +260,7 @@
                 var id_selector = $(this).attr("id");
                 try {
                     var id = /-(\d+)$/.exec(id_selector)[1];
+                    FB.AppEvents.logEvent("carousel_click", null, {id: id});
                     console.log(id_selector, id);
                     jQuery('#myCarousel').carousel(parseInt(id));
                 } catch (e) {
