@@ -534,7 +534,7 @@ a:hover {
     }
 }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 425px) {
     /*    .mission,*/
     .thumb,
     .bio,
@@ -543,6 +543,9 @@ a:hover {
     }
     .intro {
         padding: 40px 60px 90px;
+    }
+    .about_me {
+        padding: 40px 100px;
     }
 }
 
