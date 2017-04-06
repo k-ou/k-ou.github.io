@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Open+Sans|Arimo|Caveat|Homemade+Apple|Leckerli+One|Over+the+Rainbow|Pacifico|Pangolin" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
 
 </head>
 
@@ -96,45 +96,55 @@
         <!-- HERO IMAGE AND TEXT -->
         <div class="row no-gutter bio">
             <div class="col-md-12">
-                <div class="hero"></div>
+                <div class="hero" data-original="../img/me/profile1.jpg"></div>
+                <div class="greeting">
+                    <h2>Hello there.</h2>
+                </div>
                 <div class="about_me">
-                    <h2>
-                        Hello there.
-                    </h2>
-                    <p>
-                        My name is <span>Kelly Ou</span>.
-                    </p>
-                    <p>
-                        I'm a <span>graphic design student</span> and an <span>illustrator</span>.
-                    </p>
-                    <!--
-                    <p>
-                        A frequent visitor of coffee shops and bookstores, as well as the large expanse of the great outdoors, I also devour carbs, exercise early in the morning, and stay up late into the night. I enjoy making conversation with and learning from both friends and strangers alike.
-                    </p>
+                    <div>
+                        <!--
+                        <p>
+                            I'm a <span>graphic design student</span> and an <span>illustrator</span>.
+                        </p>
+                        <p>
+                            From small town Fishers, IN, to beautiful San Diego, to bustling LA, to invigorating <span>Seattle</span>.
+                        </p>
 -->
-                    <p>
-                        Interests: carbs, coffee shops, bookstores, hiking, cats, staying up, fun conversation.</p>
-                    <p>
-                        From small town Fishers, IN, to beautiful San Diego, to bustling LA, to invigorating <span>Seattle</span>.
-                    </p>
-                    <p>
-                        I have a BS in Mathematics of Computation from UCLA, and I'm currently studying graphic design at the Seattle Central Creative Academy.
-                    </p>
-                    <!--
+                        <p class="intern">
+                            I'm looking for a <span>graphic design internship</span> for summer 2017.
+                        </p>
+                        <!--
 <p>
-    <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+    I'm a graphic design student and an illustrator.
 </p>
 -->
+                        <p>
+                            I have a BS in Mathematics of Computation from UCLA, and I'm currently studying graphic design at the Seattle Central Creative Academy.
+                        </p>
+                        <p>
+                            I love crafting narratives through imagery and making order out of chaos.
+                        </p>
+                        <p>
+                            From small town Fishers, IN, to beautiful San Diego, to bustling LA, to invigorating Seattle.
+                        </p>
+                        <p>
+                            <small>
+                                Interests: carbs, coffee shops, bookstores, hiking, cats, staying up, fun conversation.
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 shout_out">
-                <h3>
-                    Let's grab a cup of coffee and chat.
-                </h3>
-            </div>
-        </div>
+        <!--
+<div class="row">
+    <div class="col-md-12 shout_out">
+        <h3>
+            Let's grab a cup of coffee and chat.
+        </h3>
+    </div>
+</div>
+-->
         <!-- FOOTER -->
         <div class="row no-gutter">
             <div class="col-xs-12 footer">
@@ -169,6 +179,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/lazyload.min.js"></script>
     <script>
         function init() {
             window.addEventListener('scroll', function(e) {
@@ -185,6 +196,9 @@
             });
         }
         window.onload = init();
+        new LazyLoad({
+            elements_selector: "div"
+        });
 
     </script>
 </body>

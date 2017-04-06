@@ -38,6 +38,176 @@ a:hover {
 /* Mobile screens */
 
 @media only screen and (min-width: 320px) {
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+    @-webkit-keyframes slideInUp {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes slideInUp {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .slideInUp {
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+    }
+    @-webkit-keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+    .zoomIn {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+    }
+    @-webkit-keyframes slideInDown {
+        from {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+            visibility: visible;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes slideInDown {
+        from {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+            visibility: visible;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+    }
+    @-webkit-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .fadeInLeft {
+        -webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+    }
+    /*
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+*/
     /* GENERAL */
     /* nav bar */
     .header,
@@ -138,7 +308,8 @@ a:hover {
         height: 20px;
     }
     /* displace for header size */
-    .mission,
+    /*    .mission,*/
+    .thumb,
     .bio,
     .project_page {
         margin-top: 160px;
@@ -186,6 +357,12 @@ a:hover {
         text-align: center;
         font-size: 14px;
         padding: 20px 15px;
+    }
+    .mission {
+        animation: fadeIn 1.0s;
+        -moz-animation: fadeIn 1.0s;
+        -webkit-animation: fadeIn 1.0s;
+        -o-animation: fadeIn 1.0s;
     }
     .mission_text {
         display: block;
@@ -236,16 +413,16 @@ a:hover {
         background-image: url(../img/thumbnails/nwirp.png);
     }
     .proj_thumb2 {
-        background-image: url(../img/thumbnails/acmw_shirt.png);
+        background-image: url(../img/thumbnails/save_rock_and_roll.png);
     }
     .proj_thumb3 {
         background-image: url(../img/thumbnails/carbcat.JPG);
     }
     .proj_thumb4 {
-        background-image: url(../img/thumbnails/hillbilly_elegy_cover.jpg);
+        background-image: url(../img/thumbnails/acmw_shirt.png);
     }
     .proj_thumb5 {
-        background-image: url(../img/thumbnails/save_rock_and_roll.png);
+        background-image: url(../img/thumbnails/hillbilly_elegy_cover.jpg);
     }
     .proj_thumb6 {
         background-image: url(../img/thumbnails/illustration_boba.png);
@@ -339,7 +516,7 @@ a:hover {
     /* ABOUT ME */
     .hero {
         height: 400px;
-        background-image: url(../img/me/profile1.jpg);
+        /*        background-image: url(../img/me/profile1.jpg);*/
         background-repeat: no-repeat;
         background-position: 45% bottom;
         background-size: cover;
@@ -348,31 +525,80 @@ a:hover {
         -webkit-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
         box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
     }
+    .greeting,
+    .headline {
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        color: white;
+    }
+    .greeting h2,
+    .headline h2 {
+        width: 100%;
+        font-weight: 300;
+        font-size: 21px;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 50px;
+        margin: 0px;
+    }
+    .greeting {
+        top: 0px;
+        background-color: var(--main_color);
+        display: flex;
+    }
+    .headline {
+        top: 50px;
+        background-color: var(--off_black);
+    }
     .about_me {
+        padding: 15px;
         width: 100%;
         position: relative;
-        padding: 20px 5%;
         margin-top: 0px;
         margin-bottom: 50px;
-        /*text-transform: lowercase;*/
+        display: flex;
+        background-color: #333333;
+        color: white;
+        height: 100%;
+        align-items: stretch;
+    }
+    .about_me p {
+        font-weight: 300;
     }
     .about_me span {
-        color: var(--main_color);
-        font-weight: bold;
-        /*font-family: 'Pacifico', sans-serif;*/
-        font-size: 18px;
+        color: white;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+    .about_me span:hover {
+        background-color: var(--main_color);
+        animation: slideInUp 2s;
+        -moz-animation: slideInUp 2s;
+        -webkit-animation: slideInUp 2s;
+        -o-animation: slideInUp 2s;
+    }
+    .about_me h2 {
+        margin-top: 0px;
+    }
+    .intern {
+        padding-bottom: 10px;
+        border-bottom: 2px white solid;
     }
     .shout_out {
         text-align: center;
-        height: 200px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--main_color);
+        background-color: var(--off_black);
         color: white;
     }
     .shout_out h3 {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 100;
         margin: 0px;
     }
@@ -469,119 +695,14 @@ a:hover {
         -webkit-animation: fadeIn 3.5s;
         -o-animation: fadeIn 3.5s;
     }
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    .fadeIn {
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-    }
-    @-webkit-keyframes zoomIn {
-        from {
-            opacity: 0;
-            -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-        }
-        50% {
-            opacity: 1;
-        }
-    }
-    @keyframes zoomIn {
-        from {
-            opacity: 0;
-            -webkit-transform: scale3d(.3, .3, .3);
-            transform: scale3d(.3, .3, .3);
-        }
-        50% {
-            opacity: 1;
-        }
-    }
-    .zoomIn {
-        -webkit-animation-name: zoomIn;
-        animation-name: zoomIn;
-    }
-    @-webkit-keyframes slideInDown {
-        from {
-            -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-            visibility: visible;
-        }
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-    @keyframes slideInDown {
-        from {
-            -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-            visibility: visible;
-        }
-        to {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-    }
-    .slideInDown {
-        -webkit-animation-name: slideInDown;
-        animation-name: slideInDown;
-    }
-    .mission {
-        animation: fadeIn 1.0s;
-        -moz-animation: fadeIn 1.0s;
-        -webkit-animation: fadeIn 1.0s;
-        -o-animation: fadeIn 1.0s;
-    }
-    /*
-    @-webkit-keyframes fadeInUp {
-        from {
-            opacity: 0;
-            -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-        }
-        to {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
-    }
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-        }
-        to {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
-    }
-    .fadeInUp {
-        -webkit-animation-name: fadeInUp;
-        animation-name: fadeInUp;
-    }
-*/
 }
 
 @media only screen and (min-width: 415px) {
-    .mission,
+    /*    .mission,*/
+    .thumb,
     .bio,
     .project_page {
-        margin-top: 190px;
+        margin-top: 140px;
     }
 }
 
@@ -590,7 +711,8 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
     /* nav bar */
-    .header {
+    .header,
+    .header.smaller {
         position: fixed;
         padding: 15px 20px;
         text-align: left;
@@ -741,7 +863,7 @@ a:hover {
     .bio,
     .mission,
     .project_page {
-        margin-top: 140px;
+        margin-top: 130px;
     }
     .thumb,
     .logo_md {
@@ -869,10 +991,52 @@ a:hover {
     }
     /* ABOUT */
     .hero {
-        height: 450px;
+        height: 400px;
+    }
+    .greeting,
+    .headline {
+        position: absolute;
+        left: 0px;
+        height: 60px;
+    }
+    .greeting h2,
+    .headline h2 {
+        letter-spacing: 1px;
+        padding-left: 50px;
+        margin: 0px;
+        line-height: 60px;
+    }
+    .greeting {
+        top: 40px;
+        width: 300px;
+        background-color: var(--main_color);
+        display: flex;
+        animation: fadeInLeft 1.0s;
+        -moz-animation: fadeInLeft 1.0s;
+        -webkit-animation: fadeInLeft 1.0s;
+        -o-animation: fadeInLeft 1.0s;
+    }
+    .greeting h2 {
+        font-size: 32px;
+    }
+    .headline {
+        top: 90px;
+        width: 400px;
+        background-color: var(--off_black);
+        animation: fadeInLeft 2.0s;
+        -moz-animation: fadeInLeft 2.0s;
+        -webkit-animation: fadeInLeft 2.0s;
+        -o-animation: fadeInLeft 2.0s;
+    }
+    .headline h2 {
+        font-size: 32px;
     }
     .about_me {
-        background-color: white;
+        padding: 30px;
+        animation: fadeInUp 2.0s;
+        -moz-animation: fadeInUp 2.0s;
+        -webkit-animation: fadeInUp 2.0s;
+        -o-animation: fadeInUp 2.0s;
     }
     /* ILLUSTRATIONS PAGE */
     #carousel-bounding-box {
@@ -892,6 +1056,9 @@ a:hover {
     }
     .description {
         margin-top: 0px;
+    }
+    .hero {
+        height: 550px;
     }
 }
 
@@ -960,7 +1127,8 @@ a:hover {
         padding-top: 5px;
     }
     /* displace for header */
-    .mission,
+    /*    .mission,*/
+    .thumb,
     .bio,
     .project_page {
         margin-top: 175px;
@@ -997,26 +1165,51 @@ a:hover {
     .hero {
         height: 650px;
     }
-    .about_me {
-        height: 0px;
-        width: 39%;
+    .greeting h2,
+    .headline h2 {
+        line-height: 100px;
+    }
+    .greeting {
         position: absolute;
-        top: 0;
-        right: 0;
-        padding-top: 0px;
-        padding-bottom: 39%;
-        padding-left: 6%;
-        padding-right: 6%;
-        margin: 25px;
-        margin-top: 50px;
-        border-radius: 100%;
+        top: 40px;
+        left: 0px;
+        height: 100px;
+        width: 400px;
+        background-color: var(--main_color);
+        color: white;
+        display: flex;
+    }
+    .greeting h2 {
+        font-size: 42px;
+        letter-spacing: 1px;
+        padding-left: 100px;
+    }
+    .headline {
+        position: absolute;
+        left: 0px;
+        top: 120px;
+        height: 100px;
+        width: 600px;
+        background-color: var(--off_black);
+        color: white;
+    }
+    .headline h2 {
+        font-size: 48px;
+        letter-spacing: 1px;
+        padding-left: 50px;
+    }
+    .about_me {
+        position: absolute;
+        width: 30%;
+        top: 0px;
+        right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
         /*text-transform: lowercase;*/
     }
-    .about_me div {
-        margin-top: 70px;
-    }
-    .about_me span {
-        font-size: 24px;
+    .about_me p {
+        font-size: 18px;
     }
     .shout_out h3 {
         font-size: 36px;
@@ -1029,31 +1222,24 @@ a:hover {
         height: 750px;
     }
     .about_me {
-        height: 0px;
-        width: 40%;
         position: absolute;
-        top: 0;
-        right: 0;
-        padding-top: 0px;
-        padding-bottom: 40%;
-        padding-left: 6%;
-        padding-right: 6%;
-        margin: 25px;
-        margin-top: 50px;
-        border-radius: 100%;
+        width: 30%;
+        top: 0px;
+        right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
         /*text-transform: lowercase;*/
     }
     .about_me div {
         margin-top: 120px;
     }
-    .about_me span {
-        font-size: 26px;
-    }
 }
 
 @media only screen and (min-width: 1824px) {
     /* displace for header */
-    .mission,
+    /*    .mission,*/
+    .thumb,
     .bio,
     .project_page {
         margin-top: 190px;
@@ -1062,31 +1248,27 @@ a:hover {
         height: 950px;
     }
     .about_me {
-        height: 0px;
-        width: 40%;
-        top: 0;
-        right: 0;
-        padding-top: 0px;
-        padding-bottom: 40%;
-        padding-left: 6%;
-        padding-right: 6%;
-        margin: 25px;
-        margin-top: 50px;
+        position: absolute;
+        width: 30%;
+        top: 0px;
+        right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        /*text-transform: lowercase;*/
     }
     .about_me div {
         margin-top: 210px;
     }
     .about_me p {
-        font-size: 18px;
-    }
-    .about_me span {
-        font-size: 28px;
+        font-size: 21px;
     }
 }
 
 @media only screen and (min-width: 2048) {
     /* displace for header */
-    .mission,
+    /*    .mission,*/
+    .thumb,
     .bio,
     .project_page {
         margin-top: 230px;
@@ -1095,18 +1277,13 @@ a:hover {
         height: 1250px;
     }
     .about_me {
-        height: 0px;
-        width: 40%;
         position: absolute;
-        top: 0;
-        right: 0;
-        padding-top: 0px;
-        padding-bottom: 40%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin: 25px;
-        margin-top: 100px;
-        border-radius: 100%;
+        width: 30%;
+        top: 0px;
+        right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
         /*text-transform: lowercase;*/
     }
 }
