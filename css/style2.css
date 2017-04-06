@@ -34,6 +34,54 @@ a:hover {
     color: var(--main_color);
 }
 
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.proj_box:hover .caption-text {
+    animation: zoomIn .5s;
+    -moz-animation: zoomIn .5s;
+    -webkit-animation: zoomIn .5s;
+    -o-animation: zoomIn .5s;
+    opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* Mobile screens */
 
@@ -301,14 +349,6 @@ a:hover {
         -o-animation: fadeIn .25s;
         opacity: 1;
     }
-    .proj_box:hover .caption-text {
-        animation: zoomIn .5s;
-        -moz-animation: zoomIn .5s;
-        -webkit-animation: zoomIn .5s;
-        -o-animation: zoomIn .5s;
-        opacity: 1;
-    }
-    /*    */
     /* PROJECT PAGE */
     .project img {
         margin: 0 auto;
