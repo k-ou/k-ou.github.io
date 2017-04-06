@@ -1,13 +1,103 @@
 .header {
-    background-color: yellow;
     color: black;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.header_bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.6)), url(https://static01.nyt.com/images/2016/05/29/arts/29WHITEWASH_COMBO/29WHITEWASH_COMBO-superJumbo.jpg);
+    /*
+    -webkit-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-6deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+*/
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 125%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    /*    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.header_text {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2.5s;
+    -moz-animation: fadeIn 2.5s;
+    -webkit-animation: fadeIn 2.5s;
+    -o-animation: fadeIn 2.5s;
+}
+
+.header_text h1 {
+    margin: 0px;
 }
 
 .section {
-    min-height: 200px;
+    padding: 30px;
+}
+
+.section:not(#hero) {
+    min-height: 250px;
     border: 2px black solid;
+    position: relative;
 }
 
 .section .no {
     background-color: yellow;
+}
+
+#hero {
+    height: 100vh;
+}
+
+#yellow div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#yellow img {
+    width: 20%;
+    height: auto;
+    /*
+    animation: fadeIn 2.5s;
+    -moz-animation: fadeIn 2.5s;
+    -webkit-animation: fadeIn 2.5s;
+    -o-animation: fadeIn 2.5s;
+*/
+}
+
+.fixed_yellow #yellow {
+    position: fixed;
+}
+
+.footer {
+    background-color: yellow;
+}
+
+.footer a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 30px;
+    text-align: center;
 }

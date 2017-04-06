@@ -1,0 +1,31 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <title>red stick figure</title>
+ <g>
+  <title>Layer 2</title>
+  <ellipse fill="#ff7f00" stroke="#ff7f00" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="210" cy="342" id="svg_18" rx="11"/>
+  <line fill="none" stroke="#000000" stroke-width="5" x1="254" y1="229" x2="253" y2="229" id="svg_1"/>
+  <g id="svg_36">
+   <circle fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="305.368891" cy="63.927276" r="31.923498" id="svg_5"/>
+   <g id="svg_22">
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="310.533335" y="273.194759" width="39.102221" height="159.647358" id="svg_10"/>
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="261.840003" y="107.79435" width="87.795553" height="163.962138" id="svg_8"/>
+    <ellipse fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="281.022225" cy="428.319157" rx="19.182222" ry="24.601895" id="svg_20"/>
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="261.471115" y="274.99259" width="39.102221" height="159.647358" id="svg_11"/>
+    <ellipse fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="330.453335" cy="427.448625" rx="19.182222" ry="24.601895" id="svg_21"/>
+   </g>
+   <g id="svg_34">
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="359.226667" y="162.448393" width="28.773333" height="99.24025" id="svg_14"/>
+    <ellipse fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="373.982223" cy="257.014283" rx="14.017777" ry="17.978306" id="svg_19"/>
+    <ellipse fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="357.751112" cy="138.357463" rx="29.879999" ry="29.843988" id="svg_33"/>
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="347.422223" y="144.470087" width="40.577777" height="15.101777" id="svg_27"/>
+   </g>
+   <g id="svg_35">
+    <ellipse fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="236.75556" cy="257.37385" id="svg_17" rx="14.017777" ry="17.978306"/>
+    <ellipse fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="251.880004" cy="136.919198" id="svg_29" rx="29.879999" ry="29.843988"/>
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="222.000004" y="144.470087" width="39.839999" height="15.101777" id="svg_23"/>
+    <rect fill="#fff200" stroke="#fff600" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="222.368893" y="162.807959" width="28.773333" height="99.24025" id="svg_15"/>
+   </g>
+  </g>
+ </g>
+</svg>
