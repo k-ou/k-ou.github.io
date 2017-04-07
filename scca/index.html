@@ -32,20 +32,31 @@
 
         <div class="row section" id="hero">
             <div class="col-xs-12">
-                <p>
-                    So, where are you from?
+                <p class="marquee1">
+                    Like, where are you from from?
                 </p>
-                <p>
+                <p class="marquee2">
                     No, where are you originally from?
                 </p>
-                <p>
+                <p class="marquee3">
                     I mean, where were your parents born?
+                </p>
+                <p class="marquee4">
+                    Look, I guess what I'm trying to say is...
+                </p>
+                <p class="marquee5">
+                    What kind of Asian are you?
                 </p>
             </div>
             <div class="row" id="yellow">
                 <div class="col-xs-12 wow bounceInUp" data-wow-delay="1s">
                     <img src="img/yellow.svg">
                 </div>
+            </div>
+            <div class="col-xs-12">
+                <h3 class="yellow_intro wow fadeIn">
+                    Asian Americans Fight for Cultural Citizenship
+                </h3>
             </div>
         </div>
 
@@ -182,6 +193,7 @@
     new WOW().init();
 
 </script>
+<script src="https://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
 <script>
     // scroll and fix
     // https://css-tricks.com/scroll-fix-content/
@@ -196,6 +208,44 @@
                 wrap.removeClass("fixed_yellow");
             }
 
+        });
+    });
+
+    //
+
+    var setSkrollr = function($el, data) {
+        for (var i = 0, l = data.length; i < l; i++) {
+            var d = data[i],
+                px = d[0];
+            css = d[1];
+            $el.attr('data-' + px, css);
+        }
+    }
+
+    jQuery(function($) {
+        setSkrollr($('.marquee1'), [
+            [0, 'transform:translateX(-100%)'],
+            [750, 'transform:translateX(100%)']
+        ]);
+        setSkrollr($('.marquee2'), [
+            [250, 'transform:translateX(100%)'],
+            [1000, 'transform:translateX(-100%)']
+        ]);
+        setSkrollr($('.marquee3'), [
+            [500, 'transform:translateX(-100%)'],
+            [1250, 'transform:translateX(100%)']
+        ]);
+        setSkrollr($('.marquee4'), [
+            [750, 'transform:translateX(100%)'],
+            [1250, 'transform:translateX(0%)']
+        ]);
+        setSkrollr($('.marquee5'), [
+            [1000, 'transform:translateX(-100%)'],
+            [1500, 'transform:translateX(25%)']
+        ]);
+
+        skrollr.init({
+            smoothScrolling: false
         });
     });
 
