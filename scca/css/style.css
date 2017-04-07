@@ -10,7 +10,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.6)), url(https://static01.nyt.com/images/2016/05/29/arts/29WHITEWASH_COMBO/29WHITEWASH_COMBO-superJumbo.jpg);
+    background: linear-gradient(rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.6)), url(../img/protest.jpg);
     /*
     -webkit-transform: skewY(-6deg);
     -ms-transform: skewY(-6deg);
@@ -20,7 +20,7 @@
     transform-origin: top left;
 */
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 125%, 0 85%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     /*    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,10 +37,13 @@
     -moz-animation: fadeIn 2.5s;
     -webkit-animation: fadeIn 2.5s;
     -o-animation: fadeIn 2.5s;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
 }
 
 .header_text h1 {
     margin: 0px;
+    font-size: 100px;
 }
 
 .section {
@@ -59,6 +62,11 @@
 
 #hero {
     height: 100vh;
+}
+
+#hero p {
+    font-size: 100px;
+    font-family: 'Teko', sans-serif;
 }
 
 #yellow div {
