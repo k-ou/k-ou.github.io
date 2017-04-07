@@ -37,25 +37,29 @@
 
 <body>
 
-    
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '298143810604267',
-          cookie     : true,
-          xfbml      : true,
-          version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();   
-      };
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '298143810604267',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
     </script>
 
     <div class="container-fluid">
@@ -147,7 +151,7 @@
                     </div>
                     <div class="description_p">
                         <p>
-                            The memoir tells a story of struggle and turmoil within an impoverished community, which has been lose to cynicism and despair. As such, I wanted show the tension and isolation through my composition.
+                            The memoir tells a story of struggle and turmoil within an impoverished community, which has been lost to cynicism and despair. As such, I wanted show the tension and isolation through my composition.
                         </p>
                         <p>
                             I liked the contrast that a split complementary color scheme allowed, and I used jagged, irregular rectangles to create some semblance of the fibers of a screen door, fraying and weathered like the hopes of the community recounted in the book.
