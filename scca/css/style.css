@@ -1,3 +1,8 @@
+h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+}
+
 .header {
     color: black;
     overflow: hidden;
@@ -50,7 +55,7 @@
     padding: 30px;
 }
 
-.section:not(#hero) {
+.section:not(#questions) {
     min-height: 250px;
     border: 2px black solid;
     position: relative;
@@ -60,17 +65,35 @@
     background-color: yellow;
 }
 
-
-/*
-#hero {
-    height: 100vh;
+#questions {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
-*/
 
-#hero p {
+#questions p {
     font-size: 100px;
     font-family: 'Teko', sans-serif;
     margin-bottom: 80px;
+}
+
+#history,
+#now {
+    height: 100vh;
+}
+
+.quote p {
+    font-family: 'Teko', sans-serif;
+}
+
+#quotes p:nth-child(1) {
+    font-size: 56px;
+}
+
+.quote p:nth-child(2) {
+    text-align: right;
+    color: grey;
+    font-size: 36px;
 }
 
 
@@ -138,6 +161,43 @@
 
 .fixed_yellow #yellow {
     position: fixed;
+}
+
+.support_profile {
+    padding: 40px;
+}
+
+.support_profile h4,
+.support_profile h5 {
+    font-family: 'Teko', sans-serif;
+}
+
+.support_profile h4 {
+    font-size: 84px;
+}
+
+.support_profile h4 a {
+    box-shadow: inset 0 0 0 0 yellow;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    text-decoration: none;
+    color: black;
+}
+
+.support_profile h4 a:hover {
+    box-shadow: inset 0 100px 0 0 yellow;
+}
+
+.support_profile h5 {
+    font-size: 48px;
+    color: grey;
+}
+
+.support_profile img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
 
 .footer {
