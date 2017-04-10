@@ -1,3 +1,8 @@
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 h2 {
     font-family: 'Teko', sans-serif;
     font-size: 48px;
@@ -5,6 +10,19 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.row {
+    margin: 0px;
 }
 
 .header {
@@ -55,14 +73,11 @@ a {
     font-size: 100px;
 }
 
-.section {
-    padding: 30px;
-}
-
 .section:not(#questions) {
     min-height: 250px;
     border: 2px black solid;
     position: relative;
+    padding: 30px;
 }
 
 .section .no {
@@ -73,6 +88,7 @@ a {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+    margin: 0px;
 }
 
 #questions p {
@@ -81,9 +97,12 @@ a {
     margin-bottom: 80px;
 }
 
-#history,
 #now {
     height: 100vh;
+}
+
+#now h3 {
+    font-weight: 300;
 }
 
 .quote p {
@@ -138,33 +157,75 @@ a {
     }
 }
 
-#yellow div {
+.yellow {
+    height: 180vh;
+    background-image: url("../img/yellow.svg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: black;
+}
+
+.white_guys {
+    margin-top: 1600px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.white_guys div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#yellow img {
-    width: 20%;
-    height: auto;
-    animation-fill-mode: forwards;
-    /*
-    animation: fadeIn 2.5s;
-    -moz-animation: fadeIn 2.5s;
-    -webkit-animation: fadeIn 2.5s;
-    -o-animation: fadeIn 2.5s;
-*/
+.yellow .whiteguy1 {
+    width: 10%;
 }
 
-.yellow_intro {
+.yellow .whiteguy2 {
+    width: 10%;
+}
+
+.yellow .whiteguy3 {
+    width: 13%;
+}
+
+.yellow .whiteguy4 {
+    width: 20%;
+}
+
+.yellow .whiteguy5 {
+    width: 20%;
+}
+
+.history1 {
+    height: 500px;
+}
+
+
+/*
+.container-fluid {
+    background-color: black;
+}
+*/
+
+.intro {
+    background-color: yellow;
+    font-family: 'Teko', sans-serif;
     width: 100%;
     text-align: center;
     font-size: 52px;
-    margin-top: 80px;
-}
-
-.fixed_yellow #yellow {
-    position: fixed;
+    height: 150px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .support_profile {

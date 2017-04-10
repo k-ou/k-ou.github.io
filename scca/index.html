@@ -11,7 +11,7 @@
     <meta name="description" content="We strive to educate on the injustices faced by Asian Americans in the past, as well as the injustices that now happen everyday.">
     <meta name="author" content="Kelly Ou and Min Moon">
 
-    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900|Lato" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="row section" id="questions">
+        <div class="row section no-gutter" id="questions">
             <div class="col-xs-12">
                 <p class="marquee1">
                     Like, where are you from from?
@@ -44,18 +44,48 @@
                 <p class="marquee4">
                     Look, I guess what I'm trying to say is...
                 </p>
-                <p class="marquee5">
+                <p class="marquee5 wpw fadeOutRight">
                     What kind of Asian are you?
                 </p>
             </div>
-            <div class="row" id="yellow">
-                <div class="col-xs-12 wow bounceInUp" data-wow-delay=".5s">
-                    <img src="img/yellow.svg">
+            <div class="col-xs-12">
+                <div class="row yellow intro_yellow no-gutter">
+                    <div class="white_guys">
+                        <div class="col-xs-3">
+                            <img src="img/white_guy.png" class="whiteguy1 rellax" data-rellax-speed="7">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="6">
+                            <img src="img/white_guy.png" class="whiteguy2">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="4">
+                            <img src="img/white_guy.png" class="whiteguy3">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="6">
+                            <img src="img/white_guy.png" class="whiteguy4">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="-1">
+                            <img src="img/white_guy.png" class="whiteguy3">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="8">
+                            <img src="img/white_guy.png" class="whiteguy2">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="8">
+                            <img src="img/white_guy.png" class="whiteguy1">
+                        </div>
+                        <div class="col-xs-3 rellax" data-rellax-speed="8">
+                            <img src="img/white_guy.png" class="whiteguy1">
+                        </div>
+                    </div>
                 </div>
+                <!--
+<div class="col-xs-12 wow bounceInUp" data-wow-delay=".5s">
+    <img src="img/yellow.svg">
+</div>
+-->
             </div>
             <div class="col-xs-12">
-                <h3 class="yellow_intro wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                    Asian Americans Fight for Cultural Citizenship
+                <h3 class="intro wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                    The Asian-American Fight for Cultural Citizenship
                 </h3>
             </div>
         </div>
@@ -69,6 +99,9 @@
                     Historical perspectives on and representations of Asians -- from the arrival of the first Asians in the United States (during the Gold Rush) up until the model minority myth, created and upheld to pit Asian success against supposed black sloth.
                 </p>
             </div>
+            <div class="col-xs-12">
+                <div class="row yellow history1"></div>
+            </div>
         </div>
 
         <div class="row section" id="now">
@@ -77,13 +110,13 @@
                     But terms like "gook" are antequated now! Aren't Asians the model minority? <span class="no">No.</span>
                 </h2>
                 <h3>
-                    History of and debunking the model minority myth.
+                    History of and debunking the model minority myth
                 </h3>
                 <h3>
                     Representation of Asian Americans in the Media
                 </h3>
                 <h4>
-                    Stereotypes in the media.
+                    Stereotypes in the media
                 </h4>
                 <p>
                     Desexualization of Asian men, eroticization of Asian women, and other "Asian" roles in the media.
@@ -288,6 +321,7 @@
     // appears on scroll
 
 </script>
+<!--
 <script>
     //    Smooth Scrolling To Internal Links With jQuery
     $(document).ready(function() {
@@ -305,6 +339,7 @@
     });
 
 </script>
+-->
 <script src="js/wow.js">
     // appears on scroll
 
@@ -314,22 +349,33 @@
 
 </script>
 <script src="https://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+<script src="js/rellax.min.js">
+    // appears on scroll
+
+</script>
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+
+</script>
 <script>
     // scroll and fix
     // https://css-tricks.com/scroll-fix-content/
-    $(document).ready(function() {
-        var wrap = $(".container-fluid");
+    //    $(document).ready(function() {
+    //        var wrap = $("#yellow");
+    //
+    //        wrap.on("scroll", function(e) {
+    //
+    //            if (this.scrollTop() > 10) {
+    //                wrap.addClass("fixed_yellow");
+    //            } else {
+    //                wrap.removeClass("fixed_yellow");
+    //            }
+    //
+    //        });
+    //    });
 
-        wrap.on("scroll", function(e) {
-
-            if (this.scrollTop > 100) {
-                wrap.addClass("fixed_yellow");
-            } else {
-                wrap.removeClass("fixed_yellow");
-            }
-
-        });
-    });
+    // $(window).scroll(function() { // var scroll = $(window).scrollTop(); // // if (scroll >= 800) { // $("#questions").addClass("fixed_yellow"); // } else { // $("#questions").removeClass("fixed_yellow"); // } // });
 
     //
 
