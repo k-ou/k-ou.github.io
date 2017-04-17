@@ -147,18 +147,43 @@ p {
     font-weight: 300;
 }
 
+
+/* QUOTES & FACTS SECTION */
+
+.quote_box {
+    margin-top: 80px;
+}
+
+.quote {
+    padding: 20px;
+    border-radius: 25px;
+    border: 4px black solid;
+    margin-right: 80px;
+}
+
 .quote p {
     font-family: 'Teko', sans-serif;
 }
 
-#quotes p:nth-child(1) {
+.quote p:nth-child(1) {
     font-size: 56px;
+    color: red;
 }
 
 .quote p:nth-child(2) {
     text-align: right;
     color: grey;
     font-size: 36px;
+}
+
+.fact {
+    padding: 20px;
+    margin-left: 80px;
+    border: 4px black solid;
+}
+
+.fact p {
+    font-size: 24px;
 }
 
 .yellow {
@@ -226,7 +251,7 @@ p {
     font-size: 32px;
 }
 
-#history h3 span {
+#history h3 span.year {
     background-color: yellow;
 }
 
