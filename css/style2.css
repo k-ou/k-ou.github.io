@@ -185,13 +185,6 @@ a:hover {
     .header.smaller .nav_bar li {
         height: 20px;
     }
-    /* displace for header size */
-    /*    .mission,*/
-    .thumb,
-    .bio,
-    .project_page {
-        margin-top: 160px;
-    }
     /* FOOTER */
     .footer {
         margin-top: 20px;
@@ -701,13 +694,6 @@ a:hover {
     .header.smaller .nav_right_text {
         margin-top: 10px;
     }
-    /**/
-    /* displace for header */
-    .bio,
-    .mission,
-    .project_page {
-        margin-top: 130px;
-    }
     .thumb,
     .logo_md {
         max-height: 100px;
@@ -958,13 +944,6 @@ a:hover {
     .header.smaller .nav_bar {
         padding-top: 5px;
     }
-    /* displace for header */
-    /*    .mission,*/
-    .thumb,
-    .bio,
-    .project_page {
-        margin-top: 175px;
-    }
     /* footer */
     .footer {
         height: 100px;
@@ -1018,26 +997,12 @@ a:hover {
 }
 
 @media only screen and (min-width: 1824px) {
-    /* displace for header */
-    /*    .mission,*/
-    .thumb,
-    .bio,
-    .project_page {
-        margin-top: 190px;
-    }
     .hero {
         height: 950px;
     }
 }
 
 @media only screen and (min-width: 2048) {
-    /* displace for header */
-    /*    .mission,*/
-    .thumb,
-    .bio,
-    .project_page {
-        margin-top: 230px;
-    }
     .hero {
         height: 1250px;
     }

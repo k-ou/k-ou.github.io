@@ -249,6 +249,15 @@
         window.onload = init();
 
     </script>
+    <script>
+        $(window).resize(
+            () => {
+                const headerHeight = $(".header").outerHeight(true);
+                [".thumb", ".bio", ".project_page", ].forEach(classname => $(classname).css("margin-top", headerHeight))
+            }
+        )
+
+    </script>
 </body>
 
 </html>
