@@ -58,6 +58,10 @@ p {
     padding: 0px;
 }
 
+.container-fluid.falling {
+    background-color: black;
+}
+
 .row {
     margin: 0px;
 }
@@ -110,28 +114,29 @@ p {
     font-size: 100px;
 }
 
-.section:not(#questions) {
+.section:not(#intro) {
     min-height: 250px;
     border: 2px black solid;
     position: relative;
     padding: 30px;
 }
 
-.section .no {
+.section .highlight {
     background-color: yellow;
 }
 
-#questions {
+#intro {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
     margin: 0px;
 }
 
-#questions p {
-    font-size: 100px;
+#intro p {
+    font-size: 84px;
     font-family: 'Teko', sans-serif;
     margin-bottom: 80px;
+    color: white;
 }
 
 #now {
@@ -157,7 +162,6 @@ p {
 }
 
 .yellow {
-    height: 180vh;
     background-image: url("../img/yellow.svg");
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -169,9 +173,13 @@ p {
     background-color: black;
 }
 
+.questions {
+    height: 150vh;
+}
+
 .white_guys {
-    padding-top: 1600px;
-    height: 100%;
+    padding-top: 900px;
+    height: 200vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -229,7 +237,11 @@ p {
 }
 */
 
-.intro {
+.fadeInOut {
+    opacity: 0;
+}
+
+.intro_title {
     background-color: yellow;
     font-family: 'Teko', sans-serif;
     width: 100%;
@@ -240,6 +252,40 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/*
+.svg_attempt {
+    height: 3000px;
+    overflow: hidden;
+}
+
+svg {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    max-width: 480px;
+    max-height: 340px;
+}
+
+.path {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+}
+*/
+
+.impact {
+    background-color: white;
+    height: 200vh;
+}
+
+.impact p {
+    font-size: 36px;
 }
 
 .support_profile {
