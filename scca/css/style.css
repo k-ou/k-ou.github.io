@@ -66,9 +66,23 @@ p {
     margin: 0px;
 }
 
+.section:not(#intro) {
+    min-height: 250px;
+    border: 2px black solid;
+    position: relative;
+    padding: 30px;
+}
+
+.section .highlight {
+    background-color: yellow;
+}
+
 .italic {
     font-style: italic;
 }
+
+
+/* HEADER */
 
 .header {
     color: black;
@@ -118,17 +132,6 @@ p {
     font-size: 100px;
 }
 
-.section:not(#intro) {
-    min-height: 250px;
-    border: 2px black solid;
-    position: relative;
-    padding: 30px;
-}
-
-.section .highlight {
-    background-color: yellow;
-}
-
 #intro {
     width: 100%;
     max-width: 100%;
@@ -142,6 +145,112 @@ p {
     margin-bottom: 80px;
     color: white;
 }
+
+
+/* YELLOW */
+
+.yellow {
+    background-image: url("../img/yellow.svg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.intro_yellow,
+.yellow_history {
+    background-color: black;
+}
+
+.questions {
+    height: 150vh;
+}
+
+.white_guys {
+    padding-top: 900px;
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.white_guys div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.yellow .whiteguy1 {
+    width: 10%;
+}
+
+.yellow .whiteguy2 {
+    width: 15%;
+}
+
+.yellow .whiteguy3 {
+    width: 13%;
+}
+
+.yellow .whiteguy4 {
+    width: 20%;
+}
+
+.yellow .whiteguy5 {
+    width: 20%;
+}
+
+
+/* HISTORY */
+
+.history1,
+.history2 {
+    height: 700px;
+}
+
+.history1 {
+    background: url("../img/yellow.svg"), linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 250px, cover, cover;
+}
+
+.history_box {
+    padding-top: 100px;
+}
+
+#history h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+}
+
+#history h3 span.year {
+    background-color: yellow;
+}
+
+
+/* The Asian-American Fight for Cultural Citizenship */
+
+.intro_title {
+    background-color: yellow;
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 52px;
+    height: 150px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* STEREOTYPES AND PERCEPTIONS IN THE MEDIA NOW */
 
 #now {
     height: 100vh;
@@ -198,103 +307,6 @@ p {
     max-width: 35%;
 }
 
-.intro_yellow,
-.yellow_history {
-    background-color: black;
-}
-
-.yellow {
-    background-image: url("../img/yellow.svg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 250px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.questions {
-    height: 150vh;
-}
-
-.white_guys {
-    padding-top: 900px;
-    height: 200vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.white_guys div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-}
-
-.yellow .whiteguy1 {
-    width: 10%;
-}
-
-.yellow .whiteguy2 {
-    width: 15%;
-}
-
-.yellow .whiteguy3 {
-    width: 13%;
-}
-
-.yellow .whiteguy4 {
-    width: 20%;
-}
-
-.yellow .whiteguy5 {
-    width: 20%;
-}
-
-.history1,
-.history2 {
-    height: 500px;
-}
-
-.history_box {
-    padding-top: 100px;
-}
-
-#history h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 32px;
-}
-
-#history h3 span.year {
-    background-color: yellow;
-}
-
-
-/*
-.container-fluid {
-    background-color: black;
-}
-*/
-
-.fadeInOut {
-    opacity: 0;
-}
-
-.intro_title {
-    background-color: yellow;
-    font-family: 'Teko', sans-serif;
-    width: 100%;
-    text-align: center;
-    font-size: 52px;
-    height: 150px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /*
 .svg_attempt {
@@ -323,6 +335,7 @@ svg {
 .impact {
     background-color: white;
     height: 200vh;
+    padding-top: 200px;
 }
 
 .impact p {
