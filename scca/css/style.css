@@ -66,9 +66,8 @@ p {
     margin: 0px;
 }
 
-.section:not(#intro) {
+.section:not(#intro):not(#video) {
     min-height: 250px;
-    border: 2px black solid;
     position: relative;
     padding: 30px;
 }
@@ -169,6 +168,11 @@ p {
     height: 150vh;
 }
 
+.marquee2,
+.marquee4 {
+    text-align: right;
+}
+
 .white_guys {
     padding-top: 900px;
     height: 200vh;
@@ -207,6 +211,10 @@ p {
 
 /* HISTORY */
 
+#history {
+    background-color: white;
+}
+
 .history1,
 .history2 {
     height: 700px;
@@ -218,6 +226,7 @@ p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 250px, cover, cover;
+    background-position: center;
 }
 
 .history_box {
@@ -226,7 +235,10 @@ p {
 
 #history h3 {
     font-family: 'Teko', sans-serif;
-    font-size: 32px;
+    font-size: 48px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
 }
 
 #history h3 span.year {
@@ -237,16 +249,19 @@ p {
 /* The Asian-American Fight for Cultural Citizenship */
 
 .intro_title {
-    background-color: yellow;
+    /*    background-color: yellow;*/
     font-family: 'Teko', sans-serif;
     width: 100%;
     text-align: center;
-    font-size: 52px;
+    font-size: 84px;
     height: 150px;
     margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    position: absolute;
+    top: -90px;
 }
 
 
@@ -254,6 +269,14 @@ p {
 
 #now {
     height: 100vh;
+    background-color: yellow;
+    margin-top: 100px;
+}
+
+#now h2 {
+    position: absolute;
+    top: -100px;
+    font-size: 80px;
 }
 
 #now h3 {
@@ -331,6 +354,19 @@ svg {
     stroke-dasharray: 1000;
 }
 */
+
+.video_box {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.video_box iframe {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
 
 .impact {
     background-color: white;
