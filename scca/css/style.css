@@ -209,10 +209,37 @@ p {
 }
 
 
+/* The Asian-American Fight for Cultural Citizenship */
+
+.intro_title {
+    /*    background-color: yellow;*/
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+    text-align: center;
+    /*    font-size: 84px;*/
+    font-size: 5.5vw;
+    height: 150px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    position: absolute;
+    top: -255px;
+    padding: 0px;
+}
+
+
 /* HISTORY */
 
 #history {
+    margin-top: 150px;
     background-color: white;
+}
+
+.year {
+    font-size: 100px;
+    color: yellow;
 }
 
 .history1,
@@ -221,11 +248,11 @@ p {
 }
 
 .history1 {
-    background: url("../img/yellow.svg"), linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 250px, cover, cover;
+    background-size: cover, cover;
     background-position: center;
 }
 
@@ -237,31 +264,9 @@ p {
     font-family: 'Teko', sans-serif;
     font-size: 48px;
     position: absolute;
-    top: 70px;
+    top: 10px;
     left: 20px;
-}
-
-#history h3 span.year {
-    background-color: yellow;
-}
-
-
-/* The Asian-American Fight for Cultural Citizenship */
-
-.intro_title {
-    /*    background-color: yellow;*/
-    font-family: 'Teko', sans-serif;
-    width: 100%;
-    text-align: center;
-    font-size: 84px;
-    height: 150px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: absolute;
-    top: -90px;
+    line-height: 44px;
 }
 
 
@@ -320,6 +325,7 @@ p {
     padding: 20px;
     margin-right: 80px;
     border: 4px black solid;
+    background-color: white;
 }
 
 .fact p {
@@ -588,7 +594,6 @@ svg {
     /*    background: rgba(0, 0, 0, 0.3);*/
     cursor: pointer;
     display: inline-block;
-    font-weight: 700;
     padding: 0 10px;
 }
 
@@ -680,8 +685,4 @@ svg {
     display: block;
     padding: 1.31em 1.21em 1.21em 0;
     color: #fff;
-}
-
-.tooltip-text-1 a {
-    font-weight: bold;
 }
