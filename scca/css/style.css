@@ -66,7 +66,7 @@ p {
     margin: 0px;
 }
 
-.section:not(#intro):not(#video) {
+.section:not(#intro):not(#video):not(#quotes) {
     min-height: 250px;
     position: relative;
     padding: 30px;
@@ -243,12 +243,33 @@ p {
 }
 
 .history1,
-.history2 {
+.history2,
+.history3,
+.history4,
+.history5 {
     height: 700px;
 }
 
 .history1 {
     background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover, cover;
+    background-position: center;
+}
+
+.history2 {
+    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover, cover;
+    background-position: center;
+}
+
+.history3 {
+    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -301,12 +322,13 @@ p {
 
 .quote {
     padding: 20px;
-    border-radius: 25px;
-    border: 4px black solid;
-    margin-left: 80px;
+    padding-left: 10%;
+    border: 10px black solid;
+    margin-right: 20%;
 }
 
-.quote p {
+.quote p,
+.response p {
     font-family: 'Teko', sans-serif;
 }
 
@@ -321,19 +343,23 @@ p {
     font-size: 36px;
 }
 
-.fact {
+.response {
     padding: 20px;
-    margin-right: 80px;
-    border: 4px black solid;
-    background-color: white;
+    margin-left: 20%;
+    border: 10px black solid;
 }
 
-.fact p {
-    font-size: 24px;
+.response p {
+    font-size: 56px;
 }
 
-.fact img {
+.response img {
     max-width: 35%;
+}
+
+.facts {
+    padding-left: 10%;
+    color: white;
 }
 
 
