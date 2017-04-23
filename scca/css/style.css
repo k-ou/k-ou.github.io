@@ -309,6 +309,77 @@ p {
     font-weight: 300;
 }
 
+.stereotype {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.stereotype img,
+.stereotype_text {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.stereotype img {
+    max-width: 35%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    z-index: 10;
+    position: absolute;
+}
+
+.stereotype_text {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 25%;
+    color: black;
+    background-color: white;
+    border: 2px black solid;
+    z-index: 5;
+    padding: 20px;
+}
+
+.stereotype img:hover {
+    animation: tada 1s;
+    -moz-animation: tada 1s;
+    -webkit-animation: tada 1s;
+    -o-animation: tada 1s;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.stereotype img:hover~.stereotype_text {
+    opacity: 1;
+}
+
+#stereotype_grid {
+    border: 2px black solid;
+}
+
+#stereotype_grid img {
+    max-height: 400px;
+    max-width: 100%;
+}
+
+#stereotype_grid .info {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+#stereotype_grid div:hover .info {
+    opacity: .75;
+}
+
 
 /* QUOTES & FACTS SECTION */
 
