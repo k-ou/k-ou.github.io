@@ -369,6 +369,7 @@ p {
 
 #stereotype_grid {
     border: 2px black solid;
+    margin-bottom: 100px;
 }
 
 #stereotype_grid img {
@@ -395,7 +396,7 @@ p {
 
 .quote_box {
     /*    margin-top: 80px;*/
-    height: 200vh;
+    height: 700vh;
 }
 
 .quote_speaker img {
@@ -415,35 +416,89 @@ p {
 .quote p {
     font-family: 'Teko', sans-serif;
     font-size: 56px;
-    color: red;
 }
 
 
 /*test*/
 
-.complain {
+.facts_left {
     position: absolute;
     top: 0;
     left: 0;
+    height: 400vh;
+}
+
+.complain,
+.something,
+.response3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complain {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: red;
+}
+
+.fact {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    color: black;
+    text-align: left;
+    padding: 80px;
+}
+
+.fact p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .response {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 700vh;
     background: black;
     overflow: hidden;
     text-align: center;
+}
+
+.response1,
+.response2,
+.response3 {
+    font-family: 'Teko', sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
-.response div,
-.response p {
+.response1 div {
+    min-width: 300px;
+    width: 100px;
+}
+
+.response1 h3,
+.response2 h3 {
+    font-size: 4vw;
+}
+
+.response3 h3 {
+    font-size: 4.5vw;
+    font-weight: 400;
+}
+
+.response3 {
+    padding-top: 100vh;
+    color: white;
     width: 100%;
-    width: 300px;
+    text-align: center;
 }
 
 
