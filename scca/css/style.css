@@ -56,6 +56,7 @@ p {
 
 .container-fluid {
     padding: 0px;
+    overflow: hidden;
 }
 
 .container-fluid.falling {
@@ -393,8 +394,8 @@ p {
 /* QUOTES & FACTS SECTION */
 
 .quote_box {
-    margin-top: 80px;
-    height: 100vh;
+    /*    margin-top: 80px;*/
+    height: 200vh;
 }
 
 .quote_speaker img {
@@ -408,10 +409,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
 }
 
-.quote p,
-.response p {
+.quote p {
     font-family: 'Teko', sans-serif;
     font-size: 56px;
     color: red;
@@ -420,16 +421,29 @@ p {
 
 /*test*/
 
-.quote div:not(.box) {
-    left: 0;
+.complain {
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.box {
+.response {
     position: absolute;
+    top: 0;
     right: 0;
     height: 100%;
-    background: #09f;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.response div,
+.response p {
+    width: 100%;
+    width: 300px;
 }
 
 
@@ -445,20 +459,6 @@ p {
     font-size: 36px;
 }
 */
-
-.response {
-    padding: 20px;
-    margin-left: 20%;
-    border: 10px black solid;
-}
-
-.response p {
-    font-size: 56px;
-}
-
-.response img {
-    max-width: 35%;
-}
 
 .facts {
     padding-left: 10%;
@@ -505,11 +505,11 @@ svg {
 
 .impact {
     background-color: white;
-    height: 500vh;
+    height: 400vh;
     padding-top: 200px;
 }
 
-.impact div {
+.impact div div {
     margin: 50vh 40px;
 }
 
