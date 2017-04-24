@@ -66,7 +66,7 @@ p {
     margin: 0px;
 }
 
-.section:not(#intro):not(#video):not(#quotes) {
+.section:not(#video):not(#quotes) {
     min-height: 250px;
     position: relative;
     padding: 30px;
@@ -136,13 +136,23 @@ p {
     max-width: 100%;
     overflow: hidden;
     margin: 0px;
+    /*    padding: 0px 40px;*/
 }
 
 #intro p {
-    font-size: 84px;
+    font-size: 6vw;
     font-family: 'Teko', sans-serif;
     margin-bottom: 80px;
     color: white;
+}
+
+.questions {
+    height: 200vh;
+}
+
+.questions div {
+    margin: 190px 60px;
+    text-align: center;
 }
 
 
@@ -164,14 +174,13 @@ p {
     background-color: black;
 }
 
-.questions {
-    height: 150vh;
-}
 
+/*
 .marquee2,
 .marquee4 {
     text-align: right;
 }
+*/
 
 .white_guys {
     padding-top: 900px;
@@ -385,6 +394,7 @@ p {
 
 .quote_box {
     margin-top: 80px;
+    height: 100vh;
 }
 
 .quote_speaker img {
@@ -393,16 +403,37 @@ p {
 
 .quote {
     padding: 20px;
-    padding-left: 10%;
-    border: 10px black solid;
-    margin-right: 20%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote p,
 .response p {
     font-family: 'Teko', sans-serif;
+    font-size: 56px;
+    color: red;
 }
 
+
+/*test*/
+
+.quote div:not(.box) {
+    left: 0;
+    position: absolute;
+}
+
+.box {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background: #09f;
+}
+
+
+/*
 .quote p:nth-child(1) {
     font-size: 56px;
     color: red;
@@ -413,6 +444,7 @@ p {
     color: grey;
     font-size: 36px;
 }
+*/
 
 .response {
     padding: 20px;
@@ -473,12 +505,18 @@ svg {
 
 .impact {
     background-color: white;
-    height: 200vh;
+    height: 500vh;
     padding-top: 200px;
 }
 
+.impact div {
+    margin: 50vh 40px;
+}
+
 .impact p {
-    font-size: 36px;
+    font-family: 'Teko', sans-serif;
+    font-size: 4.5vw;
+    text-align: center;
 }
 
 .community {
