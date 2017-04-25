@@ -380,7 +380,7 @@
         top: 0;
         padding: 20px;
         background-color: yellow;
-        height: 100%;
+        height: 0px;
         width: 100%;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
@@ -392,6 +392,7 @@
     
     .stereotype:hover .info {
         opacity: .75;
+        height: 100%;
     }
     /*PREVIOUS STEREOTYPE SECTION*/
     /*
