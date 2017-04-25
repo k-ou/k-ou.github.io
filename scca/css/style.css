@@ -1,103 +1,106 @@
-/* Move it (define the animation) */
-
-@-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
+    /* Move it (define the animation) */
+    
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+        }
     }
-    100% {
-        -moz-transform: translateX(-100%);
+    
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
     }
-}
-
-@-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
+    
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(100%);
+            /* Browser bug fix */
+            transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(-100%);
+            /* Browser bug fix */
+            transform: translateX(-100%);
+        }
     }
-    100% {
-        -webkit-transform: translateX(-100%);
+    
+    .no-gutter>[class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
     }
-}
-
-@keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(100%);
-        /* Browser bug fix */
-        transform: translateX(100%);
+    
+    h2 {
+        font-family: 'Teko', sans-serif;
+        font-size: 48px;
     }
-    100% {
-        -moz-transform: translateX(-100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(-100%);
-        /* Browser bug fix */
-        transform: translateX(-100%);
+    
+    a {
+        text-decoration: none;
     }
-}
-
-.no-gutter>[class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-h2 {
-    font-family: 'Teko', sans-serif;
-    font-size: 48px;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-
-.container-fluid {
-    padding: 0px;
-    overflow: hidden;
-}
-
-.container-fluid.falling {
-    background-color: black;
-}
-
-.row {
-    margin: 0px;
-}
-
-.section:not(#video):not(#quotes) {
-    min-height: 250px;
-    position: relative;
-    padding: 30px;
-}
-
-.section .highlight {
-    background-color: yellow;
-}
-
-.italic {
-    font-style: italic;
-}
-
-
-/* HEADER */
-
-.header {
-    color: black;
-    overflow: hidden;
-    height: 100vh;
-}
-
-.header_bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.6)), url(../img/protest.jpg);
-    /*
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+    
+    .container-fluid {
+        padding: 0px;
+        overflow: hidden;
+    }
+    
+    .container-fluid.falling {
+        background-color: black;
+    }
+    
+    .row {
+        margin: 0px;
+    }
+    
+    .section {
+        min-height: 250px;
+        position: relative;
+    }
+    
+    .section .highlight {
+        background-color: yellow;
+    }
+    
+    #history,
+    #now,
+    #support {
+        padding: 50px;
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    /* HEADER */
+    
+    .header {
+        color: black;
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+    .header_bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(rgba(255, 255, 0, 0.6), rgba(255, 255, 0, 0.6)), url(../img/protest.jpg);
+        /*
     -webkit-transform: skewY(-6deg);
     -ms-transform: skewY(-6deg);
     transform: skewY(-6deg);
@@ -105,220 +108,293 @@ p {
     -ms-transform-origin: top left;
     transform-origin: top left;
 */
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 125%, 0 85%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    /*    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-
-.header_text {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn 2.5s;
-    -moz-animation: fadeIn 2.5s;
-    -webkit-animation: fadeIn 2.5s;
-    -o-animation: fadeIn 2.5s;
-    text-transform: uppercase;
-    font-family: 'Teko', sans-serif;
-}
-
-.header_text h1 {
-    margin: 0px;
-    font-size: 100px;
-}
-
-#intro {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0px;
-    /*    padding: 0px 40px;*/
-}
-
-#intro p {
-    font-size: 6vw;
-    font-family: 'Teko', sans-serif;
-    margin-bottom: 80px;
-    color: white;
-}
-
-.questions {
-    height: 200vh;
-}
-
-.questions div {
-    margin: 190px 60px;
-    text-align: center;
-}
-
-
-/* YELLOW */
-
-.yellow {
-    background-image: url("../img/yellow.svg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 250px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.intro_yellow,
-.yellow_history {
-    background-color: black;
-}
-
-
-/*
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 125%, 0 85%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        /*    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    
+    .header_text {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -webkit-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        text-transform: uppercase;
+        font-family: 'Teko', sans-serif;
+    }
+    
+    .header_text h1 {
+        margin: 0px;
+        font-size: 100px;
+    }
+    
+    #intro {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0px;
+        /*    padding: 0px 40px;*/
+    }
+    
+    #intro p {
+        font-size: 6vw;
+        font-family: 'Teko', sans-serif;
+        margin-bottom: 80px;
+        color: white;
+    }
+    
+    .questions {
+        height: 200vh;
+    }
+    
+    .questions div {
+        margin: 190px 60px;
+        text-align: center;
+    }
+    /* YELLOW */
+    
+    .yellow {
+        background-image: url("../img/yellow.svg");
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .intro_yellow,
+    .yellow_history {
+        background-color: black;
+    }
+    /*
 .marquee2,
 .marquee4 {
     text-align: right;
 }
 */
-
-.white_guys {
-    padding-top: 900px;
-    height: 200vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+    
+    .white_guys {
+        padding-top: 900px;
+        height: 200vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .white_guys div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 700px;
+    }
+    
+    .yellow .whiteguy1 {
+        width: 10%;
+    }
+    
+    .yellow .whiteguy2 {
+        width: 15%;
+    }
+    
+    .yellow .whiteguy3 {
+        width: 13%;
+    }
+    
+    .yellow .whiteguy4 {
+        width: 20%;
+    }
+    
+    .yellow .whiteguy5 {
+        width: 20%;
+    }
+    /* The Asian-American Fight for Cultural Citizenship */
+    
+    .intro_title {
+        background-color: yellow;
+        font-family: 'Teko', sans-serif;
+        width: 100%;
+        text-align: center;
+        /*    font-size: 84px;*/
+        font-size: 5.5vw;
+        height: 100vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        padding: 0px;
+    }
+    /* HISTORY */
+    
+    #history {
+        margin-top: 150px;
+        background-color: white;
+    }
+    
+    .year {
+        font-size: 100px;
+        color: yellow;
+    }
+    
+    .history1,
+    .history2,
+    .history3,
+    .history4,
+    .history5 {
+        height: 83vh;
+    }
+    
+    .history1 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    
+    .history2 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    
+    .history3 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    
+    .history_box {
+        padding-top: 100px;
+    }
+    
+    #history h3 {
+        font-family: 'Teko', sans-serif;
+        font-size: 48px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        line-height: 44px;
+    }
+    
+    .history_timeline {
+        margin: 100px 0px;
+        height: 70vh;
+    }
+    
+    .history_timeline img {
+        position: absolute;
+        max-width: 30%;
+    }
+    
+    .history_timeline img:nth-child(1) {
+        right: 20vw;
+        top: 10vh;
+    }
+    
+    .history_timeline img:nth-child(2) {
+        left: 20vw;
+    }
+    
+    .history_timeline h5 {
+        font-family: 'Teko', sans-serif;
+        font-size: 5vw;
+        position: absolute;
+        left: 45vw;
+        color: yellow;
+    }
+    /*
+.parallax {
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.white_guys div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-}
-
-.yellow .whiteguy1 {
-    width: 10%;
-}
-
-.yellow .whiteguy2 {
-    width: 15%;
-}
-
-.yellow .whiteguy3 {
-    width: 13%;
-}
-
-.yellow .whiteguy4 {
-    width: 20%;
-}
-
-.yellow .whiteguy5 {
-    width: 20%;
-}
-
-
-/* The Asian-American Fight for Cultural Citizenship */
-
-.intro_title {
-    /*    background-color: yellow;*/
-    font-family: 'Teko', sans-serif;
-    width: 100%;
-    text-align: center;
-    /*    font-size: 84px;*/
-    font-size: 5.5vw;
-    height: 150px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: yellow;
+.parallax_layer {
     position: absolute;
-    top: -255px;
-    padding: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-
-/* HISTORY */
-
-#history {
-    margin-top: 150px;
-    background-color: white;
+.parallax1 {
+    transform: translateZ(-1px) scale(2);
 }
 
-.year {
-    font-size: 100px;
-    color: yellow;
+.parallax2 {
+    transform: translateZ(-2px) scale(3);
 }
-
-.history1,
-.history2,
-.history3,
-.history4,
-.history5 {
-    height: 700px;
-}
-
-.history1 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history2 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history3 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history_box {
-    padding-top: 100px;
-}
-
-#history h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 48px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    line-height: 44px;
-}
-
-
-/* STEREOTYPES AND PERCEPTIONS IN THE MEDIA NOW */
-
-#now {
-    height: 100vh;
-    background-color: yellow;
-    margin-top: 100px;
-}
-
-#now h2 {
-    position: absolute;
-    top: -100px;
-    font-size: 80px;
-}
-
-#now h3 {
-    font-weight: 300;
-}
-
+*/
+    /* STEREOTYPES AND PERCEPTIONS IN THE MEDIA NOW */
+    
+    #now {
+        height: 110vh;
+        background-color: yellow;
+        margin-top: 100px;
+    }
+    
+    #now h2 {
+        position: absolute;
+        top: -110px;
+        font-size: 5.5vw;
+    }
+    
+    #now h3 {
+        font-weight: 300;
+    }
+    
+    #stereotype_grid {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        overflow: hidden;
+    }
+    
+    #stereotype_grid img {
+        max-height: 400px;
+        max-width: 100%;
+    }
+    
+    .stereotype {
+        position: relative;
+    }
+    
+    .stereotype .info {
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        background-color: yellow;
+        height: 100%;
+        width: 100%;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+    }
+    
+    .stereotype:hover .info {
+        opacity: .75;
+    }
+    /*PREVIOUS STEREOTYPE SECTION*/
+    /*
 .stereotype {
     position: absolute;
     width: 100%;
@@ -366,143 +442,115 @@ p {
 .stereotype img:hover~.stereotype_text {
     opacity: 1;
 }
-
-#stereotype_grid {
-    border: 2px black solid;
-    margin-bottom: 100px;
-}
-
-#stereotype_grid img {
-    max-height: 400px;
-    max-width: 100%;
-}
-
-#stereotype_grid .info {
-    position: absolute;
-    top: 0;
-    padding: 20px;
-    background-color: yellow;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-}
-
-#stereotype_grid div:hover .info {
-    opacity: .75;
-}
-
-
-/* QUOTES & FACTS SECTION */
-
-.quote_box {
-    /*    margin-top: 80px;*/
-    height: 700vh;
-}
-
-.quote_speaker img {
-    max-width: 100%;
-}
-
-.quote {
-    padding: 20px;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-}
-
-.quote p {
-    font-family: 'Teko', sans-serif;
-    font-size: 56px;
-}
-
-
-/*test*/
-
-.facts_left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 400vh;
-}
-
-.complain,
-.something,
-.response3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.complain {
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    color: red;
-}
-
-.fact {
-    height: 100vh;
-    background-color: white;
-    width: 100%;
-    color: black;
-    text-align: left;
-    padding: 80px;
-}
-
-.fact p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
-.response {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 700vh;
-    background: black;
-    overflow: hidden;
-    text-align: center;
-}
-
-.response1,
-.response2,
-.response3 {
-    font-family: 'Teko', sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.response1 div {
-    min-width: 300px;
-    width: 100px;
-}
-
-.response1 h3,
-.response2 h3 {
-    font-size: 4vw;
-}
-
-.response3 h3 {
-    font-size: 4.5vw;
-    font-weight: 400;
-}
-
-.response3 {
-    padding-top: 100vh;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
-
-
-/*
+*/
+    /* QUOTES & FACTS SECTION */
+    
+    .quote_box {
+        /*    margin-top: 80px;*/
+        height: 700vh;
+    }
+    
+    .quote_speaker img {
+        max-width: 100%;
+    }
+    
+    .quote {
+        padding: 20px;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+    }
+    
+    .quote p {
+        font-family: 'Teko', sans-serif;
+        font-size: 56px;
+    }
+    /*test*/
+    
+    .facts_left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 400vh;
+    }
+    
+    .complain,
+    .fact,
+    .something,
+    .response3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .complain {
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        color: red;
+    }
+    
+    .fact {
+        height: 100vh;
+        background-color: white;
+        width: 100%;
+        color: black;
+        text-align: left;
+        padding: 80px;
+    }
+    
+    .fact p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+    
+    .response {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 700vh;
+        background: black;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .response1,
+    .response2,
+    .response3 {
+        font-family: 'Teko', sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .response1 div {
+        min-width: 300px;
+        width: 100px;
+    }
+    
+    .response1 h3,
+    .response2 h3 {
+        font-size: 4vw;
+    }
+    
+    .response3 h3 {
+        font-size: 4.5vw;
+        font-weight: 400;
+    }
+    
+    .response3 {
+        padding-top: 100vh;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    /*
 .quote p:nth-child(1) {
     font-size: 56px;
     color: red;
@@ -514,14 +562,12 @@ p {
     font-size: 36px;
 }
 */
-
-.facts {
-    padding-left: 10%;
-    color: white;
-}
-
-
-/*
+    
+    .facts {
+        padding-left: 10%;
+        color: white;
+    }
+    /*
 .svg_attempt {
     height: 3000px;
     overflow: hidden;
@@ -544,335 +590,321 @@ svg {
     stroke-dasharray: 1000;
 }
 */
-
-.video_box {
-    overflow: hidden;
-    height: 100vh;
-}
-
-.video_box iframe {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-}
-
-.impact {
-    background-color: white;
-    height: 400vh;
-    padding-top: 200px;
-}
-
-.impact div div {
-    margin: 50vh 40px;
-}
-
-.impact p {
-    font-family: 'Teko', sans-serif;
-    font-size: 4.5vw;
-    text-align: center;
-}
-
-.community {
-    height: 200vh;
-}
-
-.community img {
-    position: absolute;
-    max-width: 40%;
-    max-height: 600px;
-}
-
-.support_profile {
-    padding: 40px;
-}
-
-.support_profile a {
-    color: black;
-}
-
-.support_profile h4,
-.support_profile h5 {
-    font-family: 'Teko', sans-serif;
-}
-
-.support_profile h4 {
-    font-size: 84px;
-}
-
-.support_profile h4 a,
-.support_profile p a {
-    box-shadow: inset 0 0 0 0 yellow;
-    -webkit-transition: all ease 0.8s;
-    -moz-transition: all ease 0.8s;
-    transition: all ease 0.8s;
-}
-
-.support_profile h4 a:hover {
-    box-shadow: inset 0 100px 0 0 yellow;
-}
-
-.support_profile h5 {
-    font-size: 48px;
-    color: grey;
-}
-
-.support_profile p a:hover {
-    box-shadow: inset 0 24px 0 0 yellow;
-}
-
-.support_profile img {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-.footer {
-    background-color: yellow;
-}
-
-.footer a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top {
-    background-color: black;
-    color: white;
-    width: 20%;
-    height: 30px;
-    text-align: center;
-}
-
-
-/* TOOLTIP EFFECTS FOR THE HISTORY SECTION #1 */
-
-
-/* https://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/ */
-
-.tooltip {
-    display: inline;
-    position: relative;
-    z-index: 999;
-    opacity: 1;
-    text-align: center;
-    width: 100%;
-}
-
-
-/* Gap filler */
-
-.tooltip::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    bottom: 100%;
-    left: 50%;
-    pointer-events: none;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.tooltip:hover::after {
-    pointer-events: auto;
-}
-
-
-/* Tooltip */
-
-.tooltip-content {
-    position: absolute;
-    z-index: 9999;
-    width: 300px;
-    left: 50%;
-    bottom: 100%;
-    font-size: 20px;
-    line-height: 1.4;
-    text-align: center;
-    font-weight: 400;
-    color: black;
-    background: transparent;
-    opacity: 0;
-    margin: 0 0 20px -150px;
-    cursor: default;
-    pointer-events: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: opacity 0.3s 0.3s;
-    transition: opacity 0.3s 0.3s;
-}
-
-.tooltip:hover .tooltip-content {
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-.tooltip-content span {
-    display: block;
-}
-
-.tooltip-text {
-    border-bottom: 10px solid #fffaf0;
-    overflow: hidden;
-    -webkit-transform: scale3d(0, 1, 1);
-    transform: scale3d(0, 1, 1);
-    -webkit-transition: -webkit-transform 0.3s 0.3s;
-    transition: transform 0.3s 0.3s;
-}
-
-.tooltip:hover .tooltip-text {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-}
-
-.tooltip-inner {
-    background: rgba(85, 61, 61, 0.95);
-    padding: 40px;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    -webkit-transition: transform 0.3s;
-    transition: transform 0.3s;
-    margin-right: 0px;
-}
-
-.tooltip:hover .tooltip-inner {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-
-/* Arrow */
-
-.tooltip-content::after {
-    content: '';
-    bottom: -20px;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: transparent;
-    border-top-color: #fffaf0;
-    border-width: 10px;
-    margin-left: -10px;
-}
-
-
-/* TOOLTIP EFFECTS FOR THE HISTORY SECTION #1 */
-
-.tooltip-1 {
-    display: inline;
-    position: relative;
-    z-index: 999;
-}
-
-
-/* Trigger text */
-
-.tooltip-item-1 {
-    /*    background: rgba(0, 0, 0, 0.3);*/
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-
-/* Gap filler */
-
-.tooltip-item-1::after {
-    content: '';
-    position: absolute;
-    width: 360px;
-    height: 20px;
-    bottom: 100%;
-    left: 50%;
-    pointer-events: none;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.tooltip-1:hover .tooltip-item-1::after {
-    pointer-events: auto;
-}
-
-
-/* Tooltip */
-
-.tooltip-content-1 {
-    position: absolute;
-    z-index: 9999;
-    width: 360px;
-    left: 50%;
-    margin: 0 0 20px -180px;
-    bottom: 100%;
-    text-align: left;
-    font-size: 12px;
-    line-height: 1.4;
-    box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
-    background: #2a3035;
-    opacity: 0;
-    cursor: default;
-    pointer-events: none;
-}
-
-.tooltip-effect-1 .tooltip-content-1 {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.tooltip-1:hover .tooltip-content-1 {
-    pointer-events: auto;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
-    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
-}
-
-
-/* Arrow */
-
-.tooltip-content-1::after {
-    content: '';
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: transparent;
-    border-top-color: #2a3035;
-    border-width: 10px;
-    margin-left: -10px;
-}
-
-
-/* Tooltip content*/
-
-.tooltip-content-1 img {
-    position: relative;
-    height: 170px;
-    display: block;
-    float: left;
-    margin-right: 1em;
-}
-
-.tooltip-text-1 {
-    font-size: 12px;
-    line-height: 1.35;
-    display: block;
-    padding: 1.31em 1.21em 1.21em 0;
-    color: #fff;
-}
+    
+    .video_box {
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+    .video_box iframe {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+    }
+    
+    .impact {
+        background-color: white;
+        height: 400vh;
+        padding-top: 200px;
+    }
+    
+    .impact div div {
+        margin: 50vh 40px;
+    }
+    
+    .impact p {
+        font-family: 'Teko', sans-serif;
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    
+    .community {
+        height: 200vh;
+    }
+    
+    .community img {
+        position: absolute;
+        max-width: 40%;
+        max-height: 600px;
+    }
+    
+    .support_profile {
+        padding: 40px;
+    }
+    
+    .support_profile a {
+        color: black;
+    }
+    
+    .support_profile h4,
+    .support_profile h5 {
+        font-family: 'Teko', sans-serif;
+    }
+    
+    .support_profile h4 {
+        font-size: 84px;
+    }
+    
+    .support_profile h4 a,
+    .support_profile p a {
+        box-shadow: inset 0 0 0 0 yellow;
+        -webkit-transition: all ease 0.8s;
+        -moz-transition: all ease 0.8s;
+        transition: all ease 0.8s;
+    }
+    
+    .support_profile h4 a:hover {
+        box-shadow: inset 0 100px 0 0 yellow;
+    }
+    
+    .support_profile h5 {
+        font-size: 48px;
+        color: grey;
+    }
+    
+    .support_profile p a:hover {
+        box-shadow: inset 0 24px 0 0 yellow;
+    }
+    
+    .support_profile img {
+        max-width: 100%;
+        width: 100%;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+    }
+    
+    .footer {
+        background-color: yellow;
+    }
+    
+    .footer a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .top {
+        background-color: black;
+        color: white;
+        width: 20%;
+        height: 30px;
+        text-align: center;
+    }
+    /* TOOLTIP EFFECTS FOR THE HISTORY SECTION #1 */
+    /* https://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/ */
+    
+    .tooltip {
+        display: inline;
+        position: relative;
+        z-index: 999;
+        opacity: 1;
+        text-align: center;
+        width: 100%;
+    }
+    /* Gap filler */
+    
+    .tooltip::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        bottom: 100%;
+        left: 50%;
+        pointer-events: none;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    
+    .tooltip:hover::after {
+        pointer-events: auto;
+    }
+    /* Tooltip */
+    
+    .tooltip-content {
+        position: absolute;
+        z-index: 9999;
+        width: 300px;
+        left: 50%;
+        bottom: 100%;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        font-weight: 400;
+        color: black;
+        background: transparent;
+        opacity: 0;
+        margin: 0 0 20px -150px;
+        cursor: default;
+        pointer-events: none;
+        -webkit-font-smoothing: antialiased;
+        -webkit-transition: opacity 0.3s 0.3s;
+        transition: opacity 0.3s 0.3s;
+    }
+    
+    .tooltip:hover .tooltip-content {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+    
+    .tooltip-content span {
+        display: block;
+    }
+    
+    .tooltip-text {
+        border-bottom: 10px solid #fffaf0;
+        overflow: hidden;
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+        -webkit-transition: -webkit-transform 0.3s 0.3s;
+        transition: transform 0.3s 0.3s;
+    }
+    
+    .tooltip:hover .tooltip-text {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    
+    .tooltip-inner {
+        background: rgba(85, 61, 61, 0.95);
+        padding: 40px;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        -webkit-transition: transform 0.3s;
+        transition: transform 0.3s;
+        margin-right: 0px;
+    }
+    
+    .tooltip:hover .tooltip-inner {
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    /* Arrow */
+    
+    .tooltip-content::after {
+        content: '';
+        bottom: -20px;
+        left: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-top-color: #fffaf0;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    /* TOOLTIP EFFECTS FOR THE HISTORY SECTION #1 */
+    
+    .tooltip-1 {
+        display: inline;
+        position: relative;
+        z-index: 999;
+    }
+    /* Trigger text */
+    
+    .tooltip-item-1 {
+        /*    background: rgba(0, 0, 0, 0.3);*/
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    /* Gap filler */
+    
+    .tooltip-item-1::after {
+        content: '';
+        position: absolute;
+        width: 360px;
+        height: 20px;
+        bottom: 100%;
+        left: 50%;
+        pointer-events: none;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    
+    .tooltip-1:hover .tooltip-item-1::after {
+        pointer-events: auto;
+    }
+    /* Tooltip */
+    
+    .tooltip-content-1 {
+        position: absolute;
+        z-index: 9999;
+        width: 360px;
+        left: 50%;
+        margin: 0 0 20px -180px;
+        bottom: 100%;
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.4;
+        box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
+        background: #2a3035;
+        opacity: 0;
+        cursor: default;
+        pointer-events: none;
+    }
+    
+    .tooltip-effect-1 .tooltip-content-1 {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .tooltip-1:hover .tooltip-content-1 {
+        pointer-events: auto;
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+        transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+    }
+    /* Arrow */
+    
+    .tooltip-content-1::after {
+        content: '';
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-top-color: #2a3035;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    /* Tooltip content*/
+    
+    .tooltip-content-1 img {
+        position: relative;
+        height: 170px;
+        display: block;
+        float: left;
+        margin-right: 1em;
+    }
+    
+    .tooltip-text-1 {
+        font-size: 12px;
+        line-height: 1.35;
+        display: block;
+        padding: 1.31em 1.21em 1.21em 0;
+        color: #fff;
+    }
+    /* Mobile screens */
+    
+    @media only screen and (min-width: 320px) and (max-width: 991px) {
+        #history {
+            padding: 0px;
+        }
+    }
