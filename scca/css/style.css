@@ -303,21 +303,96 @@
         max-width: 30%;
     }
     
-    .history_timeline img:nth-child(1) {
-        right: 20vw;
-        top: 10vh;
-    }
-    
-    .history_timeline img:nth-child(2) {
-        left: 20vw;
-    }
-    
     .history_timeline h5 {
         font-family: 'Teko', sans-serif;
         font-size: 5vw;
         position: absolute;
-        left: 45vw;
         color: yellow;
+    }
+    /* timeline2 */
+    
+    .timeline2 img:nth-child(1) {
+        right: 20vw;
+        top: 10vh;
+    }
+    
+    .timeline2 img:nth-child(2) {
+        left: 20vw;
+    }
+    
+    .timeline2 h5 {
+        left: 45vw;
+    }
+    /* timeline 3 */
+    
+    .timeline3 img:nth-child(1) {
+        top: 30vh;
+        right: 15vw;
+    }
+    
+    .timeline3 img:nth-child(2) {
+        top: 30vh;
+        right: 15vw;
+    }
+    
+    .timeline3 img:nth-child(3) {
+        top: 30vh;
+        right: 15vw;
+    }
+    
+    .timeline3 img:nth-child(4) {
+        top: 30vh;
+        right: 15vw;
+    }
+    
+    .timeline3 h5:nth-child(5) {
+        left: 20vw;
+        top: 5vh;
+    }
+    
+    .timeline3 h5:nth-child(6) {
+        left: 20vw;
+        top: 5vh;
+    }
+    
+    .timeline3 h5:nth-child(7) {
+        left: 20vw;
+        top: 5vh;
+    }
+    
+    .timeline3 h5:nth-child(8) {
+        left: 20vw;
+        top: 5vh;
+    }
+    /* timeline 4 */
+    
+    .timeline4 img:nth-child(1) {
+        left: 20vw;
+        top: 10vh;
+    }
+    
+    .timeline4 img:nth-child(2) {
+        left: 40vw;
+    }
+    
+    .timeline4 img:nth-child(3) {
+        top: 30vh;
+        right: 15vw;
+    }
+    
+    .timeline4 h5:nth-child(4) {
+        left: 20vw;
+        top: 5vh;
+    }
+    
+    .timeline4 h5:nth-child(5) {
+        left: 40vw;
+        top: 57vh;
+    }
+    
+    .timeline4 h5:nth-child(6) {
+        right: 15vw;
+        top: 50vh;
     }
     /*
 .parallax {
@@ -507,6 +582,18 @@
     .fact p {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
+    }
+    
+    p.fact_p {
+        font-family: 'Teko', sans-serif;
+        font-size: 54px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+    
+    p.fact_p span {
+        color: red;
+        font-weight: 500;
     }
     
     .response {
