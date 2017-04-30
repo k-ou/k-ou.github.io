@@ -73,7 +73,7 @@
     }
     
     .section .highlight {
-        background-color: yellow;
+        background-color: #FFD000;
     }
     
     #history,
@@ -219,7 +219,7 @@
     /* The Asian-American Fight for Cultural Citizenship */
     
     .intro_title {
-        background-color: yellow;
+        background-color: #FFD000;
         font-family: 'Teko', sans-serif;
         width: 100%;
         text-align: center;
@@ -242,7 +242,7 @@
     
     .year {
         font-size: 100px;
-        color: yellow;
+        color: #FFD000;
     }
     
     .history1,
@@ -301,13 +301,69 @@
     .history_timeline img {
         position: absolute;
         max-width: 30%;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    
+    .history_timeline img:hover {
+        transform: scale(1.1);
+        z-index: 15;
+    }
+    
+    .history_timeline img:hover~h4 {
+        transform: scale(1.1);
+        z-index: 20;
     }
     
     .history_timeline h5 {
         font-family: 'Teko', sans-serif;
         font-size: 5vw;
         position: absolute;
-        color: yellow;
+        color: #FFD000;
+    }
+    /* timeline1 */
+    
+    .timeline1 img:nth-child(1) {
+        left: 5vw;
+        top: 5vh;
+    }
+    
+    .timeline1 img:nth-child(2) {
+        left: 30vw;
+        top: 25vh;
+    }
+    
+    .timeline1 img:nth-child(3) {
+        right: 15vw;
+        top: 5vh;
+    }
+    
+    .timeline1 img:nth-child(4) {
+        right: 5vw;
+        top: 35vh;
+    }
+    
+    .timeline1 h5:nth-child(5) {
+        left: 5vw;
+    }
+    
+    .timeline1 h5:nth-child(6) {
+        left: 30vw;
+        top: 20vh;
+    }
+    
+    .timeline1 h5:nth-child(7) {
+        right: 15vw;
+    }
+    
+    .timeline1 h5:nth-child(8) {
+        right: 5vw;
+        top: 30vh;
     }
     /* timeline2 */
     
@@ -326,43 +382,32 @@
     /* timeline 3 */
     
     .timeline3 img:nth-child(1) {
-        top: 30vh;
-        right: 15vw;
+        left: 15vw;
+        top: 25vh;
     }
     
     .timeline3 img:nth-child(2) {
-        top: 30vh;
-        right: 15vw;
+        left: 30vw;
+        top: 5vh;
     }
     
     .timeline3 img:nth-child(3) {
-        top: 30vh;
         right: 15vw;
+        top: 20vh;
     }
     
-    .timeline3 img:nth-child(4) {
-        top: 30vh;
-        right: 15vw;
+    .timeline3 h5:nth-child(4) {
+        left: 15vw;
+        top: 20vh;
     }
     
     .timeline3 h5:nth-child(5) {
-        left: 20vw;
-        top: 5vh;
+        left: 30vw;
     }
     
     .timeline3 h5:nth-child(6) {
-        left: 20vw;
-        top: 5vh;
-    }
-    
-    .timeline3 h5:nth-child(7) {
-        left: 20vw;
-        top: 5vh;
-    }
-    
-    .timeline3 h5:nth-child(8) {
-        left: 20vw;
-        top: 5vh;
+        right: 15vw;
+        top: 15vh;
     }
     /* timeline 4 */
     
@@ -421,7 +466,7 @@
     
     #now {
         height: 110vh;
-        background-color: yellow;
+        background-color: #FFD000;
         margin-top: 100px;
     }
     
@@ -444,17 +489,19 @@
     #stereotype_grid img {
         max-height: 400px;
         max-width: 100%;
+        filter: grayscale(100%);
     }
     
     .stereotype {
         position: relative;
+        overflow: hidden;
     }
     
     .stereotype .info {
         position: absolute;
         top: 0;
         padding: 20px;
-        background-color: yellow;
+        background-color: #FFD000;
         height: 0px;
         width: 100%;
         -webkit-transition: all 0.5s ease-in-out;
@@ -523,7 +570,7 @@
     
     .quote_box {
         /*    margin-top: 80px;*/
-        height: 700vh;
+        height: 800vh;
     }
     
     .quote_speaker img {
@@ -600,7 +647,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        height: 700vh;
+        height: 900vh;
         background: black;
         overflow: hidden;
         text-align: center;
@@ -609,11 +656,17 @@
     .response1,
     .response2,
     .response3 {
-        font-family: 'Teko', sans-serif;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    
+    .response1,
+    .response2,
+    .response3,
+    .response5 {
+        font-family: 'Teko', sans-serif;
         color: white;
     }
     
@@ -623,7 +676,8 @@
     }
     
     .response1 h3,
-    .response2 h3 {
+    .response2 h3,
+    .response5 h3 {
         font-size: 4vw;
     }
     
@@ -637,6 +691,18 @@
         color: white;
         width: 100%;
         text-align: center;
+    }
+    /* for divs that are multiple vh long */
+    
+    .response5 div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .response5 {
+        height: 200vh;
     }
     /*
 .quote p:nth-child(1) {
@@ -737,14 +803,14 @@ svg {
     
     .support_profile h4 a,
     .support_profile p a {
-        box-shadow: inset 0 0 0 0 yellow;
+        box-shadow: inset 0 0 0 0 #FFD000;
         -webkit-transition: all ease 0.8s;
         -moz-transition: all ease 0.8s;
         transition: all ease 0.8s;
     }
     
     .support_profile h4 a:hover {
-        box-shadow: inset 0 100px 0 0 yellow;
+        box-shadow: inset 0 100px 0 0 #FFD000;
     }
     
     .support_profile h5 {
@@ -753,18 +819,18 @@ svg {
     }
     
     .support_profile p a:hover {
-        box-shadow: inset 0 24px 0 0 yellow;
+        box-shadow: inset 0 24px 0 0 #FFD000;
     }
     
     .support_profile img {
         max-width: 100%;
         width: 100%;
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
     
     .footer {
-        background-color: yellow;
+        background-color: #FFD000;
     }
     
     .footer a {
