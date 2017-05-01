@@ -218,20 +218,51 @@
     }
     /* The Asian-American Fight for Cultural Citizenship */
     
-    .intro_title {
+    #title_container {
+        height: 300vh;
+    }
+    
+    #title {
         background-color: #FFD000;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    
+    #title div {
         font-family: 'Teko', sans-serif;
         width: 100%;
         text-align: center;
-        /*    font-size: 84px;*/
-        font-size: 5.5vw;
-        height: 100vh;
         margin: 0px;
+        color: black;
+        padding: 0px;
+    }
+    
+    .title_box1,
+    .title_box2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: black;
-        padding: 0px;
+    }
+    
+    .title_box1 h2,
+    .title_box3 h2 {
+        font-size: 96px;
+    }
+    
+    .title_box2 {
+        background-color: black;
+        height: 300px;
+    }
+    
+    .title_box2 h2 {
+        text-transform: uppercase;
+        color: #FFD000;
+        font-size: 200px;
+    }
+    
+    .title_box3 {
+        background-color: #FFD000;
+        height: 320px;
     }
     /* HISTORY */
     
