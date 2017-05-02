@@ -1013,14 +1013,28 @@ svg {
 }
 
 .impact div div {
-    margin: 50vh 40px;
+    margin: 50vh 220px;
 }
 
 .impact p {
     font-family: 'Teko', sans-serif;
-    font-size: 6vw;
     text-align: center;
+    font-size: 6vw;
 }
+
+
+/*
+.impact div div:nth-child(5) {
+    background-color: black;
+}
+
+.impact div div:nth-child(5) p {
+    font-size: 25vw;
+    background-image: linear-gradient(rgba(255, 228, 109, 0.6), rgba(255, 228, 109, 0.6)), url("http://cdn3.i-scmp.com/sites/default/files/styles/2000x792/public/2016/11/03/lee_01oct16_fe_chin_44_vincent-chin-protest_1_hero.jpg?itok=u90NNhmi");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+*/
 
 #support {
     background-color: #FFD000;
