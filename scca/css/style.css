@@ -741,12 +741,14 @@ p {
     height: 200vh;
     background-color: #FFD000;
     margin-top: 100px;
+    padding-top: 100px;
 }
 
 #now h2 {
     position: absolute;
-    top: -110px;
-    font-size: 5.5vw;
+    top: -180px;
+    font-size: 124px;
+    right: 20px;
 }
 
 #now h3 {
@@ -754,7 +756,7 @@ p {
 }
 
 #stereotype_grid {
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 100px;
     overflow: hidden;
 }
@@ -1038,12 +1040,14 @@ svg {
 
 #support {
     background-color: #FFD000;
+    padding-top: 80px;
 }
 
 #support h2 {
     position: absolute;
-    top: -120px;
-    font-size: 84px;
+    top: -170px;
+    font-size: 124px;
+    right: 20px;
 }
 
 .support_profile {
