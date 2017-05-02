@@ -1,49 +1,78 @@
-jQuery(document).ready(function($){
-	var contentSections = $('.cd-section'),
-		navigationItems = $('#cd-vertical-nav a');
+    //    Working navigation when clicked
 
-	updateNavigation();
-	$(window).on('scroll', function(){
-		updateNavigation();
-	});
+    (function (window) {
 
-	//smooth scroll to the section
-	navigationItems.on('click', function(event){
-        event.preventDefault();
-        smoothScroll($(this.hash));
+        'use strict';
+
+        function init() {
+            [].slice.call(document.querySelectorAll('.nav')).forEach(function (nav) {
+                var navItems = [].slice.call(nav.querySelectorAll('.nav__item')),
+                    itemsTotal = navItems.length,
+                    setCurrent = function (item) {
+                        // return if already current
+                        if (item.classList.contains('nav__item--current')) {
+                            return false;
+                        }
+                        // remove current
+                        var currentItem = nav.querySelector('.nav__item--current');
+                        currentItem.classList.remove('nav__item--current');
+
+                        // set current
+                        item.classList.add('nav__item--current');
+                    };
+
+                navItems.forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        setCurrent(item);
+                    });
+                });
+            });
+        }
+
+        init();
+
+    })(window);
+
+    //    Smooth Scrolling To Internal Links With jQuery
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing');
+
+        });
     });
-    //smooth scroll to second section
-    $('.cd-scroll-down').on('click', function(event){
-        event.preventDefault();
-        smoothScroll($(this.hash));
-    });
 
-    //open-close navigation on touch devices
-    $('.touch .cd-nav-trigger').on('click', function(){
-    	$('.touch #cd-vertical-nav').toggleClass('open');
-  
-    });
-    //close navigation on touch devices when selectin an elemnt from the list
-    $('.touch #cd-vertical-nav a').on('click', function(){
-    	$('.touch #cd-vertical-nav').removeClass('open');
-    });
+    //  Update active link in nav based on scroll
+    var sections = $('section'),
+        nav = $('nav'),
+        nav_height = nav.outerHeight();
 
-	function updateNavigation() {
-		contentSections.each(function(){
-			$this = $(this);
-			var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
-			if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
-				navigationItems.eq(activeSection).addClass('is-selected');
-			}else {
-				navigationItems.eq(activeSection).removeClass('is-selected');
-			}
-		});
-	}
+    const hash = window.location.hash === "" ?
+        '#nav1' :
+        window.location.hash;
+    nav.find('a[href="' + hash + '"] button')
+        .addClass('nav__item--current');
 
-	function smoothScroll(target) {
-        $('body,html').animate(
-        	{'scrollTop':target.offset().top},
-        	600
-        );
-	}
-});
+    $(window).on('scroll', function () {
+        var cur_pos = $(this).scrollTop();
+        sections.each(function () {
+            var top = $(this).offset().top - nav_height,
+                bottom = top + $(this).outerHeight();
+            if (
+                cur_pos >= top &&
+                cur_pos <= bottom &&
+                !$('html, body').is(':animated')
+            ) {
+                nav.find('button')
+                    .removeClass('nav__item--current');
+                nav.find('a[href="#' + $(this).attr('id') + '"] button')
+                    .addClass('nav__item--current');
+            }
+        });
+    });
