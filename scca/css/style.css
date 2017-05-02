@@ -517,9 +517,41 @@ p {
     color: #FFD000;
 }
 
+.timeline_container {
+    position: relative;
+}
+
+.timeline_caption {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*
+.timeline_container_test {
+    position: relative;
+    max-width: 30%;
+    left: 5vw;
+    top: 5vh;
+}
+
+.timeline_container_test img {
+    max-width: 100%;
+}
+
+.timeline_caption_test {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+}
+*/
+
 
 /* timeline1 */
 
+
+/*
 .timeline1 img:nth-child(1) {
     left: 5vw;
     top: 5vh;
@@ -554,6 +586,45 @@ p {
 }
 
 .timeline1 h5:nth-child(8) {
+    right: 5vw;
+    top: 30vh;
+}
+*/
+
+.timeline1 .timeline_box:nth-child(1) img {
+    left: 5vw;
+    top: 5vh;
+}
+
+.timeline1 .timeline_box:nth-child(1) h5 {
+    left: 5vw;
+}
+
+.timeline1 .timeline_box:nth-child(2) img {
+    left: 30vw;
+    top: 25vh;
+}
+
+.timeline1 .timeline_box:nth-child(2) h5 {
+    left: 30vw;
+    top: 20vh;
+}
+
+.timeline1 .timeline_box:nth-child(3) img {
+    right: 15vw;
+    top: 5vh;
+}
+
+.timeline1 .timeline_box:nth-child(3) h5 {
+    right: 15vw;
+}
+
+.timeline1 .timeline_box:nth-child(4) img {
+    right: 5vw;
+    top: 35vh;
+}
+
+.timeline1 .timeline_box:nth-child(4) h5 {
     right: 5vw;
     top: 30vh;
 }
@@ -886,20 +957,6 @@ p.fact_p span {
     height: 200vh;
 }
 
-
-/*
-.quote p:nth-child(1) {
-    font-size: 56px;
-    color: red;
-}
-
-.quote p:nth-child(2) {
-    text-align: right;
-    color: grey;
-    font-size: 36px;
-}
-*/
-
 .facts {
     padding-left: 10%;
     color: white;
@@ -947,6 +1004,12 @@ svg {
     background-color: white;
     /*    height: 450vh;*/
     padding-top: 200px;
+    background-image: linear-gradient(rgba(255, 228, 109, 0.6), rgba(255, 228, 109, 0.6)), url("http://cdn3.i-scmp.com/sites/default/files/styles/2000x792/public/2016/11/03/lee_01oct16_fe_chin_44_vincent-chin-protest_1_hero.jpg?itok=u90NNhmi");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 70vh;
 }
 
 .impact div div {
@@ -955,22 +1018,18 @@ svg {
 
 .impact p {
     font-family: 'Teko', sans-serif;
-    font-size: 4.5vw;
+    font-size: 6vw;
     text-align: center;
-}
-
-.community {
-    height: 200vh;
-}
-
-.community img {
-    position: absolute;
-    max-width: 40%;
-    max-height: 600px;
 }
 
 #support {
     background-color: #FFD000;
+}
+
+#support h2 {
+    position: absolute;
+    top: -120px;
+    font-size: 84px;
 }
 
 .support_profile {
