@@ -822,31 +822,6 @@ p {
 }
 
 
-/*
-.parallax {
-    perspective: 1px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.parallax_layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.parallax1 {
-    transform: translateZ(-1px) scale(2);
-}
-
-.parallax2 {
-    transform: translateZ(-2px) scale(3);
-}
-*/
-
-
 /* STEREOTYPES AND PERCEPTIONS IN THE MEDIA NOW */
 
 #now {
@@ -863,8 +838,10 @@ p {
     right: 20px;
 }
 
-#now h3 {
-    font-weight: 300;
+#now h3,
+#support h3 {
+    font-weight: 400;
+    width: 60vw;
 }
 
 #stereotype_grid {

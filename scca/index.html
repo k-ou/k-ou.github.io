@@ -224,25 +224,7 @@
             <div class="row section no-gutter" id="history_title">
                 <h2>History</h2>
             </div>
-
             <div class="row section no-gutter" id="history">
-                <!--
-<div class="col-xs-12">
-    <h2>
-        History
-    </h2>
-    <p>
-        Historical perspectives on and representations of Asians -- from the arrival of the first Asians in the United States (during the Gold Rush) up until the model minority myth, created and upheld to pit Asian success against supposed black sloth.
-    </p>
-</div>
--->
-                <!--
-            <div class="col-xs-12">
-                <h2 class="intro_title">
-                    The Asian-American Fight for Cultural Citizenship
-                </h2>
-            </div>
--->
                 <div class="col-xs-12 history_box">
                     <h3>
                         <span class="year">1848</span><br>
@@ -250,29 +232,6 @@
                     </h3>
                     <div class="row yellow_history history1"></div>
                 </div>
-                <!--
-            <div class="col-xs-12 hero" style="height: 800px;
-	overflow: hidden;
-	position: relative;">
-                <h3><span class="highlight">1848 Arrival of first Chinese immigrants for the gold rush</span></h3>
-                <div class="layer layer2" data-type="parallax" data-depth="0.1" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg'); 	background-position: bottom center;
-	background-size: auto;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 800px;
-	position: fixed;
-	z-index: -1;"></div>
-                <div class="layer layer1" data-type="parallax" data-depth="0.8" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png
-		'); background-position: bottom center;
-	background-size: auto;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 800px;
-	position: fixed;
-	z-index: -1;"></div>
-            </div>
--->
-
                 <div class="col-xs-12 history_timeline timeline1">
                     <div class="timeline_box">
                         <div class="timeline_container_test">
@@ -622,6 +581,9 @@
                     <h3>
                         American society continues to perceive Asian Americans as the <span class="highlight">"other."</span>
                     </h3>
+                    <h3>
+                        Asian culture is frequently warped to suit the narrative of a white protagonist, and while Asians are seldom championed in American media, in those rare instances, their portrayals are often problematic.
+                    </h3>
                     <div class="row no-gutter" id="stereotype_grid">
                         <div class="col-xs-12 col-sm-4 stereotype">
                             <img src="http://static.highsnobiety.com/wp-content/uploads/2016/07/05161330/marvel-asian-characters-Madame-Gao.jpg">
@@ -944,12 +906,12 @@
                     <h2>
                         Support Asian Americans
                     </h2>
-                    <p>
+                    <h3>
                         The best way to support Asian American representation is by putting your time and money towards them.
-                    </p>
-                    <p>
+                    </h3>
+                    <h3>
                         We are not your model minority and we deserve to be heard.
-                    </p>
+                    </h3>
                     <h3>
                         Here's a few amazing Asian Americans to follow and support:
                     </h3>
@@ -1140,30 +1102,13 @@
         </div>
     </div>
 </body>
-<script src="js/jquery.min.js">
-    // appears on scroll
-
-</script>
-<script src="js/wow.js">
-    // appears on scroll
+<script src="js/jquery.min.js"></script>
+<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js">
+    // appears after scroll
 
 </script>
 <script>
     new WOW().init();
-
-</script>
-<script src="js/rellax.min.js">
-    // little white guys appear on scroll
-
-</script>
-<script>
-    // Accepts any class name
-    var rellax = new Rellax('.rellax');
-
-</script>
-
-<script src="js/main.js">
-    // fixed nav
 
 </script>
 
@@ -1183,43 +1128,6 @@
 
 </script>
 
-<script>
-    // multiple layer
-    window.addEventListener('scroll', function(event) {
-        var depth, i, layer, layers, len, movement, topDistance, translate3d;
-        topDistance = this.pageYOffset;
-        layers = document.querySelectorAll("[data-type='parallax']");
-        for (i = 0, len = layers.length; i < len; i++) {
-            layer = layers[i];
-            depth = layer.getAttribute('data-depth');
-            movement = -(topDistance * depth);
-            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-            layer.style['-webkit-transform'] = translate3d;
-            layer.style['-moz-transform'] = translate3d;
-            layer.style['-ms-transform'] = translate3d;
-            layer.style['-o-transform'] = translate3d;
-            layer.style.transform = translate3d;
-        }
-    });
-
-</script>
-
-<script>
-    var setSkrollr = function($el, data) {
-        for (var i = 0, l = data.length; i < l; i++) {
-            var d = data[i],
-                px = d[0];
-            css = d[1];
-            $el.attr('data-' + px, css);
-        }
-    }
-
-    jQuery(function($) {
-        skrollr.init({
-            smoothScrolling: false
-        });
-    });
-
-</script>
+<script src="js/main.js"></script>
 
 </html>
