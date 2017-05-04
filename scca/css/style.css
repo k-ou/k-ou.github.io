@@ -1,3 +1,112 @@
+/* parallax */
+
+
+/* all layers */
+
+.parallax-bg div {
+    display: flex;
+    justify-content: center;
+    /*    align-items: center;*/
+}
+
+div#parallax-bg-3 div div,
+div#parallax-bg-2 div div,
+div#parallax-bg-1 div div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    overflow: hidden;
+    height: 400vh;
+}
+
+div#parallax-bg-3,
+div#parallax-bg-2,
+div#parallax-bg-1 {
+    position: relative;
+    width: 100%;
+}
+
+div#bg-3-1,
+div#bg-2-1,
+div#bg-1-1 {
+    background: url("../img/white_guy.png");
+    background-size: contain;
+}
+
+div#bg-3-1,
+div#bg-2-1 {
+    width: 15%;
+}
+
+div#bg-1-1 {
+    width: 20%;
+}
+
+
+/* background*/
+
+div#parallax-bg-1 {
+    z-index: 503;
+}
+
+div#parallax-bg-1 div:nth-child(2) {
+    top: 50vh;
+    left: 10vw;
+}
+
+div#parallax-bg-1 div:nth-child(3) {
+    top: -50vh;
+}
+
+
+/*middle layer*/
+
+div#parallax-bg-2 {
+    z-index: 502;
+}
+
+div#parallax-bg-2 div:nth-child(2) {
+    top: 50vh;
+}
+
+div#parallax-bg-2 div:nth-child(3) {
+    top: -25vh;
+}
+
+div#parallax-bg-2 div:nth-child(4) {
+    top: 25vh;
+}
+
+
+/* foreground */
+
+div#parallax-bg-3 {
+    z-index: 501;
+}
+
+div#parallax-bg-3 div:nth-child(2) {
+    top: 100vh;
+}
+
+div#parallax-bg-3 div:nth-child(3) {
+    top: 75vh;
+}
+
+div#parallax-bg-3 div:nth-child(4) {
+    top: 50vh;
+}
+
+div#parallax-bg-3 div:nth-child(5) {
+    top: 100vh;
+}
+
+div#parallax-bg-3 div:nth-child(6) {
+    top: 50vh;
+}
+
+
+/*****************************************/
+
 html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -323,18 +432,21 @@ p {
 
 .white_guys {
     padding-top: 900px;
-    height: 200vh;
+    height: 400vh;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
+
+/*
 .white_guys div {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 700px;
 }
+*/
 
 .yellow .whiteguy1 {
     width: 10%;
