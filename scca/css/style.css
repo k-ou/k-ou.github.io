@@ -547,6 +547,24 @@ p {
     color: #FFD000;
 }
 
+.history_summary {
+    padding: 80px 00px 0px 140px !important;
+    width: 70%;
+    color: #333333;
+}
+
+.history_summary p {
+    font-size: 26px;
+    font-weight: 500;
+    text-indent: -2em;
+}
+
+.history_summary span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
 .history1,
 .history2,
 .history3,
@@ -617,8 +635,7 @@ p {
     z-index: 15;
 }
 
-.history_timeline img:hover~h4 {
-    transform: scale(1.1);
+.history_timeline h5 {
     z-index: 20;
 }
 
