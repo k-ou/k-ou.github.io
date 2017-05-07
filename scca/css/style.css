@@ -611,6 +611,7 @@ p {
     top: 10px;
     left: 20px;
     line-height: 44px;
+    z-index: 100;
 }
 
 .history_timeline {
@@ -655,70 +656,6 @@ p {
     height: 100%;
     width: 100%;
 }
-
-
-/*
-.timeline_container_test {
-    position: relative;
-    max-width: 30%;
-    left: 5vw;
-    top: 5vh;
-}
-
-.timeline_container_test img {
-    max-width: 100%;
-}
-
-.timeline_caption_test {
-    position: absolute;
-    background-color: white;
-    padding: 5px;
-}
-*/
-
-
-/* timeline1 */
-
-
-/*
-.timeline1 img:nth-child(1) {
-    left: 5vw;
-    top: 5vh;
-}
-
-.timeline1 img:nth-child(2) {
-    left: 30vw;
-    top: 25vh;
-}
-
-.timeline1 img:nth-child(3) {
-    right: 15vw;
-    top: 5vh;
-}
-
-.timeline1 img:nth-child(4) {
-    right: 5vw;
-    top: 35vh;
-}
-
-.timeline1 h5:nth-child(5) {
-    left: 5vw;
-}
-
-.timeline1 h5:nth-child(6) {
-    left: 30vw;
-    top: 20vh;
-}
-
-.timeline1 h5:nth-child(7) {
-    right: 15vw;
-}
-
-.timeline1 h5:nth-child(8) {
-    right: 5vw;
-    top: 30vh;
-}
-*/
 
 .timeline1 .timeline_box:nth-child(1) img {
     left: 5vw;
