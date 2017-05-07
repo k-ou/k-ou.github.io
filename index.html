@@ -67,7 +67,7 @@
             <div class="col-xs-12 col-sm-3 col-md-2 logo_container">
                 <div class="logo">
                     <a href="index.html">
-                        <img class="logo_md" src="img/ko_logo.png">
+                        <img class="logo_md" src="img/ko_logo_new.png">
                         <h1>Kelly Ou</h1>
                     </a>
                 </div>
@@ -81,8 +81,19 @@
                             </div>
                         </li>
                     </a>
+                    <a href="illustrations.html">
+                        <li>
+                            <div>
+                                Illustration
+                            </div>
+                        </li>
+                    </a>
                     <a href="about.html">
-                        <li>About</li>
+                        <li>
+                            <div>
+                                About
+                            </div>
+                        </li>
                     </a>
                 </ul>
             </div>
@@ -167,18 +178,8 @@
                 </a>
             </div>
             <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
-                <a href="project_page_w.html">
-                    <div class="proj_thumb4"></div>
-                    <div class="caption">
-                        <div class="caption-text">
-                            <h3>ACM-W T-Shirt Design</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
                 <a href="project_page_hillbillyelegy.html">
-                    <div class="proj_thumb5"></div>
+                    <div class="proj_thumb4"></div>
                     <div class="caption">
                         <div class="caption-text">
                             <h3>Hillbilly Elegy Concept Cover</h3>
@@ -187,11 +188,21 @@
                 </a>
             </div>
             <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
-                <a href="project_page_illustrations.html">
+                <a href="project_page_w.html">
+                    <div class="proj_thumb5"></div>
+                    <div class="caption">
+                        <div class="caption-text">
+                            <h3>ACM-W T-Shirt Design</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-4 proj_box">
+                <a href="project_page_papavargas.html">
                     <div class="proj_thumb6"></div>
                     <div class="caption">
                         <div class="caption-text">
-                            <h3>Illustrations</h3>
+                            <h3>Papa Vargas</h3>
                         </div>
                     </div>
                 </a>
@@ -231,33 +242,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        function init() {
-            window.addEventListener('scroll', function(e) {
-                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                    shrinkOn = 100,
-                    header = document.querySelector(".header");
-                if (distanceY > shrinkOn) {
-                    $(".header").addClass("smaller");
-                } else {
-                    if ($(".header").hasClass("smaller")) {
-                        $(".header").removeClass("smaller");
-                    }
-                }
-            });
-        }
-        window.onload = init();
-
-    </script>
-    <script>
-        $(window).resize(
-            () => {
-                const headerHeight = $(".header").outerHeight(true);
-                [".thumb", ".bio", ".project_page", ].forEach(classname => $(classname).css("margin-top", headerHeight))
-            }
-        )
-
-    </script>
 </body>
 
 </html>

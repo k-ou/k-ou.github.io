@@ -43,7 +43,7 @@
             <div class="col-xs-12 col-sm-3 col-md-2 logo_container">
                 <div class="logo">
                     <a href="index.html">
-                        <img class="logo_md" src="img/ko_logo.png">
+                        <img class="logo_md" src="img/ko_logo_new.png">
                         <h1>Kelly Ou</h1>
                     </a>
                 </div>
@@ -54,6 +54,13 @@
                         <li>
                             <div>
                                 Projects
+                            </div>
+                        </li>
+                    </a>
+                    <a href="illustrations.html">
+                        <li>
+                            <div>
+                                Illustration
                             </div>
                         </li>
                     </a>
@@ -216,21 +223,6 @@
 
     </script>
     <script>
-        function init() {
-            window.addEventListener('scroll', function(e) {
-                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                    shrinkOn = 100,
-                    header = document.querySelector(".header");
-                if (distanceY > shrinkOn) {
-                    $(".header").addClass("smaller");
-                } else {
-                    if ($(".header").hasClass("smaller")) {
-                        $(".header").removeClass("smaller");
-                    }
-                }
-            });
-        }
-        window.onload = init();
         new LazyLoad({
             elements_selector: "div"
         });

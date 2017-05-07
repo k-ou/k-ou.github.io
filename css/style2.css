@@ -22,11 +22,6 @@ h4 {
     font-family: 'Lato', sans-serif;
 }
 
-p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
 a,
 a:hover {
     cursor: pointer;
@@ -87,6 +82,9 @@ a:hover {
 
 @media only screen and (min-width: 320px) {
     /* GENERAL */
+    p {
+        font-size: 16px;
+    }
     /* nav bar */
     .header,
     .header.smaller {
@@ -124,7 +122,8 @@ a:hover {
         float: left;
         text-transform: uppercase;
         text-align: center;
-        width: 50%;
+        /*        width: 50%;*/
+        width: 33%;
         height: 40px;
     }
     .nav_bar a {
@@ -139,7 +138,7 @@ a:hover {
     /* logo */
     .logo_container {
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         width: 100%;
         max-width: 100%;
     }
@@ -290,13 +289,13 @@ a:hover {
         background-image: url(../img/thumbnails/carbcat.JPG);
     }
     .proj_thumb4 {
-        background-image: url(../img/thumbnails/acmw_shirt.png);
-    }
-    .proj_thumb5 {
         background-image: url(../img/thumbnails/hillbilly_elegy_cover.jpg);
     }
+    .proj_thumb5 {
+        background-image: url(../img/thumbnails/acmw_shirt.png);
+    }
     .proj_thumb6 {
-        background-image: url(../img/thumbnails/illustration_boba.png);
+        background-image: url(../img/thumbnails/papavargas.jpg);
     }
     /* for caption feature */
     .caption {
@@ -356,7 +355,7 @@ a:hover {
         max-width: 100%;
     }
     .description {
-        margin-top: 40px;
+        padding: 30px 15px;
     }
     .description h4 {
         margin-top: 0;
@@ -365,9 +364,10 @@ a:hover {
         font-weight: 400;
     }
     .description_title p {
-        font-size: 14px;
-        color: var(--description_title);
-        text-transform: uppercase;
+        font-size: 24px;
+        color: var(--main_color);
+        /*        text-transform: uppercase;*/
+        font-weight: 400;
     }
     .description a {
         color: var(--main_color);
@@ -406,16 +406,6 @@ a:hover {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    /*
-    .about_me p,
-    .about_me ul {
-        border-left: 3px #dddddd solid;
-        padding-left: 10px;
-    }
-    .about_me ul {
-        list-style: none;
-    }
-*/
     .about_me p,
     .about_me li {
         font-size: 16px;
@@ -546,6 +536,10 @@ a:hover {
 /* TABLET */
 
 @media only screen and (min-width: 768px) {
+    /*     GENERAL */
+    p {
+        font-size: 18px;
+    }
     /* nav bar */
     .header,
     .header.smaller {
@@ -564,7 +558,7 @@ a:hover {
     .nav_bar {
         margin-top: 25px;
         display: block;
-        width: 75%;
+        width: 100%;
         float: left;
         background-color: rgba(255, 255, 255, 0.0);
     }
@@ -573,7 +567,8 @@ a:hover {
         float: left;
         text-transform: uppercase;
         text-align: center;
-        width: 40%;
+        /*        width: 40%;*/
+        width: 33%;
         height: 30px;
     }
     .nav_bar a {
@@ -604,7 +599,7 @@ a:hover {
         position: absolute;
         top: 100%;
         left: 13%;
-        width: 74%;
+        width: 75%;
         height: 4px;
         content: '';
         opacity: 0;
@@ -700,7 +695,10 @@ a:hover {
         width: auto;
     }
     .project_page {
-        margin-top: 140px;
+        padding-top: 80px;
+    }
+    .description {
+        padding: 0px;
     }
     /* FOOTER */
     .footer {
@@ -811,12 +809,20 @@ a:hover {
     /* PROJECT PAGE */
     .project_page_bottom,
     .project_page {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .project_page_bottom {
         padding-top: 40px;
-        margin-left: 6%;
-        margin-right: 6%;
     }
     .project_page_full {
         padding-top: 40px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .project_page_full div {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     /* ABOUT ME */
     .intro {
@@ -872,11 +878,11 @@ a:hover {
         max-height: 100px;
         width: auto;
     }
-    .description {
-        margin-top: 0px;
-    }
     .hero {
         height: 550px;
+    }
+    .nav_bar {
+        width: 80%;
     }
 }
 
@@ -909,7 +915,8 @@ a:hover {
     .nav_bar li {
         padding-top: 5px;
         height: 35px;
-        width: 25%;
+        /*        width: 25%;*/
+        width: 33%;
     }
     .current div {
         display: inline-block;
@@ -969,8 +976,9 @@ a:hover {
         width: 100%;
     }
     .project {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
+        padding-right: 40px;
     }
     /* ABOUT ME */
     .intro {
