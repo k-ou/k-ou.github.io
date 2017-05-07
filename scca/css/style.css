@@ -478,7 +478,10 @@ p {
 #title {
     background-color: #FFD000;
     height: 100vh;
-    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #title div {
@@ -1307,5 +1310,8 @@ svg {
     }
     .stereotype .info p {
         font-size: 22px;
+    }
+    .support_profile p {
+        font-size: 24px;
     }
 }
