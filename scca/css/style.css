@@ -614,6 +614,11 @@ p {
     z-index: 100;
 }
 
+.history_box span.highlight {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .history_timeline {
     margin: 100px 0px;
     height: 70vh;
@@ -827,7 +832,7 @@ p {
 .stereotype .info {
     position: absolute;
     top: 0;
-    padding: 20px;
+    padding: 10%;
     background-color: #FFD000;
     height: 0px;
     width: 100%;
@@ -850,6 +855,15 @@ p {
 
 .stereotype:hover img {
     transform: scale(1.1);
+}
+
+.info small,
+.info a {
+    color: #555555;
+}
+
+.info a {
+    font-style: italic;
 }
 
 .stereotype:hover .info {
@@ -939,6 +953,17 @@ p.fact_p {
 p.fact_p span {
     color: red;
     font-weight: 500;
+}
+
+p.attribution {
+    font-family: 'Teko', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.attribution span {
+    font-weight: 400;
 }
 
 .response {
@@ -1142,6 +1167,11 @@ svg {
     box-shadow: inset 0 24px 0 0 #FFD000;
 }
 
+.support_profile .col-sm-8 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .support_profile img {
     max-width: 100%;
     width: 100%;
@@ -1198,6 +1228,11 @@ svg {
 
 .resources_section li a:hover {
     box-shadow: inset 0 18px 0 0 #FFD000;
+}
+
+#collapseResource {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .footer {
