@@ -27,6 +27,9 @@
         font-size: 64px;
         right: 20px;
     }
+    .support_profile {
+        padding: 35px;
+    }
 }
 
 @media only screen and (min-width: 1224px) {
@@ -39,6 +42,9 @@
     }
     .history_timeline {
         height: 70vh;
+    }
+    .support_profile {
+        padding: 50px;
     }
 }
 
@@ -1167,7 +1173,6 @@ svg {
 }
 
 .support_profile {
-    padding: 50px;
     background-color: white;
     margin-top: 50px;
 }
