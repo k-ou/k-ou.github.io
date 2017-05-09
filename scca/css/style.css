@@ -627,6 +627,7 @@ p {
 .history_timeline img {
     position: absolute;
     max-width: 30%;
+    min-width: 24%;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -772,12 +773,12 @@ p {
 
 .timeline4 h5:nth-child(5) {
     left: 40vw;
-    top: 57vh;
+    top: -5vh;
 }
 
 .timeline4 h5:nth-child(6) {
     right: 15vw;
-    top: 50vh;
+    top: 25vh;
 }
 
 
@@ -1282,5 +1283,29 @@ svg {
 @media only screen and (min-width: 320px) and (max-width: 991px) {
     #history {
         padding: 0px;
+    }
+}
+
+
+/* Mobile screens */
+
+@media only screen and (min-width: 2000px) {
+    .history_summary {
+        width: 45%;
+    }
+    .history_summary p {
+        font-size: 32px;
+    }
+    .history_summary span {
+        font-size: 58px;
+    }
+    .stereotype .info {
+        padding: 100px;
+    }
+    .stereotype .info h4 {
+        font-size: 100px;
+    }
+    .stereotype .info p {
+        font-size: 22px;
     }
 }
