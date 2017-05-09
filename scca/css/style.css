@@ -1376,6 +1376,10 @@ svg {
     .fact div {
         max-width: 70%;
     }
+    .support_profile .col-sm-8 {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
     .support_profile p {
         font-size: 24px;
     }
