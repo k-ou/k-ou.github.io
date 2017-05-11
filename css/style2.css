@@ -1,5 +1,6 @@
 body {
-    --main_color: #2bb9b9;
+    /*    --main_color:  #2bb9b9;*/
+    --main_color: #43aa9b;
     --highlight_color: lavender;
     --other_color: #2bb9b9;
     --off_black: #444444;
@@ -155,8 +156,16 @@ a:hover {
     .social_media {
         display: none;
     }
+    .social_media li a img {
+        -webkit-transition: opacity 0.25s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        -moz-transition: opacity 0.25s ease-in-out;
+        -o-transition: opacity 0.25s ease-in-out;
+        -ms-transition: opacity 0.25s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
+    }
     .social_media li a img:hover {
-        opacity: 0.8;
+        opacity: 0.75;
     }
     .nav_right {
         display: none;
