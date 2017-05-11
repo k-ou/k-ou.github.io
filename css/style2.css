@@ -19,7 +19,7 @@ p,
 li,
 h3,
 h4 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a,
@@ -305,7 +305,7 @@ a:hover {
         height: 100%;
         width: 100%;
         position: absolute;
-        background-color: rgba(0, 0, 0, 1.0);
+        background-color: rgba(0, 0, 0, 0.9);
         bottom: 0px;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
@@ -321,18 +321,22 @@ a:hover {
         z-index: 10;
         height: 80%;
         width: 80%;
+        /*
         border: 2px white solid;
         border-radius: 100%;
+*/
         padding: 20px;
-        text-align: center;
+        text-align: left;
         color: white;
         opacity: 0;
     }
     .caption-text h3 {
-        font-size: 14px;
-        font-weight: 100;
+        font-size: 24px;
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
+        padding-left: 15px;
+        border-left: 5px var(--main_color) solid;
     }
     .proj_box:hover .caption {
         animation: fadeIn .25s;
@@ -556,7 +560,7 @@ a:hover {
         position: relative;
     }
     .nav_bar {
-        margin-top: 25px;
+        margin-top: 15px;
         display: block;
         width: 100%;
         float: left;
@@ -593,7 +597,7 @@ a:hover {
         height: 100%;
         display: inline-block;
         width: auto;
-        border-bottom: 2px var(--main_color) solid;
+        border-bottom: 5px var(--main_color) solid;
     }
     .nav_bar li:not(.current)::after {
         position: absolute;
@@ -637,7 +641,7 @@ a:hover {
         width: 80%;
     }
     .nav_right p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .nav_right_text {
         width: 100%;
@@ -675,10 +679,10 @@ a:hover {
         margin-bottom: 5px;
     }
     .header.smaller .nav_bar {
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .header.smaller .nav_bar a {
-        font-size: 12px;
+        font-size: 14px;
     }
     .header.smaller .nav_bar li {
         height: 25px;
@@ -688,6 +692,9 @@ a:hover {
     }
     .header.smaller .nav_right_text {
         margin-top: 10px;
+    }
+    .header.smaller .current div {
+        border-bottom: 4px var(--main_color) solid;
     }
     .thumb,
     .logo_md {
@@ -769,11 +776,12 @@ a:hover {
     /**/
     /* for caption feature */
     .caption-text {
-        height: 65%;
-        width: 65%;
+        height: 80%;
+        width: 80%;
     }
     .caption-text h3 {
-        font-size: 16px;
+        font-size: 32px;
+        border-left: 7px var(--main_color) solid;
     }
     /* for zoom feature */
     .proj_thumb1,
@@ -930,7 +938,7 @@ a:hover {
         width: 75%;
     }
     .nav_right p {
-        font-size: 16px;
+        font-size: 14px;
         display: block;
         margin-top: 0;
         padding-top: 0;
