@@ -44,7 +44,7 @@ window.onload = init();
 // add margin-top to pages to allow room for header
 const makeRoomForHeader = () => {
     const headerHeight = $(".header").outerHeight(true);
-    const pages = [".thumb", ".bio", ".project_page"];
+    const pages = [".thumb", ".bio", ".project_page", ".project_page_ill"];
     pages.forEach(
         classname =>
         $(classname).css("margin-top", headerHeight)
@@ -82,3 +82,55 @@ $(document).ready(function ($) {
         $('#carousel-text').html($('#slide-content-' + id).html());
     });
 });
+
+// new illustration carousel
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+// autoplay carousel
+
+//var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
