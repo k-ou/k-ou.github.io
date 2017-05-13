@@ -6,7 +6,7 @@
 }
 
 .mySlides {
-    display: block;
+    position:absolute;
 }
 
 .mySlides img {
@@ -89,14 +89,15 @@
 
 /* Fading animation */
 
-.fade {
-    -webkit-animation-name: fade;
+.fadeSlide {
+    -webkit-animation-name: fadeSlide;
     -webkit-animation-duration: 1.5s;
-    animation-name: fade;
+    animation-name: fadeSlide;
     animation-duration: 1.5s;
+    background-color: black;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fadeSlide {
     from {
         opacity: .4
     }
@@ -105,7 +106,7 @@
     }
 }
 
-@keyframes fade {
+@keyframes fadeSlide {
     from {
         opacity: .4
     }

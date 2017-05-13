@@ -53,6 +53,9 @@ function makeRoomForHeader() {
         classname =>
         $(classname).css("margin-top", headerHeight)
     )
+    
+    $('.slideshow-container').height($('.mySlides').height());
+
 };
 
 makeRoomForHeader();
@@ -63,14 +66,29 @@ $(window).resize(makeRoomForHeader);
 let slideIndex = 0;
 const timer = setInterval(
     () => setCurrentSlide(++slideIndex, false),
-    3000,
+    6000,
 );
 
-setCurrentSlide(slideIndex, false);
+const duration = 1000;
 
-function setCurrentSlide(index, stopAutoplay = true) {
-    hideAllSlides();
+const hideAllSlides = (shouldAnimate = true) => {
+    $('.mySlides').each((_, slide) => {
+        shouldAnimate
+            ? $(slide).animate(
+                {opacity: 0},
+                {duration, queue: false}
+            )
+            : $(slide).css('opacity', 0);
+    });
+    $('.dot').each((_, dot) => $(dot).removeClass('active'));
+}
 
+function setCurrentSlide(
+    index,
+    stopAutoplay = true,
+    shouldAnimate = true,
+) {
+    hideAllSlides(shouldAnimate);
     
     const slides = $('.mySlides');
     
@@ -86,11 +104,10 @@ function setCurrentSlide(index, stopAutoplay = true) {
         });
     }
 
-    slides.eq(slideIndex).show();
+    shouldAnimate
+        ? slides.eq(slideIndex).animate({opacity:1}, {duration})
+        : slides.eq(slideIndex).css('opacity', 1);
     $('.dot').eq(slideIndex).addClass('active');
 }
 
-function hideAllSlides() {
-    $('.mySlides').each((_, slide) => $(slide).hide());
-    $('.dot').each((_, dot) => $(dot).removeClass('active'));
-}
+setCurrentSlide(slideIndex, false, false);
