@@ -6,7 +6,7 @@
 }
 
 .mySlides {
-    display: none;
+    display: block;
 }
 
 .mySlides img {

@@ -139,13 +139,13 @@
                         <img src="img/carbcat_travels.jpg" alt="Sample spread from CarbCat Goes to the Museum.">
                         <!--                        <div class="text">Caption Two</div>-->
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="setCurrentSlide(--slideIndex)">&#10094;</a>
+                    <a class="next" onclick="setCurrentSlide(++slideIndex)">&#10095;</a>
                 </div>
                 <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="setCurrentSlide(0)"></span>
+                    <span class="dot" onclick="setCurrentSlide(1)"></span>
+                    <span class="dot" onclick="setCurrentSlide(2)"></span>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-4">
