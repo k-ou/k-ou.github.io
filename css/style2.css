@@ -413,13 +413,13 @@ a:hover {
         padding-bottom: 100%;
     }
     .proj_thumb1 {
-        background-image: url(../img/thumbnails/nwirp.png);
+        background-image: url(../img/thumbnails/saverockandroll_mock.jpg);
     }
     .proj_thumb2 {
-        background-image: url(../img/thumbnails/save_rock_and_roll.png);
+        background-image: url(../img/thumbnails/asianamerican_mock1.png);
     }
     .proj_thumb3 {
-        background-image: url(../img/thumbnails/carbcat.JPG);
+        background-image: url(../img/thumbnails/papavargas.jpg);
     }
     .proj_thumb4 {
         background-image: url(../img/thumbnails/hillbilly_elegy_cover.jpg);
@@ -428,7 +428,7 @@ a:hover {
         background-image: url(../img/thumbnails/acmw_shirt.png);
     }
     .proj_thumb6 {
-        background-image: url(../img/thumbnails/papavargas.jpg);
+        background-image: url(../img/thumbnails/nwirp.png);
     }
     /* for caption feature */
     .caption {
@@ -486,6 +486,44 @@ a:hover {
     }
     .project_page_full {
         padding-top: 30px;
+    }
+    /* web visit button bar */
+    .visit_bar {
+        background-color: #727d82;
+        height: 250px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .visit_bar div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .visit_bar h3 {
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 25px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .visit_bar, .visit_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .visit_button {
+        color: white;
+        background-color: var(--main_color);
+        border-radius: 5px;
+        width: 250px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    .visit_button p {
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        margin: 0px;
     }
     .project_page_full div img {
         width: 100%;
@@ -965,6 +1003,18 @@ a:hover {
     .project_page_full div {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .visit_bar {
+        height: 350px;
+    }
+    .visit_bar div {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .visit_bar h3 {
+        font-size: 48px;
+/*        font-size: 3.5vw;*/
+        margin-bottom: 50px;
     }
     /* ABOUT ME */
     .intro {
