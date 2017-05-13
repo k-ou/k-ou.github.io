@@ -40,50 +40,25 @@ function init() {
 }
 window.onload = init();
 
-
 // add margin-top to pages to allow room for header
-const makeRoomForHeader = () => {
+function makeRoomForHeader() {
     const headerHeight = $(".header").outerHeight(true);
-    const pages = [".thumb", ".bio", ".project_page", ".project_page_ill"];
+    const pages = [
+        '.thumb',
+        '.bio',
+        '.project_page',
+        '.project_page_ill',
+    ];
     pages.forEach(
         classname =>
         $(classname).css("margin-top", headerHeight)
     )
 };
 
+makeRoomForHeader();
 $(window).resize(makeRoomForHeader);
 
 // carousel for illustration page
-
-$(document).ready(function ($) {
-
-    makeRoomForHeader();
-
-    $('#myCarousel').carousel({
-        interval: 5000
-    });
-
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        try {
-            var id = /-(\d+)$/.exec(id_selector)[1];
-            FB.AppEvents.logEvent("carousel_click", null, {
-                id: id
-            });
-            $('#myCarousel').carousel(parseInt(id));
-        } catch (e) {
-            console.log('Regex failed!', e);
-        }
-    });
-    // When the carousel slides, auto update the text
-    $('#myCarousel').on('slid.bs.carousel', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-' + id).html());
-    });
-});
-
-// new illustration carousel
 
 let slideIndex = 0;
 const timer = setInterval(
@@ -95,9 +70,7 @@ setCurrentSlide(slideIndex, false);
 
 function setCurrentSlide(index, stopAutoplay = true) {
     hideAllSlides();
-    if (stopAutoplay) {
-        clearInterval(timer);    
-    }
+
     
     const slides = $('.mySlides');
     
@@ -105,11 +78,14 @@ function setCurrentSlide(index, stopAutoplay = true) {
           index >= slides.length ? 0
         : index < 0              ? slides.length - 1
         : index;
-
-    FB.AppEvents.logEvent('new_carousel_click', null, {
-      slideIndex,
-    });
     
+    if (stopAutoplay) {
+        clearInterval(timer);
+        FB.AppEvents.logEvent('new_carousel_click', null, {
+            slideIndex,
+        });
+    }
+
     slides.eq(slideIndex).show();
     $('.dot').eq(slideIndex).addClass('active');
 }

@@ -26,7 +26,28 @@
     <link href="css/animate.css" rel="stylesheet">
 
 </head>
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '298143810604267',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 <body>
     <section class="section section--nav" id="Meklit">
         <nav class="nav nav--meklit">
