@@ -60,6 +60,9 @@ function makeRoomForHeader() {
 
 makeRoomForHeader();
 $(window).resize(makeRoomForHeader);
+$('.mySlides img').each((_, img) => {
+   $(img).load(makeRoomForHeader);
+});
 
 // carousel for illustration page
 
