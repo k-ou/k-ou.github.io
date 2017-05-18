@@ -49,6 +49,7 @@ ul {
 
 .project_page_ill img {
     max-width: 100%;
+    width: 100%;
 }
 
 p,
@@ -517,6 +518,7 @@ a:hover {
     }
     .mySlides {
         position: absolute;
+        width: 100%;
     }
     .mySlides img {
         width: 100%;
