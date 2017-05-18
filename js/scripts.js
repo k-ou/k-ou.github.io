@@ -114,3 +114,12 @@ function setCurrentSlide(
 }
 
 setCurrentSlide(slideIndex, false, false);
+
+$(() => {
+    $('.slideshow-container').on('swipeleft', event => {
+        setCurrentSlide(++slideIndex);
+    });
+    $('.slideshow-container').on('swiperight', event => {
+        setCurrentSlide(--slideIndex);
+    });
+});
