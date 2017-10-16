@@ -132,7 +132,7 @@ p {
 .hero {
     height: 100vh;
     grid-column: 1/7;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/REI_1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/REI_1.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,7 +168,7 @@ p {
 }
 
 .image1 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/REI_4.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/REI_4.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;
@@ -188,7 +188,7 @@ p {
 }
 
 .image2 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/REI_5.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/REI_5.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;
@@ -197,7 +197,7 @@ p {
 
 .fw {
     grid-column: 1/7;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/REI_8.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/REI_8.jpg);
     padding: 80px 250px;
 }
 
@@ -227,7 +227,7 @@ h3 {
 .together {
     grid-column: 1/7;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/REI_2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/REI_2.jpg);
     display: flex;
     justify-content: center;
 }
