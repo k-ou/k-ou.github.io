@@ -182,8 +182,8 @@ body {
         text-transform: uppercase;
     }
     p {
-        font-family: 'Comfortaa', sans-serif;
-        font-family: 'Nova Flat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.5px;
     }
     h1 {
         font-size: 64px;
