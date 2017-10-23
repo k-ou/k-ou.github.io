@@ -1,0 +1,133 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 75vh;
+}
+
+#mountains {
+    background: #616161 url(../img/mountains.png) center bottom repeat;
+    background-size: 180px;
+}
+
+#water {
+    background: #0288D1 url(../img/water.png) center center repeat;
+    background-size: 160px;
+}
+
+#cliffs {
+    background: #F57C00 url(../img/cliffs.png) center bottom repeat;
+    background-size: 180px;
+}
+
+#sun-yellow {
+    background: #FBC02D url(../img/sun-yellow.png) center center repeat;
+    background-size: 200px;
+}
+
+#deciduous {
+    background: #7CB342 url(../img/deciduous-pale.png) center center repeat;
+    background-size: 200px;
+}
+
+#evergreen {
+    background: #43A047 url(../img/evergreens.png) center center repeat;
+    background-size: 80px;
+}
+
+#wheat {
+    background: #FBC02D url(../img/wheat3.png) center center repeat;
+    background-size: 60px;
+}
+
+#swamp {
+    background: #7CB342 url(../img/swamp-pale.png) center center repeat;
+    background-size: 140px;
+}
