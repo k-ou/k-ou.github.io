@@ -169,6 +169,10 @@ body {
     --material_green900: #1B5E20;
 }
 
+body {
+    background-color: var(--material_grey900);
+}
+
 
 /* Mobile screens */
 
