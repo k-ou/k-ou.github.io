@@ -538,6 +538,11 @@ body {
         justify-content: center;
         flex-wrap: wrap;
     }
+    svg a {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
     .main svg {
         /*        Map only takes up 80% of the screen */
         width: 90%;
@@ -565,7 +570,6 @@ body {
         fill: var(--material_blue200);
         filter: url(#blur-filter);
         transform: translate(20px, -20px);
-        /*        transform: translate(40px, -30px);*/
     }
     /* Summary */
     .info {
