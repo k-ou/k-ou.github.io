@@ -231,6 +231,10 @@ body {
         grid-gap: 0.5vw;
         padding-top: 15vh;
     }
+    img.opening_eagle {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
     .opening_headline {
         grid-column: 2/16;
         grid-row: 1/2;
