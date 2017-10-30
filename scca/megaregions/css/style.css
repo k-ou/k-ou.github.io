@@ -364,9 +364,6 @@ body {
     .industries img {
         max-width: 13vw;
         margin-right: 15px;
-        -webkit-filter: invert(100%);
-        /* Safari 6.0 - 9.0 */
-        filter: invert(100%);
     }
     /* Icon Patterns */
     .mountains {
@@ -788,9 +785,6 @@ body {
     .industries img {
         max-width: 4vw;
         margin-right: 15px;
-        -webkit-filter: invert(100%);
-        /* Safari 6.0 - 9.0 */
-        filter: invert(100%);
     }
 }
 
