@@ -854,3 +854,27 @@ body {
         grid-row: 4/6;
     }
 }
+
+
+/* Super Large screens */
+
+@media only screen and (min-width: 2000px) {
+    .opening_headline h1 {
+        font-size: 4.0em;
+        padding-bottom: 135px;
+    }
+    h3 {
+        font-size: 2.4vw;
+    }
+    .map_label {
+        margin-top: 30px;
+    }
+    h2,
+    .name5 h2,
+    .name7 h2 {
+        font-size: 100px;
+    }
+    .regional_name {
+        padding-left: 180px;
+    }
+}
