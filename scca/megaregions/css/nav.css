@@ -241,6 +241,15 @@ body,
     }
 }
 
+
+/* Super Large screens */
+
+@media only screen and (min-width: 2000px) {
+    .st-menu {
+        width: 420px;
+    }
+}
+
 .st-menu ul li a {
     font-family: "Source Sans Pro", sans-serif;
     display: block;
