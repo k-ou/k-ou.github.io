@@ -1,0 +1,365 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    --basis_yellow: rgb(253, 213, 82);
+    --basis_green: rgb(106, 182, 180);
+    --basis_red: rgb(242, 99, 103);
+    --basis_blue: rgb(38, 85, 196);
+    --basis_grey: rgb(96, 104, 115);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+}
+
+
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    .container-full,
+    .container-margin,
+    .container-layer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .container-margin {
+        padding: 0px 15px;
+    }
+    .container-layer {
+        align-items: center;
+    }
+    .header-full {
+        grid-column: span 12;
+    }
+    .article {
+        grid-column: span 12;
+        height: 300px;
+    }
+    /*Featured Article 1*/
+    .feat-article-1 {
+        background: url(../img/sugar_conspiracy.jpg) center no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+    /*Top Section*/
+    .article-1 {
+        background-color: orange;
+    }
+    .article-2 {
+        background-color: yellow;
+    }
+    .article-3 {
+        background-color: lawngreen;
+    }
+    .article-4 {
+        background-color: cadetblue;
+    }
+    .most-read {
+        background-color: var(--basis_red);
+        grid-column: span 12;
+        height: 300px;
+    }
+    /*Most Recent Articles*/
+    .article-5 {
+        background-color: purple;
+    }
+    .article-6 {
+        background-color: pink;
+    }
+    .article-7 {
+        background-color: deeppink;
+    }
+    /*Featured Article 2*/
+    .feat-article-2-background {
+        background-color: var(--basis_blue);
+        height: 800px;
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        grid-column: span12;
+        grid-column-start: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .feat-article-2-image-background {
+        background: url(../img/sugar_conspiracy.jpg) center no-repeat;
+        background-size: cover;
+        height: 700px;
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+        grid-column: span12;
+        grid-column-start: 1;
+        grid-row: 1;
+        z-index: 3;
+        margin-top: 50px;
+    }
+    .feat-article-2-header {
+        grid-column: span 2;
+        grid-column-start: 10;
+        grid-row: 1;
+        z-index: 20;
+    }
+    /*Section Articles*/
+    .article-8 {
+        background-color: yellow;
+    }
+    .article-9 {
+        background-color: lawngreen;
+    }
+    .article-10 {
+        background-color: cadetblue;
+    }
+    .article-11 {
+        background-color: purple;
+    }
+    .article-12 {
+        background-color: pink;
+    }
+    .article-13 {
+        background-color: deeppink;
+    }
+    /*Featured Article 2*/
+    .feat-article-3-background-1 {
+        background-color: var(--basis_red);
+        ;
+        height: 800px;
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+        grid-column: span12;
+        grid-column-start: 1;
+        grid-row: 1;
+        z-index: 1;
+        margin-top: 50px;
+    }
+    .feat-article-3-background-2 {
+        background-color: var(--basis_yellow);
+        height: 700px;
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        grid-column: span12;
+        grid-column-start: 1;
+        grid-row: 1;
+        z-index: 2;
+    }
+    .feat-article-3-header {
+        grid-column: span 2;
+        grid-column-start: 10;
+        grid-row: 1;
+        z-index: 3;
+    }
+    /*Footer*/
+    .footer {
+        background-color: var(--basis_blue);
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+        padding: 20px 50px;
+    }
+    .footer-1 {
+        background-color: green;
+        grid-column: span 12;
+    }
+    .footer-2 {
+        background-color: purple;
+        grid-column: span 12;
+    }
+    .footer-3 {
+        background-color: pink;
+        grid-column: span 12;
+    }
+}
+
+
+/* Medium screens */
+
+@media only screen and (min-width: 768px) {
+    .container-margin {
+        padding: 0px 100px;
+    }
+    /*Top Section*/
+    .article-1 {
+        grid-column: span 8;
+        order: 1;
+    }
+    .article-2 {
+        grid-column: span 4;
+        order: 3;
+    }
+    .article-3 {
+        grid-column: span 4;
+        grid-row: span 2;
+        order: 4;
+        height: auto;
+    }
+    .article-4 {
+        grid-column: span 4;
+        order: 5;
+    }
+    .most-read {
+        grid-column: 9/13;
+        grid-row: span 3;
+        height: auto;
+        order: 2;
+    }
+    /*Most Recent Articles*/
+    .article-5 {
+        grid-column: span 4;
+    }
+    .article-6 {
+        grid-column: span 4;
+    }
+    .article-7 {
+        grid-column: span 4;
+    }
+    /*Section Articles*/
+    .article-8 {
+        grid-column: span 4;
+    }
+    .article-9 {
+        grid-column: span 4;
+    }
+    .article-10 {
+        grid-column: span 4;
+    }
+    .article-11 {
+        grid-column: span 4;
+    }
+    .article-12 {
+        grid-column: span 4;
+    }
+    .article-13 {
+        grid-column: span 4;
+    }
+    /*Footer*/
+    .footer {
+        background-color: var(--basis_blue);
+        height: 300px;
+        padding: 50px 100px;
+    }
+    .footer p {
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+    .footer-1 {
+        grid-column: span 3;
+    }
+    .footer-2 {
+        grid-column: span 3;
+    }
+    .footer-3 {
+        grid-column: span 6;
+    }
+}
+
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {}
+
+
+/* Super Large screens */
+
+@media only screen and (min-width: 2000px) {}

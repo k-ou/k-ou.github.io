@@ -818,6 +818,10 @@ body {
     li {
         font-size: 20px;
     }
+    .opening_headline img {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
     .opening_headline h1 {
         font-size: 4.0em;
         padding-bottom: 90px;
