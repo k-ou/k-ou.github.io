@@ -1,28 +1,42 @@
 /* Mobile screens */
 
 @media only screen and (min-width: 320px) {
+    p+p {
+        margin-top: 1.4rem;
+    }
+    a {
+        text-decoration: underline;
+    }
     .hero {
         grid-column: 1/13;
         height: 100vh;
     }
     .feature-content {
-        grid-column: 4 / 10;
+        grid-column: 2 / 12;
     }
     .feature-content p {
-        font-size: 1.2em;
-        font-family: "Libre Baskerville", serif;
+        font-size: 1.4em;
+        font-family: 'Crimson Text', serif;
     }
 }
 
 
 /* Medium screens */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .feature-content {
+        grid-column: 3 / 11;
+    }
+}
 
 
 /* iPad Pro screens */
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    .feature-content {
+        grid-column: 4 / 10;
+    }
+}
 
 
 /* Large screens */

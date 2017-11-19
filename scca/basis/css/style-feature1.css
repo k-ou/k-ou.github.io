@@ -3,9 +3,10 @@
 @media only screen and (min-width: 320px) {
     .hero {
         background-color: #fae856;
+        margin-bottom: 60px;
     }
     #feature1-hero {
-        background-image: url(../img/sugar_conspiracy.jpg);
+        background-image: url(../img/sugar_conspiracy/sugar_conspiracy.jpg);
         /*        background: linear-gradient(url(../img/sugar_conspiracy.jpg), yellow);*/
         /*        background-position: right 100px top;*/
         background-position: 140% 30%;
@@ -35,31 +36,65 @@
         font-size: 2em;
         line-height: 0.75em;
     }
+    /* Dropcap */
+    .drop-cap p:first-child:first-letter {
+        color: pink;
+        float: left;
+        font-family: 'Knewave';
+        font-size: 96px;
+        line-height: 60px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 3px;
+    }
+    /*Content*/
+    .feature-content a {
+        color: pink;
+    }
+    .feature1-pull-quote,
+    .feature-img {
+        margin: 50px 0px;
+    }
     /*Pull Quotes*/
     .feature1-pull-quote {
         grid-column: 3 / 9;
     }
     .feature1-pull-quote p {
         font-size: 1.5em;
-        font-family: "Libre Franklin", sans-serif;
+        font-family: 'Libre Franklin', sans-serif;
         font-weight: 900;
     }
     /*Images*/
     .feature-img {
         grid-column: 1/13;
         height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .feature1-img1 {
-        background-image: url(../img/brooke-lark-203839.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url(../img/sugar_conspiracy/sugar1.png);
     }
     .feature1-img2 {
-        background-image: url(../img/brooke-lark-203842.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url(../img/sugar_conspiracy/sugar2.jpg);
+    }
+    .feature1-img3 {
+        background-image: url(../img/sugar_conspiracy/sugar3.jpg);
+    }
+    .feature1-img4 {
+        background-image: url(../img/sugar_conspiracy/sugar4.jpg);
+    }
+    .feature1-img5 {
+        background-image: url(../img/sugar_conspiracy/sugar5.jpg);
+    }
+    .feature1-img6 {
+        background-image: url(../img/sugar_conspiracy/sugar6.jpg);
+    }
+    .feature1-img7 {
+        background-image: url(../img/sugar_conspiracy/sugar7.jpg);
+    }
+    .feature1-img8 {
+        background-image: url(../img/sugar_conspiracy/sugar8.jpg);
     }
 }
 
