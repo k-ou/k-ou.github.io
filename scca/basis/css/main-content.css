@@ -1,0 +1,19 @@
+.article-image,
+.article-container-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-7 .article-container-image {
+    background-image: url(../img/friends.jpg);
+}
+
+.most-read-article1 .article-container-image {
+    background-image: url(../img/sugar_conspiracy/sugar_conspiracy.jpg);
+    background-position: left 70%;
+}
+
+.most-read-article2 .article-container-image {
+    background-image: url(../img/smartphones/smartphones1.jpg);
+}
