@@ -1,6 +1,20 @@
 /* Mobile screens */
 
 @media only screen and (min-width: 320px) {
+    /* Progress Bar Styling */
+    progress {
+        color: mediumturquoise;
+    }
+    .flat::-webkit-progress-value {
+        background-color: mediumturquoise;
+    }
+    .flat::-moz-progress-bar {
+        background-color: mediumturquoise;
+    }
+    .progress-bar {
+        background-color: mediumturquoise;
+    }
+    /* Hero */
     .hero {
         background-color: #fae856;
         margin-bottom: 60px;
@@ -41,10 +55,10 @@
         color: pink;
         float: left;
         font-family: 'Knewave';
-        font-size: 96px;
+        font-size: 74px;
         line-height: 60px;
-        padding-top: 15px;
-        padding-right: 15px;
+        padding-top: 7px;
+        padding-right: 10px;
         padding-left: 3px;
     }
     /*Content*/
@@ -57,7 +71,7 @@
     }
     /*Pull Quotes*/
     .feature1-pull-quote {
-        grid-column: 3 / 9;
+        grid-column: 2 / 12;
     }
     .feature1-pull-quote p {
         font-size: 1.5em;
@@ -101,7 +115,20 @@
 
 /* Medium screens */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    /* Dropcap */
+    .drop-cap p:first-child:first-letter {
+        font-size: 96px;
+        line-height: 60px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 3px;
+    }
+    /*Pull Quotes*/
+    .feature1-pull-quote {
+        grid-column: 3 / 10;
+    }
+}
 
 
 /* iPad Pro screens */
@@ -111,7 +138,12 @@
 
 /* Large screens */
 
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+    /*Pull Quotes*/
+    .feature1-pull-quote {
+        grid-column: 3 / 9;
+    }
+}
 
 
 /* Super Large screens */
