@@ -1,0 +1,35 @@
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    .hero {
+        grid-column: 1/13;
+        height: 100vh;
+    }
+    .feature-content {
+        grid-column: 4 / 10;
+    }
+    .feature-content p {
+        font-size: 1.2em;
+        font-family: "Libre Baskerville", serif;
+    }
+}
+
+
+/* Medium screens */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {}
+
+
+/* Super Large screens */
+
+@media only screen and (min-width: 2000px) {}
