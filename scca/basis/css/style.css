@@ -147,12 +147,13 @@ i {
         align-items: center;
     }
     .header-full {
+        margin: 120px 0px 20px;
         grid-column: span 12;
     }
     .article,
     .article-container {
         grid-column: span 12;
-        height: 350px;
+        /*        height: 350px;*/
         padding: 20px;
     }
     .article-image,
@@ -160,8 +161,8 @@ i {
         width: 100%;
         background-color: black;
         color: white;
-        height: 70%;
-        /*        height: 300px;*/
+        /*        height: 70%;*/
+        height: 200px;
     }
     .article-container-image {
         position: relative;
@@ -184,10 +185,20 @@ i {
         background: url(../img/sugar_conspiracy/sugar1.png) center no-repeat;
         background-size: cover;
         height: 500px;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 120px;
+    }
+    .feat-article-1-text {
+        background-color: rgba(255, 200, 200, 0.7);
+        padding: 40px 5%;
+        bottom: -120px;
+        position: relative;
+        max-width: 100%;
     }
     /*Top Section*/
     .article-1 {
-        background-color: orange;
+        /*        background-color: orange;*/
     }
     .article-2 {
         background-color: yellow;
@@ -342,12 +353,26 @@ i {
     }
     .article,
     .article-container {
-        height: 400px;
+        /*        height: 400px;*/
         padding: 20px;
     }
     .article-image,
     .article-container-image {
-        height: 50%;
+        height: 250px;
+    }
+    /*Featured Article*/
+    .feat-article-1 {
+        height: 700px;
+        margin-bottom: 70px;
+    }
+    .feat-article-1-text {
+        -webkit-clip-path: polygon(0 0, 90% 15%, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0, 90% 15%, 100% 90%, 0% 100%);
+        padding: 60px;
+        padding-right: 100px;
+        padding-left: 4%;
+        bottom: -30px;
+        max-width: 80%;
     }
     /*Top Section*/
     .article-1 {
@@ -457,10 +482,14 @@ i {
     }
     .article-image,
     .article-container-image {
-        height: 70%;
+        height: 300px;
     }
     .most-read {
         padding-left: 50px;
+    }
+    /*Featured Article*/
+    .feat-article-1 {
+        height: 700px;
     }
     /*Featured Article 2*/
     .feat-article-2-background {
@@ -488,6 +517,19 @@ i {
     }
     .most-read {
         padding-left: 60px;
+    }
+    /*Featured Article*/
+    .feat-article-1 {
+        height: 700px;
+        margin-bottom: 70px;
+    }
+    .feat-article-1-text {
+        -webkit-clip-path: polygon(0 0, 95% 15%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 0, 95% 15%, 100% 95%, 0% 100%);
+        padding: 60px;
+        padding-left: 9%;
+        bottom: -30px;
+        max-width: 50%;
     }
     /*Footer*/
     .footer {

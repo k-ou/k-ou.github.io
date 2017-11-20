@@ -1,11 +1,17 @@
+var lastScrollTop = 0;
+
 // Sticky Header
 $(window).scroll(function () {
-
-    if ($(window).scrollTop() > 100) {
-        $('.navigation').addClass('sticky');
-    } else {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop && $(window).scrollTop() > 500) {
+        // downscroll code
         $('.navigation').removeClass('sticky');
+    } else {
+        // upscroll code
+        $('.navigation').addClass('sticky');
     }
+    lastScrollTop = st;
+
 });
 
 // Mobile Navigation
@@ -31,6 +37,6 @@ $('nav a').click(function (event) {
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
-    }, 500);
+    }, 800);
     event.preventDefault();
 });
