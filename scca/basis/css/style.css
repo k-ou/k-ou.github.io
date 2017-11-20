@@ -160,10 +160,8 @@ i {
         width: 100%;
         background-color: black;
         color: white;
-    }
-    .article-image,
-    .article-container-image {
         height: 70%;
+        /*        height: 300px;*/
     }
     .article-container-image {
         position: relative;
@@ -183,7 +181,7 @@ i {
     }
     /*Featured Article 1*/
     .feat-article-1 {
-        background: url(../img/sugar_conspiracy.jpg) center no-repeat;
+        background: url(../img/sugar_conspiracy/sugar1.png) center no-repeat;
         background-size: cover;
         height: 500px;
     }
@@ -236,7 +234,7 @@ i {
         z-index: 1;
     }
     .feat-article-2-image-background {
-        background: url(../img/sugar_conspiracy.jpg) center no-repeat;
+        background: url(../img/sugar_conspiracy/sugar_conspiracy.jpg) center no-repeat;
         background-size: cover;
         height: 400px;
         -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
@@ -347,6 +345,10 @@ i {
         height: 400px;
         padding: 20px;
     }
+    .article-image,
+    .article-container-image {
+        height: 50%;
+    }
     /*Top Section*/
     .article-1 {
         grid-column: span 8;
@@ -452,6 +454,10 @@ i {
     .article,
     .article-container {
         padding: 20px;
+    }
+    .article-image,
+    .article-container-image {
+        height: 70%;
     }
     .most-read {
         padding-left: 50px;

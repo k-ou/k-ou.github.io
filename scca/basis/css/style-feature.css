@@ -5,6 +5,7 @@
     progress {
         /* Positioning */
         position: fixed;
+        z-index: 200;
         left: 0;
         top: 0;
         /* Dimensions */
