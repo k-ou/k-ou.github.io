@@ -17,3 +17,7 @@
 .most-read-article2 .article-container-image {
     background-image: url(../img/smartphones/smartphones1.jpg);
 }
+
+.hiddenSectionLinks {
+  display: none;
+}
