@@ -1,0 +1,116 @@
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    .container-margin {
+        /*    padding: 0px 140px;*/
+    }
+    .header-full h2 {
+        font-weight: 700;
+        text-decoration: underline wavy var(--basis_red);
+    }
+    .article {
+        grid-column: span 12;
+        grid-row: span 1;
+    }
+    .article h4 a {
+        /*        text-decoration-style: wavy;*/
+        color: black;
+        transition: color .5s;
+    }
+    .article h4 a:hover {
+        color: var(--basis_red);
+        transition: color .25s;
+    }
+    .article-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 240px;
+        /*
+        background-color: white;
+        background-blend-mode: multiply;
+        transition: background-color .5s;
+*/
+        border-bottom: 0px var(--basis_red) solid;
+        transition: border-bottom .25s;
+    }
+    .article-image:hover {
+        /*
+        background-color: var(--basis_red);
+        transition: background-color .5s;
+*/
+        border-bottom: 5px var(--basis_red) solid;
+        transition: border-bottom .5s;
+    }
+    /*
+    .article-image:hover:after {
+        content: "\a0";
+        display: block;
+        height: 230px;
+        border: 5px var(--basis_red) solid;
+        transition: border .5s;
+    }
+*/
+    .article-1,
+    .article-2,
+    .article-3,
+    .article-4,
+    .article-5,
+    .article-6 {
+        background-color: white;
+        order: 1;
+        height: auto;
+    }
+    .article-1 .article-image {
+        background-image: url(../img/beer.jpg);
+    }
+    .article-2 .article-image {
+        background-image: url("https://media.vanityfair.com/photos/572382c0c53fec9b76cb4c78/master/pass/t-James-Baldwin-Giovannis-Room.jpg");
+    }
+    .article-3 .article-image {
+        background-image: url(../img/category/insecure.jpg);
+    }
+    .article-4 .article-image {
+        background-image: url(../img/category/monsters.jpg);
+    }
+    .article-5 .article-image {
+        background-image: url("http://www.backgroundhdwallpapers.com/wp-content/uploads/2017/08/V-for-Vendetta-Art-HD-Wallpapers.jpg");
+    }
+    .article-6 .article-image {
+        background-image: url("https://rightsinfo.org/app/uploads/2015/10/Screen-Shot-2015-10-14-at-09.15.22.png");
+    }
+    .article-7 .article-image {
+        background-image: url(../img/climate_chage.png);
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+
+/* Medium screens */
+
+@media only screen and (min-width: 768px) {
+    .article {
+        grid-column: span 6;
+    }
+}
+
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {
+    .article {
+        grid-column: span 4;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {}
+
+
+/* Super Large screens */
+
+@media only screen and (min-width: 2000px) {}

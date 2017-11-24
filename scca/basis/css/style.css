@@ -133,6 +133,10 @@ i {
     }
     h4 {
         font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .most-read h4 {
+        margin: 16px 0px 4px;
     }
     p {
         font-size: 14px;
@@ -145,6 +149,7 @@ i {
     }
     .container-layer {
         align-items: center;
+        margin: 50px 0px;
     }
     .header-full {
         margin: 120px 0px 20px;
@@ -179,6 +184,14 @@ i {
     p.article-category {
         font-family: 'Libre Franklin', sans-serif;
         font-size: 12px;
+        margin: 16px 0px 8px;
+    }
+    p.article-author {
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 300i;
+        font-size: 12px;
+        color: grey;
+        margin-bottom: 8px;
     }
     /*Featured Article 1*/
     .feat-article-1 {
@@ -207,10 +220,11 @@ i {
         background-color: lawngreen;
     }
     .article-4 {
-        background-color: cadetblue;
+        /*        background-color: cadetblue;*/
     }
     .most-read {
-        background-color: var(--basis_red);
+        /*        background-color: rgba(100, 200, 255, 0.5);*/
+        background-color: var(--basis_yellow);
         grid-column: span 12;
         height: auto;
         padding-left: 50px;
@@ -231,7 +245,7 @@ i {
         background-color: pink;
     }
     .article-7 {
-        background-color: deeppink;
+        /*        background-color: deeppink;*/
     }
     /*Featured Article 2*/
     .feat-article-2-background {
@@ -360,6 +374,9 @@ i {
     .article-container-image {
         height: 250px;
     }
+    .container-layer {
+        margin: 70px 0px;
+    }
     /*Featured Article*/
     .feat-article-1 {
         height: 700px;
@@ -476,6 +493,9 @@ i {
     .container-margin {
         padding: 0px 40px;
     }
+    .container-layer {
+        margin: 100px 0px;
+    }
     .article,
     .article-container {
         padding: 20px;
@@ -507,7 +527,7 @@ i {
 
 /* Large screens */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
     .container-margin {
         padding: 0px 100px;
     }

@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
 }
 
+.article-4 .article-image {
+    background-image: url(../img/beer.jpg);
+}
+
 .article-7 .article-container-image {
     background-image: url(../img/friends.jpg);
 }
