@@ -193,6 +193,51 @@ i {
         color: grey;
         margin-bottom: 8px;
     }
+    .article-container-image {
+        transition: border-bottom .5s;
+    }
+    a.category-money,
+    a.category-body,
+    a.category-culture,
+    a.category-mind,
+    a.category-science {
+        transition: .5s;
+    }
+    a.category-culture div:hover {
+        border-bottom: 5px var(--basis_red) solid;
+        transition: border-bottom .5s;
+    }
+    a.category-culture:hover {
+        color: var(--basis_red);
+    }
+    a.category-money div:hover {
+        border-bottom: 5px var(--basis_yellow) solid;
+        transition: border-bottom .5s;
+    }
+    a.category-money:hover {
+        color: var(--basis_yellow);
+    }
+    a.category-body div:hover {
+        border-bottom: 5px var(--basis_blue) solid;
+        transition: border-bottom .5s;
+    }
+    a.category-body:hover {
+        color: var(--basis_blue);
+    }
+    a.category-science div:hover {
+        border-bottom: 5px var(--basis_blue) solid;
+        transition: border-bottom .5s;
+    }
+    a.category-science:hover {
+        color: var(--basis_blue);
+    }
+    a.category-mind div:hover {
+        border-bottom: 5px var(--basis_green) solid;
+        transition: border-bottom .5s;
+    }
+    a.category-mind:hover {
+        color: var(--basis_green);
+    }
     /*Featured Article 1*/
     .feat-article-1 {
         background: url(../img/sugar_conspiracy/sugar1.png) center no-repeat;
@@ -214,7 +259,7 @@ i {
         /*        background-color: orange;*/
     }
     .article-2 {
-        background-color: yellow;
+        /*        background-color: yellow;*/
     }
     .article-3 {
         background-color: lawngreen;
@@ -238,14 +283,8 @@ i {
         color: red;
     }
     /*Most Recent Articles*/
-    .article-5 {
-        background-color: purple;
-    }
     .article-6 {
         background-color: pink;
-    }
-    .article-7 {
-        /*        background-color: deeppink;*/
     }
     /*Featured Article 2*/
     .layer-1 {
@@ -289,13 +328,13 @@ i {
         background-color: lawngreen;
     }
     .article-10 {
-        background-color: cadetblue;
+        /*        background-color: cadetblue;*/
     }
     .article-11 {
         background-color: purple;
     }
     .article-12 {
-        background-color: pink;
+        /*        background-color: pink;*/
     }
     .article-13 {
         background-color: deeppink;
@@ -306,8 +345,11 @@ i {
         z-index: 1;
     }
     .feat-article-3-background-2 {
-        background-color: var(--basis_yellow);
+        background-color: black;
         z-index: 3;
+    }
+    .feat-article-3-header {
+        color: white;
     }
     .feat-article-3-header {
         grid-column: span 2;

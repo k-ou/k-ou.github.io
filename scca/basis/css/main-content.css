@@ -5,8 +5,28 @@
     background-repeat: no-repeat;
 }
 
+.article-1 .article-image {
+    background-image: url("https://cdn.theatlantic.com/assets/media/img/2015/06/12/DonationEffects/1920.jpg?1434142030");
+}
+
+.article-2 .article-image {
+    background-image: url("https://www.theispot.com/assets/images/source/emory111.jpg");
+}
+
+.article-3 .article-image {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/a84b4427857297.5636be2e8673e.jpg");
+}
+
 .article-4 .article-image {
     background-image: url(../img/beer.jpg);
+}
+
+.article-5 .article-container-image {
+    background-image: url(../img/job_offer.png);
+}
+
+.article-6 .article-container-image {
+    background-image: url("https://i.pinimg.com/736x/46/d1/04/46d104c4807ac6444c46cae3b487827f--fortune-magazine-thibault.jpg");
 }
 
 .article-7 .article-container-image {
@@ -20,4 +40,9 @@
 
 .most-read-article2 .article-container-image {
     background-image: url(../img/smartphones/smartphones1.jpg);
+}
+
+.most-read-article3 .article-container-image {
+    /*    background-image: url("http://barloungeetiquette.com/wp-content/uploads/2013/12/Empty_Glass_Well.jpg");*/
+    background-image: url("https://pbs.twimg.com/media/CnLa7tbVYAAp2ms.jpg");
 }
