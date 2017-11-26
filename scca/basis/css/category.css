@@ -82,6 +82,83 @@
     .article-7 .article-image {
         background-image: url(../img/climate_chage.png);
     }
+    /* Recommendations */
+    .category-recommendation-section {
+        grid-auto-rows: auto;
+    }
+    .category-recommendations-header {
+        color: white;
+    }
+    .category-recommendation-section .layer-1 {
+        background-color: black;
+        -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+        -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
+    }
+    .category-recommendation-section .layer-2 {
+        background-color: var(--basis_red);
+        -webkit-clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
+        clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
+        padding: 0px 20px 150px;
+    }
+    .category-recommendation-section .layer-1 {
+        min-height: 800px;
+        height: auto;
+    }
+    .category-recommendation-section .layer-2 {
+        min-height: 900px;
+        height: auto;
+    }
+    .category-recommendations {
+        grid-column: span 12;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: flex-start;
+        padding: 0px 20px;
+    }
+    .category-recommendations-image {
+        height: 360px;
+        width: 240px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .category-recommendations-image-1 {
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/71Ew4KATtbL.jpg");
+    }
+    .category-recommendations-image-2 {
+        background-image: url("https://images.gr-assets.com/books/1222383663l/12617.jpg");
+    }
+    .category-recommendations-image-3 {
+        background-image: url("http://www.joblo.com/posters/images/full/moonlight-poster-lg.jpg");
+    }
+    .category-recommendations-text {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    /* Articles */
+    .article {
+        background-color: white;
+    }
+    .article-7 .article-image {
+        background-image: url("http://estheraarts.nl/wp-content/uploads/2015/03/NYTimesSundayReview_Education_EstherAarts_800x686.jpg");
+    }
+    .article-8 .article-image {
+        background-image: url("http://www.illustrationdaily.com/upload/joey_guidone_5_12_13_2016_09_48_37.jpg");
+    }
+    .article-9 .article-image {
+        background-image: url("http://weandthecolor.com/wp-content/uploads/2015/02/Editorial-illustration-by-Riki-Blanco-for-an-article-about-self-esteem-Peso-Perfecto-Magazine-2012-600x794.jpg");
+    }
+    .article-10 .article-image {
+        background-image: url("https://i.pinimg.com/736x/89/43/fc/8943fc79818605c32bc1ebceaf54161d.jpg");
+    }
+    .article-11 .article-image {
+        background-image: url("http://www.valerieoualid.com/artistes/gaetan_heuze/VO_gaetan_heuze_phone-e506a.jpeg");
+    }
+    .article-12 .article-image {
+        background-image: url("https://i.pinimg.com/736x/15/08/f7/1508f7e8de142fe8e5a7be02e23207f8--design-illustrations-illustration-art.jpg");
+    }
     .footer {
         margin-top: 100px;
     }
@@ -93,6 +170,19 @@
 @media only screen and (min-width: 768px) {
     .article {
         grid-column: span 6;
+    }
+    /* Recommendations */
+    .category-recommendation-section .layer-1 {
+        -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    }
+    .category-recommendation-section .layer-2 {
+        -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+        padding: 0px 20px 100px;
+    }
+    .category-recommendations {
+        grid-column: span 4;
     }
 }
 
