@@ -152,7 +152,7 @@ i {
         margin: 50px 0px;
     }
     .header-full {
-        margin: 120px 0px 20px;
+        margin: 180px 0px 20px;
         grid-column: span 12;
     }
     .article,
@@ -370,11 +370,11 @@ i {
         margin: 10px 0px;
     }
     .footer-1 {
-        background-color: green;
+        /*        background-color: green;*/
         grid-column: span 12;
     }
     .footer-2 {
-        background-color: purple;
+        /*        background-color: purple;*/
         grid-column: span 12;
     }
     .footer-3 {
@@ -507,7 +507,6 @@ i {
 */
     /*Footer*/
     .footer {
-        background-color: var(--basis_blue);
         height: 300px;
         padding: 50px 30px;
     }
