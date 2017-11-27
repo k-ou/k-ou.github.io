@@ -120,14 +120,14 @@
         color: white;
     }
     .category-recommendation-section .layer-1 {
-        background-color: black;
+        background-color: var(--basis_red);
         -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
         -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
         clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 98%);
     }
     .category-recommendation-section .layer-2 {
-        background-color: var(--basis_red);
+        background-color: black;
         -webkit-clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
         clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
         padding: 0px 20px 150px;
@@ -142,14 +142,6 @@
     }
     .category-recommendation-section .container-margin {
         grid-column: span 12;
-    }
-    .category-recommendations {
-        grid-column: span 12;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-self: flex-start;
-        padding: 30px 10px;
     }
     .category-recommendations-header {
         margin-top: 60px;

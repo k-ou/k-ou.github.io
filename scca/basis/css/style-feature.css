@@ -90,7 +90,7 @@
 
 /* Large screens */
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
     .hero {
         height: 100vh;
     }
