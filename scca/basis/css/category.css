@@ -62,7 +62,8 @@
         height: auto;
     }
     .article-1 .article-image {
-        background-image: url(../img/beer.jpg);
+        background-image: url("https://static1.squarespace.com/static/556ea5c8e4b081da85e406c7/t/576b8a7a440243decaa4a9c6/1466665633799/Powerful+Stories_Mark+Conlan?format=1000w");
+        background-position: top;
     }
     .article-2 .article-image {
         background-image: url("https://media.vanityfair.com/photos/572382c0c53fec9b76cb4c78/master/pass/t-James-Baldwin-Giovannis-Room.jpg");
@@ -110,19 +111,49 @@
         min-height: 900px;
         height: auto;
     }
+    .category-recommendation-section .container-margin {
+        grid-column: span 12;
+    }
     .category-recommendations {
         grid-column: span 12;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-self: flex-start;
-        padding: 0px 20px;
+        padding: 30px 10px;
     }
+    .category-recommendations-header {
+        margin-top: 60px;
+    }
+    .category-recommendations-header h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+    }
+    .category-recommendations-background,
     .category-recommendations-image {
         height: 360px;
         width: 240px;
+    }
+    .category-recommendations-background {
+        background-color: black;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -15px;
+        z-index: -1;
+    }
+    .category-recommendations-image {
         background-size: contain;
         background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+    a .category-recommendations-image:hover {
+        -moz-transform: translate(5px, -5px);
+        -ms-transform: translate(5px, -5px);
+        -o-transform: translate(5px, -5px);
+        -webkit-transform: translate(5px, -5px);
+        transform: translate(5px, -5px);
+        transition: 0.5s;
     }
     .category-recommendations-image-1 {
         background-image: url("https://images-na.ssl-images-amazon.com/images/I/71Ew4KATtbL.jpg");
@@ -135,7 +166,17 @@
     }
     .category-recommendations-text {
         width: 100%;
-        margin: 20px 0px;
+        margin: 60px 0px 0px;
+    }
+    .category-recommendations-text h5 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .category-recommendations-text h5:hover a {
+        text-decoration: underline white;
+    }
+    .category-recommendations-text p.article-author {
+        color: black;
     }
     /* Articles */
     .article {
@@ -182,7 +223,26 @@
         padding: 0px 20px 100px;
     }
     .category-recommendations {
-        grid-column: span 4;
+        grid-column: span 12;
+        flex-wrap: nowrap;
+    }
+    .category-recommendations-header h4 {
+        font-size: 48px;
+    }
+    .category-recommendations-text {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .category-recommendations-background,
+    .category-recommendations-image {
+        height: 360px;
+        width: 240px;
+    }
+    .category-recommendations-image {
+        margin-left: 30px;
+    }
+    .category-recommendations-background {
+        margin-left: 15px;
     }
 }
 
@@ -192,6 +252,14 @@
 @media only screen and (min-width: 1024px) {
     .article {
         grid-column: span 4;
+    }
+    /* Recommendations */
+    .category-recommendations {
+        grid-column: span 4;
+        flex-wrap: wrap;
+    }
+    .category-recommendations-text {
+        margin: 50px 0px 0px;
     }
 }
 
