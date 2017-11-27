@@ -60,6 +60,9 @@
         border-bottom: 0px var(--basis_red) solid;
         transition: border-bottom .25s;
     }
+    .article-image {
+        grid-row: span 1;
+    }
     .article-image:hover {
         /*
         background-color: var(--basis_red);

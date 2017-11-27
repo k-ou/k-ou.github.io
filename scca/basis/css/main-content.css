@@ -35,7 +35,7 @@
 
 .most-read-article1 .article-container-image {
     background-image: url(../img/sugar_conspiracy/sugar_conspiracy.jpg);
-    background-position: left 70%;
+    background-position: center;
 }
 
 .most-read-article2 .article-container-image {
@@ -45,4 +45,22 @@
 .most-read-article3 .article-container-image {
     /*    background-image: url("http://barloungeetiquette.com/wp-content/uploads/2013/12/Empty_Glass_Well.jpg");*/
     background-image: url("https://pbs.twimg.com/media/CnLa7tbVYAAp2ms.jpg");
+}
+
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {
+    .article-3 .article-image {
+        height: 815px;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {
+    .article-3 .article-image {
+        height: 815px;
+    }
 }
