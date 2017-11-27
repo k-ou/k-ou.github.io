@@ -14,6 +14,20 @@
     .progress-bar {
         background-color: mediumturquoise;
     }
+    /* Navigation */
+    .sticky {
+        /*        --basis_blue: rgb(38, 85, 196);*/
+        background-color: rgba(38, 85, 196, 0.85);
+    }
+    nav a {
+        color: black;
+    }
+    nav li:nth-child(4) a {
+        color: white;
+    }
+    nav li:nth-child(4) a:hover {
+        color: white;
+    }
     /* Hero */
     .hero {
         background-color: #fae856;
@@ -21,34 +35,39 @@
     }
     #feature1-hero {
         background-image: url(../img/sugar_conspiracy/sugar_conspiracy.jpg);
-        /*        background: linear-gradient(url(../img/sugar_conspiracy.jpg), yellow);*/
-        /*        background-position: right 100px top;*/
-        background-position: 140% 30%;
-        background-size: 120%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 180%;
         background-repeat: no-repeat;
-        display: flex;
-        justify-content: flex-end;
         padding-top: 60px;
         height: 100%;
-        flex-wrap: wrap;
     }
-    #feature1-hero h2 {
+    .hero-text {
+        grid-column: 2/12;
+        position: relative;
+        width: 100%;
+        top: -20px;
+    }
+    .hero-text h2 {
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 5em;
+        /*        font-size: 4em;*/
+        font-size: 14.5vw;
         line-height: 0.75em;
     }
-    #feature1-hero h2 span {
-        font-size: 1.9em;
+    .hero-text h2 span {
+        /*        font-size: 1.9em;*/
+        font-size: 28vw;
         line-height: 0.75em;
-        padding-left: 40px;
     }
-    #feature1-hero h3 {
+    .hero-text h3 {
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
-        font-size: 2em;
-        line-height: 0.75em;
+        font-size: 20px;
+        line-height: 1.25em;
+        margin-top: 40px;
+        padding-right: 20px;
     }
     /* Dropcap */
     .drop-cap p:first-child:first-letter {
@@ -69,6 +88,13 @@
     .feature-img {
         margin: 50px 0px;
     }
+    /*
+    p:selection {
+        background-color: black;
+        color: white;
+        font-weight: 400;
+    }
+*/
     /*Pull Quotes*/
     .feature1-pull-quote {
         grid-column: 2 / 12;
@@ -77,6 +103,17 @@
         font-size: 1.5em;
         font-family: 'Libre Franklin', sans-serif;
         font-weight: 900;
+    }
+    .hero-text h3 span,
+    .feature1-pull-quote span {
+        background-color: black;
+        transition: 1s;
+        font-weight: 400;
+    }
+    .hero-text h3:hover span,
+    .feature1-pull-quote span:hover {
+        color: white;
+        transition: 1s;
     }
     /*Images*/
     .feature-img {
@@ -110,12 +147,70 @@
     .feature1-img8 {
         background-image: url(../img/sugar_conspiracy/sugar8.jpg);
     }
+    .category-recommendations-image-1 {
+        background-image: url("http://www.diagnosisdiet.com/wp-content/uploads/2016/03/obesity-code-300.jpg");
+    }
+    .category-recommendations-image-2 {
+        background-image: url("https://images.gr-assets.com/books/1361919312l/15797397.jpg");
+    }
+    .category-recommendations-image-3 {
+        background-image: url("https://fontmeme.com/images/Food-Inc-Poster.jpg");
+    }
 }
 
 
 /* Medium screens */
 
 @media only screen and (min-width: 768px) {
+    #feature1-hero {
+        background-position: 120% 10%;
+        background-size: 150%;
+        background-repeat: no-repeat;
+        padding-top: 60px;
+        height: 100%;
+    }
+    .hero-text {
+        grid-column: span 12;
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        width: 35%;
+        padding-top: 80px;
+    }
+    .hero-text h2 {
+        font-size: 5.5vw;
+        line-height: 0.75em;
+    }
+    .hero-text h2 span {
+        font-size: 10.5vw;
+        line-height: 0.75em;
+    }
+    .hero-text h3 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.25em;
+        margin-top: 60px;
+        padding-right: 20px;
+    }
+    /*
+        .hero-text {
+        grid-column: span 12;
+        position: relative;
+        top: 90px;
+        right: 0px;
+        width: 35%;
+        padding-top: 80px;
+    }
+    .hero-text h3 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.25em;
+        margin-top: 80px;
+        padding-right: 20px;
+    }
+*/
     /* Dropcap */
     .drop-cap p:first-child:first-letter {
         font-size: 96px;
@@ -133,12 +228,52 @@
 
 /* iPad Pro screens */
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    #feature1-hero {
+        background-position: 100% -40%;
+        background-size: 160%;
+        padding-top: 0px;
+        height: 100%;
+    }
+    .hero-text {
+        right: 0px;
+        width: 35%;
+        padding-top: 180px;
+    }
+    .hero-text h3 {
+        font-size: 20px;
+        margin-top: 120px;
+        padding-right: 20px;
+    }
+}
 
 
 /* Large screens */
 
 @media only screen and (min-width: 1440px) {
+    #feature1-hero {
+        background-image: url(../img/sugar_conspiracy/sugar_conspiracy.jpg);
+        /*        background: linear-gradient(url(../img/sugar_conspiracy.jpg), yellow);*/
+        /*        background-position: right 100px top;*/
+        background-position: 140% 50%;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 60px;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+    .hero-text {
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        width: 35%;
+        padding-top: 150px;
+    }
+    .hero-text h3 {
+        font-size: 24px;
+    }
     /*Pull Quotes*/
     .feature1-pull-quote {
         grid-column: 3 / 9;

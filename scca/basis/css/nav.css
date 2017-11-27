@@ -46,7 +46,7 @@
 
 nav {
     float: right;
-    width: 60%;
+    width: 70%;
 }
 
 nav ul {
@@ -132,7 +132,7 @@ nav li:nth-child(5) a:hover {
     /*    max-width: 940px;*/
     margin: 0 auto;
     position: relative;
-    padding: 0 9%;
+    padding: 0 7%;
 }
 
 a {
@@ -195,5 +195,41 @@ a {
     }
     .row {
         padding: 0 5%;
+    }
+}
+
+
+/* Medium screens */
+
+@media only screen and (min-width: 768px) {
+    .row {
+        padding: 0 50px;
+    }
+}
+
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {
+    .row {
+        padding: 0 60px;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {
+    .row {
+        padding: 0 130px;
+    }
+}
+
+
+/* XL screens */
+
+@media only screen and (min-width: 2560px) {
+    .row {
+        padding: 0 210px;
     }
 }

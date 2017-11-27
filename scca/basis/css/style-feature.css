@@ -54,7 +54,7 @@
     }
     .hero {
         grid-column: 1/13;
-        height: 100vh;
+        height: 65vh;
     }
     .feature-content {
         grid-column: 2 / 12;
@@ -91,6 +91,9 @@
 /* Large screens */
 
 @media only screen and (min-width: 1400px) {
+    .hero {
+        height: 100vh;
+    }
     .feature-content {
         grid-column: 4 / 10;
     }
