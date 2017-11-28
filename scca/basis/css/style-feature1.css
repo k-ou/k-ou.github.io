@@ -14,20 +14,6 @@
     .progress-bar {
         background-color: mediumturquoise;
     }
-    /* Navigation */
-    .sticky {
-        /*        --basis_blue: rgb(38, 85, 196);*/
-        background-color: rgba(38, 85, 196, 0.85);
-    }
-    nav a {
-        color: black;
-    }
-    nav li:nth-child(4) a {
-        color: white;
-    }
-    nav li:nth-child(4) a:hover {
-        color: white;
-    }
     /* Hero */
     .hero {
         background-color: #fae856;
@@ -112,8 +98,13 @@
     }
     .hero-text h3:hover span,
     .feature1-pull-quote span:hover {
-        color: white;
         transition: 1s;
+    }
+    .hero-text h3:hover span {
+        color: var(--basis_yellow);
+    }
+    .feature1-pull-quote span:hover {
+        color: white;
     }
     /*Images*/
     .feature-img {

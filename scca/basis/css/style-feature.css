@@ -56,6 +56,10 @@
         grid-column: 1/13;
         height: 65vh;
     }
+    .hero div {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .feature-content {
         grid-column: 2 / 12;
     }
