@@ -258,8 +258,6 @@ i {
     }
     /*Featured Article 1*/
     .feat-article-1 {
-        background: url(../img/sugar_conspiracy/sugar1.png) center no-repeat;
-        background-size: cover;
         height: 500px;
         display: flex;
         align-items: flex-end;
@@ -271,6 +269,10 @@ i {
         bottom: -120px;
         position: relative;
         max-width: 100%;
+    }
+    .feat-article-1-text h2 a {
+        color: black;
+        font-weight: 700;
     }
     /*Top Section*/
     .article-1 {
@@ -307,7 +309,7 @@ i {
     }
     /*Most Recent Articles*/
     .article-6 {
-        background-color: pink;
+        border: 0px;
     }
     /*Featured Article 2*/
     .layer-1 {
@@ -467,8 +469,8 @@ i {
         -webkit-clip-path: polygon(0 0, 90% 15%, 100% 90%, 0% 100%);
         clip-path: polygon(0 0, 90% 15%, 100% 90%, 0% 100%);
         padding: 60px;
-        padding-right: 100px;
-        padding-left: 4%;
+        padding-right: 120px;
+        padding-left: 50px;
         bottom: -30px;
         max-width: 80%;
     }
@@ -516,6 +518,7 @@ i {
     }
     .article-6 {
         grid-column: span 4;
+        border: 12px solid var(--basis_yellow);
     }
     .article-7 {
         grid-column: span 4;
@@ -679,9 +682,14 @@ i {
         -webkit-clip-path: polygon(0 0, 95% 15%, 100% 95%, 0% 100%);
         clip-path: polygon(0 0, 95% 15%, 100% 95%, 0% 100%);
         padding: 60px;
+        padding-right: 120px;
         padding-left: 9%;
-        bottom: -30px;
+        bottom: -90px;
         max-width: 50%;
+    }
+    .feat-article-1-text h2 {
+        font-size: 76px;
+        line-height: 74px;
     }
     .feat-article-2-header {
         grid-column: 3 / span 3;

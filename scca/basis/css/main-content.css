@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
 }
 
+.feat-article-1 {
+    background: url(../img/sugar_conspiracy/sugar1.png) bottom no-repeat;
+    background-size: cover;
+}
+
 .article-1 .article-image {
     background-image: url("https://cdn.theatlantic.com/assets/media/img/2015/06/12/DonationEffects/1920.jpg?1434142030");
 }
