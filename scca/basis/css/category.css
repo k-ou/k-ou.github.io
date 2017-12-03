@@ -68,7 +68,7 @@
         background-color: var(--basis_red);
         transition: background-color .5s;
 */
-        border-bottom: 5px var(--basis_red) solid;
+        border-bottom: 12px var(--basis_red) solid;
         transition: border-bottom .5s;
     }
     /*
@@ -254,6 +254,7 @@
         flex-wrap: nowrap;
         border: 10px var(--basis_red) solid;
         margin: 20px 0px;
+        padding-bottom: 50px;
     }
     .category-recommendations-header h4 {
         font-size: 48px;
@@ -280,6 +281,12 @@
     .article {
         grid-column: span 4;
     }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {
     /* Recommendations */
     .category-recommendations {
         grid-column: span 4;
@@ -290,11 +297,6 @@
         margin: 50px 0px 0px;
     }
 }
-
-
-/* Large screens */
-
-@media only screen and (min-width: 1440px) {}
 
 
 /* Super Large screens */

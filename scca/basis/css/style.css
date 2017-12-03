@@ -211,8 +211,7 @@ i {
     a.category-culture div,
     a.category-mind div,
     a.category-science div {
-        border-bottom: 0px;
-        transition: 0.5s;
+        transition: border-bottom 0.5s;
     }
     a.category-money:hover,
     a.category-body:hover,
@@ -221,12 +220,22 @@ i {
     a.category-science:hover {
         text-decoration: underline;
     }
+    /* Culture Hover */
+    a.category-culture div {
+        border-bottom: 0px var(--basis_red) solid;
+        transition: border-bottom .5s;
+    }
     a.category-culture div:hover {
         border-bottom: 12px var(--basis_red) solid;
         transition: border-bottom .5s;
     }
     a.category-culture {
         color: var(--basis_red);
+    }
+    /* Money Hover */
+    a.category-money div {
+        border-bottom: 0px var(--basis_yellow) solid;
+        transition: border-bottom .5s;
     }
     a.category-money div:hover {
         border-bottom: 12px var(--basis_yellow) solid;
@@ -235,6 +244,11 @@ i {
     a.category-money {
         color: var(--basis_yellow);
     }
+    /* Body Hover */
+    a.category-body div {
+        border-bottom: 0px var(--basis_green) solid;
+        transition: border-bottom .5s;
+    }
     a.category-body div:hover {
         border-bottom: 12px var(--basis_green) solid;
         transition: border-bottom .5s;
@@ -242,12 +256,22 @@ i {
     a.category-body {
         color: var(--basis_green);
     }
+    /* Science Hover */
+    a.category-science div {
+        border-bottom: 0px var(--basis_blue) solid;
+        transition: border-bottom .5s;
+    }
     a.category-science div:hover {
         border-bottom: 12px var(--basis_blue) solid;
         transition: border-bottom .5s;
     }
     a.category-science {
         color: var(--basis_blue);
+    }
+    /* Mind Hover */
+    a.category-mind div {
+        border-bottom: 0px var(--basis_teal) solid;
+        transition: border-bottom .5s;
     }
     a.category-mind div:hover {
         border-bottom: 12px var(--basis_teal) solid;
@@ -275,18 +299,6 @@ i {
         font-weight: 700;
     }
     /*Top Section*/
-    .article-1 {
-        /*        background-color: orange;*/
-    }
-    .article-2 {
-        /*        background-color: yellow;*/
-    }
-    .article-3 {
-        /*        background-color: lawngreen;*/
-    }
-    .article-4 {
-        /*        background-color: cadetblue;*/
-    }
     .most-read {
         grid-column: span 12;
         height: auto;
@@ -365,24 +377,6 @@ i {
         text-transform: uppercase;
         font-size: 42px;
         /*        font-weight: 700;*/
-    }
-    .article-8 {
-        border-top: 12px var(--basis_green) solid;
-    }
-    .article-9 {
-        border-top: 12px var(--basis_teal) solid;
-    }
-    .article-10 {
-        border-top: 12px var(--basis_blue) solid;
-    }
-    .article-11 {
-        border-top: 12px var(--basis_red) solid;
-    }
-    .article-12 {
-        border-top: 12px var(--basis_yellow) solid;
-    }
-    .article-13 {
-        background-color: deeppink;
     }
     /*Featured Article 3*/
     .feat-article-3-background-1 {
@@ -518,7 +512,6 @@ i {
     }
     .article-6 {
         grid-column: span 4;
-        border: 12px solid var(--basis_yellow);
     }
     .article-7 {
         grid-column: span 4;
@@ -592,9 +585,6 @@ i {
     .article-image,
     .article-container-image {
         height: 300px;
-    }
-    .article-1 .article-image {
-        height: 400px;
     }
     /*Top Section*/
     .article-1 {
@@ -698,9 +688,6 @@ i {
     .feat-article-2-header h4 a {
         font-weight: 700;
     }
-    .article-1 .article-image {
-        height: 400px;
-    }
     /*Footer*/
     .footer {
         padding: 60px 100px;
@@ -727,9 +714,6 @@ i {
     }
     .feat-article-2-header h4 a {
         font-size: 60px;
-    }
-    .article-1 .article-image {
-        height: 700px;
     }
     .layer-1 {
         height: 100vh;

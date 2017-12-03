@@ -68,10 +68,46 @@
     background-size: cover;
 }
 
+.article-8 {
+    border-top: 12px var(--basis_green) solid;
+}
+
+.article-9 {
+    border-top: 12px var(--basis_teal) solid;
+}
+
+.article-10 {
+    border-top: 12px var(--basis_blue) solid;
+}
+
+.article-11 {
+    border-top: 12px var(--basis_red) solid;
+}
+
+.article-12 {
+    border-top: 12px var(--basis_yellow) solid;
+}
+
+.article-13 {
+    background-color: deeppink;
+}
+
+
+/* Medium screens */
+
+@media only screen and (min-width: 1024px) {
+    .article-6 {
+        border: 12px solid var(--basis_yellow);
+    }
+}
+
 
 /* iPad Pro screens */
 
 @media only screen and (min-width: 1024px) {
+    .article-1 .article-image {
+        height: 400px;
+    }
     .article-3 .article-image {
         height: 815px;
     }
@@ -81,7 +117,19 @@
 /* Large screens */
 
 @media only screen and (min-width: 1440px) {
+    .article-1 .article-image {
+        height: 400px;
+    }
     .article-3 .article-image {
         height: 815px;
+    }
+}
+
+
+/* Super Large screens */
+
+@media only screen and (min-width: 2560px) {
+    .article-1 .article-image {
+        height: 700px;
     }
 }
