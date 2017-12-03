@@ -47,6 +47,22 @@
     background-image: url("https://pbs.twimg.com/media/CnLa7tbVYAAp2ms.jpg");
 }
 
+.most-read-article4 .article-container-image {
+    /*    background-image: url("http://barloungeetiquette.com/wp-content/uploads/2013/12/Empty_Glass_Well.jpg");*/
+    background-image: url("https://i.pinimg.com/736x/5d/0f/63/5d0f634281ef24c6b2efdce637489e3e--holiday-images-flat-illustration.jpg");
+    background-position: left 90%;
+}
+
+.most-read-article5 .article-container-image {
+    /*    background-image: url("http://barloungeetiquette.com/wp-content/uploads/2013/12/Empty_Glass_Well.jpg");*/
+    background-image: url("https://i.pinimg.com/originals/03/a2/5d/03a25ddab96ff81923b1ff6fc90ca2d3.jpg");
+}
+
+.feat-article-2-image-background {
+    background: url(../img/smartphones/smartphones6.gif) center no-repeat;
+    background-size: cover;
+}
+
 
 /* iPad Pro screens */
 

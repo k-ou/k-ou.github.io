@@ -4,10 +4,14 @@
     #feature3-hero {
         background-image: url(../img/insecure/insecure-1.jpg);
         height: 100%;
+        background-position: right;
+    }
+    .hero {
+        margin-bottom: 50px;
     }
     .hero-text {
         position: absolute;
-        bottom: 100px;
+        bottom: 300px;
         background-color: rgba(255, 255, 255, 0.8);
         padding: 50px;
     }
@@ -17,8 +21,7 @@
     }
     .feature3-pull-quote p {
         font-size: 1.5em;
-        font-family: 'Libre Franklin', sans-serif;
-        font-weight: 900;
+        font-family: 'Abril Fatface', sans-serif;
     }
     /* Recommendations */
     .category-recommendation-section {
@@ -48,7 +51,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         grid-column: 1 / 13;
-        margin: 50px 0px;
     }
     .feature3-img1 {
         background-image: url(../img/insecure/insecure-2.jpg);
@@ -71,19 +73,34 @@
         filter: saturate(1.0);
         transition: 0.75s;
     }
+    /* Dropcap */
+    .drop-cap p:first-child:first-letter {
+        color: var(--basis_red);
+        float: left;
+        font-family: 'Abril Fatface';
+        font-size: 74px;
+        line-height: 60px;
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-left: 3px;
+    }
 }
 
 
 /* Medium screens */
 
 @media only screen and (min-width: 768px) {
+    .hero-text {
+        bottom: 100px;
+        padding: 50px;
+    }
     /* Dropcap */
     .drop-cap p:first-child:first-letter {
-        font-size: 120px;
+        font-size: 90px;
         line-height: 60px;
-        padding-top: 15px;
+        padding-top: 10px;
         padding-right: 15px;
-        padding-left: 3px;
+        padding-left: 0px;
     }
     /*Pull Quotes*/
     .feature3-pull-quote {

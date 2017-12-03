@@ -34,14 +34,14 @@
 }
 
 .category-recommendation-section .layer-1 {
-    z-index: 2;
+    z-index: 1;
     margin-top: 150px;
     padding: 70px 0px;
 }
 
 .category-recommendation-section .layer-2 {
     background-color: black;
-    z-index: 1;
+    z-index: 2;
 }
 
 .category-recommendation-section .container-margin {
@@ -69,8 +69,8 @@
 
 .category-recommendations-background,
 .category-recommendations-image {
-    height: 360px;
-    width: 240px;
+    height: 300px;
+    width: 180px;
 }
 
 .category-recommendations-background {

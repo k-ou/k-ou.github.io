@@ -62,6 +62,7 @@
     }
     .feature-content {
         grid-column: 2 / 12;
+        margin: 40px 0px;
     }
     .feature-title {
         grid-column: 2 / 12;
@@ -88,6 +89,15 @@
 @media only screen and (min-width: 1024px) {
     .feature-content {
         grid-column: 3 / 11;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation:landscape) {
+    .hero {
+        height: 100vh;
+    }
+    .feature-content {
+        grid-column: 4 / 10;
     }
 }
 
