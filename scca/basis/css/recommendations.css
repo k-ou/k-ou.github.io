@@ -115,6 +115,14 @@ a .category-recommendations-image:hover {
 }
 
 
+/* Space between title and summary for recommendations */
+
+.category-recommendations p+p,
+.category-recommendations h5+p:not(.article-author) {
+    margin-top: 8px;
+}
+
+
 /* Medium screens */
 
 @media only screen and (min-width: 768px) {

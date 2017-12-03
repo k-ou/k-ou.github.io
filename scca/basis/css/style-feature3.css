@@ -1,19 +1,57 @@
 /* Mobile screens */
 
 @media only screen and (min-width: 320px) {
+    /* Progress Bar Styling */
+    progress {
+        color: var(--basis_red);
+    }
+    .flat::-webkit-progress-value {
+        background-color: var(--basis_red);
+    }
+    .flat::-moz-progress-bar {
+        background-color: var(--basis_red);
+    }
+    .progress-bar {
+        background-color: var(--basis_red);
+    }
+    /* Hero */
     #feature3-hero {
         background-image: url(../img/insecure/insecure-1.jpg);
         height: 100%;
-        background-position: right;
+        background-position: 95%;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 80px;
     }
     .hero {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     .hero-text {
-        position: absolute;
-        bottom: 300px;
+        position: relative;
         background-color: rgba(255, 255, 255, 0.8);
-        padding: 50px;
+        padding: 30px;
+        bottom: -200px;
+        width: 100%;
+    }
+    .hero-text h2 {
+        color: var(--basis_red);
+        font-family: "Patua One", sans-serif;
+        font-size: 40px;
+    }
+    /* Makes room for title */
+    .drop-cap {
+        margin-top: 280px;
+    }
+    /* Dropcap */
+    .drop-cap p:first-child:first-letter {
+        color: var(--basis_red);
+        float: left;
+        font-family: 'Patua One', sans-serif;
+        font-size: 80px;
+        line-height: 40px;
+        padding-top: 14px;
+        padding-right: 16px;
+        padding-left: 0px;
     }
     /*Pull Quotes*/
     .feature3-pull-quote {
@@ -21,7 +59,8 @@
     }
     .feature3-pull-quote p {
         font-size: 1.5em;
-        font-family: 'Abril Fatface', sans-serif;
+        font-family: 'Patua One', sans-serif;
+        color: var(--basis_red);
     }
     /* Recommendations */
     .category-recommendation-section {
@@ -54,47 +93,77 @@
     }
     .feature3-img1 {
         background-image: url(../img/insecure/insecure-2.jpg);
-        height: 75vh;
+        background-position: center;
+        height: 35vh;
     }
     .feature3-img2 {
         background-image: url(../img/insecure/insecure-3.jpg);
-        height: 75vh;
+        background-position: center;
+        height: 35vh;
     }
     .feature3-img3 {
         background-image: url(../img/insecure/insecure-4.jpg);
-    }
-    #feature3-hero,
-    .feature-img {
-        filter: saturate(0.0);
-        transition: 0.75s;
-    }
-    #feature3-hero:hover,
-    .feature-img:hover {
-        filter: saturate(1.0);
-        transition: 0.75s;
-    }
-    /* Dropcap */
-    .drop-cap p:first-child:first-letter {
-        color: var(--basis_red);
-        float: left;
-        font-family: 'Abril Fatface';
-        font-size: 74px;
-        line-height: 60px;
-        padding-top: 7px;
-        padding-right: 10px;
-        padding-left: 3px;
+        background-position: 80%;
+        height: 50vh;
     }
 }
 
 
 /* Medium screens */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation:portrait) {
     .hero-text {
-        bottom: 100px;
-        padding: 50px;
+        position: relative;
+        bottom: 0px;
+        padding: 40px 60px;
+        margin-bottom: 30px;
+        width: 70%;
+    }
+    .hero-text h2 {
+        font-size: 60px;
+    }
+    .drop-cap {
+        margin-top: 30px;
     }
     /* Dropcap */
+    .drop-cap p:first-child:first-letter {
+        font-size: 90px;
+        line-height: 60px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    /* Hero */
+    #feature3-hero {
+        background-position: 80%;
+        margin-top: 0px;
+    }
+    /*Pull Quotes*/
+    .feature3-pull-quote {
+        grid-column: 3 / 10;
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation:landscape) {
+    /* Hero */
+    #feature3-hero {
+        margin-top: 0px;
+    }
+    .hero-text {
+        position: relative;
+        bottom: 0px;
+        padding: 40px 60px;
+        margin-bottom: 30px;
+        width: 70%;
+    }
+    .hero-text h2 {
+        font-size: 60px;
+    }
+    /* Dropcap */
+    .drop-cap {
+        margin-top: 40px;
+    }
     .drop-cap p:first-child:first-letter {
         font-size: 90px;
         line-height: 60px;
@@ -105,21 +174,93 @@
     /*Pull Quotes*/
     .feature3-pull-quote {
         grid-column: 3 / 10;
+        font-size: 1.25em;
+    }
+    /* Images */
+    .feature3-img1 {
+        height: 50vh;
+    }
+    .feature3-img2 {
+        height: 50vh;
+    }
+    .feature3-img3 {
+        height: 90vh;
     }
 }
 
 
 /* iPad Pro screens */
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) and (orientation:portrait) {
+    .hero-text {
+        margin-bottom: 80px;
+        width: 50%;
+    }
+    .hero-text h2 {
+        font-size: 60px;
+    }
+    /* Hero */
+    #feature3-hero {
+        background-position: 75%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation:landscape) {
+    .hero-text {
+        margin-bottom: 80px;
+        width: 50%;
+    }
+    .hero-text h2 {
+        font-size: 60px;
+    }
+    /* Images */
+    .feature3-img1 {
+        height: 65vh;
+    }
+    .feature3-img2 {
+        height: 65vh;
+    }
+    .feature3-img3 {
+        height: 90vh;
+    }
+}
 
 
 /* Large screens */
 
 @media only screen and (min-width: 1440px) {
+    .hero-text {
+        padding: 50px 140px;
+        width: 50%;
+    }
+    .hero-text h2 {
+        font-size: 70px;
+    }
+    /* Images */
+    .feature3-img1 {
+        height: 75vh;
+    }
+    .feature3-img2 {
+        height: 75vh;
+    }
+    .feature3-img3 {
+        height: 90vh;
+    }
+    /* Image Hover Effects */
+    #feature3-hero,
+    .feature-img {
+        filter: saturate(0.0);
+        transition: 0.75s;
+    }
+    #feature3-hero:hover,
+    .feature-img:hover {
+        filter: saturate(1.0);
+        transition: 0.75s;
+    }
     /*Pull Quotes*/
     .feature3-pull-quote {
         grid-column: 3 / 9;
+        font-size: 1.5em;
     }
 }
 

@@ -46,9 +46,6 @@
         display: block;
         height: inherit;
     }
-    p+p {
-        margin-top: 1.4rem;
-    }
     a {
         text-decoration: underline;
     }
@@ -70,6 +67,9 @@
     .feature-content p {
         font-size: 18px;
         font-family: 'Crimson Text', serif;
+    }
+    .feature-content p+p {
+        margin-top: 1.2rem;
     }
 }
 
