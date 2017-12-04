@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="navigation sticky">
+    <div class="navigation sticky" id="header-1">
         <div class="row">
             <a class="logo" href="index.html"></a>
             <div class="mobile-toggle">
@@ -37,9 +37,18 @@
                     <li><a href="#">Science</a></li>
                     <li><a href="#">Body</a></li>
                     <li><a href="#">Mind</a></li>
+                    <li>
+                        <div class="search-button">
+                            <a href="#" class="search-toggle" data-selector="#header-1"></a>
+                        </div>
+                    </li>
                 </ul>
+
             </nav>
         </div>
+        <form action="" class="search-box">
+            <input type="text" class="text search-input" placeholder="What do you want to learn about?" />
+        </form>
     </div>
     <progress class="flat" value="0">
         <div class="progress-container">
@@ -190,6 +199,7 @@
         </div>
     </div>
     <script src="js/nav-new.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/progressIndicator.js"></script>
 </body>
 

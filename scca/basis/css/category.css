@@ -33,6 +33,13 @@
     .culture-header .container-margin {
         grid-column: span 12;
     }
+    /* SEARCH */
+    .search-toggle::before {
+        border: 2px solid black;
+    }
+    .search-toggle::after {
+        background: black;
+    }
     /* Articles */
     .article {
         grid-column: span 12;

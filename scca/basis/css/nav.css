@@ -332,6 +332,7 @@ a {
         padding: 0 50px;
     }
     /* SEARCH BAR STUFF */
+    /* https://codepen.io/choogoor/pen/NGJVMb?limit=all&page=3&q=search */
     form.search-box {
         display: block;
     }
@@ -342,24 +343,6 @@ a {
     }
     nav:after {
         clear: both;
-    }
-    .menu {
-        display: inline-block;
-        float: right;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    .menu li {
-        display: inline-block;
-    }
-    .menu li a {
-        color: #0097bf;
-        display: block;
-        padding: 10px;
-        position: relative;
-        transition: color 0.3s;
-        text-decoration: none;
     }
     .search-button {
         position: absolute;
