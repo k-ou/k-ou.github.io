@@ -750,11 +750,11 @@ i {
     /* Subscribe */
     .feat-article-3-background-1 {
         grid-row: 1;
-        height: 700px;
+        height: 775px;
     }
     .feat-article-3-background-2 {
         grid-row: 1;
-        height: 700px;
+        height: 775px;
         padding: 140px 0px;
     }
     .feat-article-3-header {
@@ -813,10 +813,10 @@ i {
         box-shadow: -30px 30px var(--basis_red);
     }
     .feat-article-3-background-1 {
-        height: 800px;
+        height: 850px;
     }
     .feat-article-3-background-2 {
-        height: 800px;
+        height: 850px;
         padding: 140px 0px;
     }
     /*Footer*/
