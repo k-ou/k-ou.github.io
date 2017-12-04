@@ -118,6 +118,29 @@ body {
     .feature2-img8 {
         background-image: url(../img/smartphones/smartphones8.gif);
     }
+    /* Recommendations */
+    .category-recommendation-section {
+        /*        color: white;*/
+    }
+    .category-recommendation-section .layer-1 {
+        background-color: var(--basis_teal);
+        z-index: 2;
+        margin-top: 150px;
+        padding: 70px 0px;
+    }
+    .category-recommendation-section .layer-2 {
+        background-color: black;
+        z-index: 1;
+    }
+    .category-recommendations-image-1 {
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/71Ew4KATtbL.jpg");
+    }
+    .category-recommendations-image-2 {
+        background-image: url("https://images.gr-assets.com/books/1222383663l/12617.jpg");
+    }
+    .category-recommendations-image-3 {
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/41l%2B4UobkRL._SX325_BO1,204,203,200_.jpg");
+    }
 }
 
 
