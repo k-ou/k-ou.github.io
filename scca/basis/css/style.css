@@ -422,6 +422,7 @@ i {
         grid-column: 3 / span 8;
         grid-row: 2;
         z-index: 4;
+        margin-top: 50px;
     }
     .feat-article-3 .subscribe-img {
         grid-column: 3 / span 8;
@@ -433,18 +434,10 @@ i {
         float: right;
         box-shadow: -25px 25px var(--basis_red);
     }
-    .feat-article-3 .magazine-cover {
-        height: 400px;
-        background-image: url(../img/basis%20cover%20draft%201.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        /*        width: 80%;*/
-        float: right;
-        box-shadow: 10px 10px 10px white;
-    }
     .feat-article-3 .subscribe {
         border: 10px solid white;
         padding: 20px;
+        margin-top: 20px;
     }
     .feat-article-3 .subscribe p {
         font-family: 'Roboto Condensed', sans-serif;
@@ -599,10 +592,12 @@ i {
     /* Subscribe */
     .feat-article-3 img {
         width: 80%;
+        box-shadow: -30px 30px var(--basis_red);
     }
     .feat-article-3-header {
         grid-column: 8 / span 3;
         grid-row: 1;
+        margin-top: 0px;
     }
     /*Featured Article 2*/
     .layer-1 {
@@ -752,6 +747,7 @@ i {
     .article-13 {
         grid-column: span 4;
     }
+    /* Subscribe */
     .feat-article-3-background-1 {
         grid-row: 1;
         height: 700px;
@@ -811,6 +807,10 @@ i {
     }
     .feat-article-2-header h4 a {
         font-weight: 700;
+    }
+    /* Subscribe */
+    .feat-article-3 img {
+        box-shadow: -30px 30px var(--basis_red);
     }
     .feat-article-3-background-1 {
         height: 800px;
