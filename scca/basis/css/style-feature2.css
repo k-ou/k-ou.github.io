@@ -66,8 +66,6 @@ body {
     .drop-cap p:first-child:first-letter {
         color: var(--smartphone_red);
         float: left;
-        /*        font-family: 'Press Start 2P';*/
-        /*        font-family: 'Sigmar One';*/
         font-family: 'Racing Sans One';
         font-size: 96px;
         line-height: 60px;

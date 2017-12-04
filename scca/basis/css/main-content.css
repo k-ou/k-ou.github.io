@@ -88,8 +88,11 @@
     border-top: 12px var(--basis_yellow) solid;
 }
 
-.article-13 {
-    background-color: deeppink;
+.ad-label {
+    color: grey;
+    font-size: 10px;
+    font-family: 'Libre Franklin', sans-serif;
+    /*    background-color: deeppink;*/
 }
 
 

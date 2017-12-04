@@ -319,6 +319,23 @@ i {
         width: 100%;
         height: 100px;
     }
+    /* Banner Ad */
+    .banner-ad1 {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .banner-ad1 .ad-label {
+        grid-column: 2/12;
+    }
+    .banner-ad-img {
+        grid-column: 2/12;
+        background: url("https://cdn.shopify.com/s/files/1/1575/8079/collections/Banners_0001_ARE.jpg?v=1507762116");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 180%;
+        background-position: center;
+        height: 130px;
+    }
     /*Most Recent Articles*/
     .article-6 {
         border: 0px;
@@ -378,23 +395,67 @@ i {
         font-size: 42px;
         /*        font-weight: 700;*/
     }
+    .article-13 img {
+        max-width: 100%;
+    }
     /*Featured Article 3*/
+    .feat-article-3 {
+        align-items: unset;
+    }
     .feat-article-3-background-1 {
         background-color: var(--basis_red);
         z-index: 1;
+        grid-row: 1 / span 2;
+        height: 700px;
     }
     .feat-article-3-background-2 {
         background-color: black;
         z-index: 3;
+        grid-row: 1 / span 2;
+        height: 700px;
+        padding: 100px 0px;
     }
     .feat-article-3-header {
         color: white;
     }
     .feat-article-3-header {
-        grid-column: span 2;
-        grid-column-start: 10;
+        grid-column: 3 / span 8;
+        grid-row: 2;
+        z-index: 4;
+    }
+    .feat-article-3 .subscribe-img {
+        grid-column: 3 / span 8;
         grid-row: 1;
         z-index: 4;
+    }
+    .feat-article-3 img {
+        width: 90%;
+        float: right;
+        box-shadow: -25px 25px var(--basis_red);
+    }
+    .feat-article-3 .magazine-cover {
+        height: 400px;
+        background-image: url(../img/basis%20cover%20draft%201.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /*        width: 80%;*/
+        float: right;
+        box-shadow: 10px 10px 10px white;
+    }
+    .feat-article-3 .subscribe {
+        border: 10px solid white;
+        padding: 20px;
+    }
+    .feat-article-3 .subscribe p {
+        font-family: 'Roboto Condensed', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .feat-article-3 .subscribe div {
+        background-color: white;
+        height: 100%;
+        width: 100px;
     }
     /*Footer*/
     .footer {
@@ -526,6 +587,23 @@ i {
     .article-7 {
         grid-column: span 4;
     }
+    /* Banner Ad */
+    .banner-ad1 .ad-label,
+    .banner-ad-img {
+        grid-column: 1/13;
+    }
+    .banner-ad-img {
+        height: 160px;
+        background-size: 100%;
+    }
+    /* Subscribe */
+    .feat-article-3 img {
+        width: 80%;
+    }
+    .feat-article-3-header {
+        grid-column: 8 / span 3;
+        grid-row: 1;
+    }
     /*Featured Article 2*/
     .layer-1 {
         height: 700px;
@@ -559,6 +637,20 @@ i {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
     }
 */
+    .feat-article-3-background-1 {
+        grid-row: 1;
+        height: 500px;
+    }
+    .feat-article-3-background-2 {
+        background-color: black;
+        z-index: 3;
+        grid-row: 1;
+        height: 500px;
+        padding: 100px 0px;
+    }
+    .feat-article-3 .subscribe-img {
+        grid-column: 3 / span 4;
+    }
     /*Footer*/
     .footer {
         /*        height: 300px;*/
@@ -627,6 +719,10 @@ i {
         width: 70%;
         height: 100px;
     }
+    /* Banner Ad */
+    .banner-ad-img {
+        height: 180px;
+    }
     /*Featured Article*/
     .feat-article-1 {
         height: 700px;
@@ -656,6 +752,20 @@ i {
     .article-13 {
         grid-column: span 4;
     }
+    .feat-article-3-background-1 {
+        grid-row: 1;
+        height: 700px;
+    }
+    .feat-article-3-background-2 {
+        grid-row: 1;
+        height: 700px;
+        padding: 140px 0px;
+    }
+    .feat-article-3-header {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
     /*Footer*/
     .footer {
         padding: 60px 40px;
@@ -672,6 +782,10 @@ i {
     .article,
     .article-container {
         padding: 30px;
+    }
+    /* Banner Ad */
+    .banner-ad-img {
+        height: 220px;
     }
     /*Featured Article*/
     .feat-article-1 {
@@ -697,6 +811,13 @@ i {
     }
     .feat-article-2-header h4 a {
         font-weight: 700;
+    }
+    .feat-article-3-background-1 {
+        height: 800px;
+    }
+    .feat-article-3-background-2 {
+        height: 800px;
+        padding: 140px 0px;
     }
     /*Footer*/
     .footer {
