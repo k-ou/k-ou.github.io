@@ -100,10 +100,14 @@
     .feature1-pull-quote span:hover {
         transition: 1s;
     }
-    .hero-text h3:hover span {
+    .hero-text h3:hover span,
+    .hero-text h3:focus span,
+    .hero-text h3:active span {
         color: white;
     }
-    .feature1-pull-quote span:hover {
+    .feature1-pull-quote span:hover,
+    .feature1-pull-quote span:focus,
+    .feature1-pull-quote span:active {
         color: white;
     }
     /*Images*/

@@ -405,9 +405,9 @@ i {
     }
     .footer p {
         font-family: 'Libre Franklin', sans-serif;
+        color: white;
         font-size: 12px;
         margin: 10px 0px;
-        color: white;
     }
     .footer-1 {
         /*        background-color: green;*/
@@ -418,8 +418,18 @@ i {
         grid-column: span 12;
     }
     .footer-3 {
-        background-color: pink;
+        /*        background-color: pink;*/
         grid-column: span 12;
+        width: 80%;
+    }
+    .footer-4 {
+        grid-column: span 12;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .footer-4 img {
+        width: 100px;
     }
 }
 
@@ -551,8 +561,8 @@ i {
 */
     /*Footer*/
     .footer {
-        height: 300px;
-        padding: 50px 30px;
+        /*        height: 300px;*/
+        padding: 90px 30px 30px;
     }
     .footer-1 {
         grid-column: span 3;
