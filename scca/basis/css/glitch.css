@@ -1,0 +1,162 @@
+/*https://codepen.io/kaypooma/pen/ehfjC?page=4*/
+
+
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    .error {
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 900;
+        color: var(--smartphone_blue);
+        /*    animation: noise 2s linear infinite;*/
+        animation: noise 3s linear infinite;
+        overflow: default;
+    }
+    .error:after {
+        content: attr(data-text);
+        font-size: 1.5em;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 900;
+        color: var(--smartphone_blue);
+        margin: auto;
+        position: absolute;
+        /*    top: -450px;*/
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        color: blue;
+        /*    animation: noise-1 .2s linear infinite;*/
+        animation: noise-1 .5s linear infinite;
+    }
+    h2.error:after {
+        font-size: 32px;
+    }
+    .error:before {
+        content: attr(data-text);
+        font-size: 1.5em;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 900;
+        color: var(--smartphone_blue);
+        margin: auto;
+        position: absolute;
+        /*    top: -450px;*/
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        color: red;
+        /*    animation: noise-2 .2s linear infinite;*/
+        animation: noise-2 .4s linear infinite;
+    }
+    h2.error:before {
+        font-size: 32px;
+    }
+    @keyframes noise-1 {
+        0%,
+        20%,
+        40%,
+        60%,
+        70%,
+        90% {
+            opacity: 0;
+        }
+        10% {
+            opacity: .1;
+        }
+        50% {
+            opacity: .5;
+            left: -6px;
+        }
+        80% {
+            opacity: .3;
+        }
+        100% {
+            opacity: .6;
+            left: 2px;
+        }
+    }
+    @keyframes noise-2 {
+        0%,
+        20%,
+        40%,
+        60%,
+        70%,
+        90% {
+            opacity: 0;
+        }
+        10% {
+            opacity: .1;
+        }
+        50% {
+            opacity: .5;
+            left: 6px;
+        }
+        80% {
+            opacity: .3;
+        }
+        100% {
+            opacity: .6;
+            left: -2px;
+        }
+    }
+    @keyframes noise {
+        0%,
+        3%,
+        5%,
+        42%,
+        44%,
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+        4.3% {
+            opacity: 1;
+            transform: scaleY(1.05);
+        }
+        43% {
+            opacity: 1;
+            transform: scaleX(1.025);
+        }
+    }
+}
+
+
+/* Medium screens */
+
+@media only screen and (min-width: 768px) {
+    h2.error:before {
+        font-size: 76px;
+    }
+    h2.error:after {
+        font-size: 76px;
+    }
+}
+
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {
+    h2.error:before {
+        font-size: 96px;
+    }
+    h2.error:after {
+        font-size: 96px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation:landscape) {}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {
+    h2.error:before {
+        font-size: 116px;
+    }
+    h2.error:after {
+        font-size: 116px;
+    }
+}

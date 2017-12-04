@@ -1,6 +1,8 @@
 body {
     --smartphone_red: #f45414;
     --smartphone_blue: #014e6d;
+    color: white;
+    background-color: black;
 }
 
 
@@ -22,7 +24,7 @@ body {
     }
     /* Hero */
     .hero {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         height: 80vh;
     }
     #feature2-hero {
@@ -40,20 +42,25 @@ body {
         color: var(--smartphone_red);
     }
     #feature2-title h2 {
-        font-family: 'Racing Sans One', sans-serif;
-        font-size: 4em;
-        /*        line-height: 0.75em;*/
+        font-size: 32px;
+        line-height: 1;
+        margin-top: 0px;
     }
+    /*
     #feature2-title h2 span {
         font-size: 1.9em;
         line-height: 0.75em;
         padding-left: 40px;
     }
+*/
     #feature2-title h3 {
         font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 700;
-        font-size: 2em;
-        line-height: 0.75em;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 40px;
+        line-height: 1.4em;
+        color: dimgray;
+        width: 100%;
     }
     /* Dropcap */
     .drop-cap p:first-child:first-letter {
@@ -89,7 +96,7 @@ body {
     /*Images*/
     .feature-img {
         grid-column: 1/13;
-        height: 100vh;
+        height: 35vh;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -147,6 +154,18 @@ body {
 /* Medium screens */
 
 @media only screen and (min-width: 768px) {
+    /* Hero */
+    #feature2-title h2 {
+        font-size: 76px;
+        margin-top: -200px;
+    }
+    #feature2-title h3 {
+        font-size: 28px;
+        margin-top: 40px;
+        line-height: 1.4em;
+        color: dimgray;
+        width: 60%;
+    }
     /* Dropcap */
     .drop-cap p:first-child:first-letter {
         font-size: 120px;
@@ -159,12 +178,38 @@ body {
     .feature2-pull-quote {
         grid-column: 3 / 10;
     }
+    /*Images*/
+    .feature-img {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation:portrait) {
+    /*Images*/
+    .feature-img {
+        height: 45vh;
+    }
 }
 
 
 /* iPad Pro screens */
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    /* Hero */
+    .hero {
+        height: 50vh;
+    }
+    #feature2-title h2 {
+        font-size: 96px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation:portrait) {
+    /*Images*/
+    .feature-img {
+        height: 50vh;
+    }
+}
 
 
 /* Large screens */
