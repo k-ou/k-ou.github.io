@@ -153,10 +153,12 @@
 /* Large screens */
 
 @media only screen and (min-width: 1440px) {
+    /*
     h2.error:before {
         font-size: 116px;
     }
     h2.error:after {
         font-size: 116px;
     }
+*/
 }

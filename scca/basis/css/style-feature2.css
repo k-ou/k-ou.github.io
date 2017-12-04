@@ -213,6 +213,13 @@ body {
 /* Large screens */
 
 @media only screen and (min-width: 1440px) {
+    /* Hero */
+    .hero {
+        height: 70vh;
+    }
+    #feature2-title h2 {
+        margin-top: -100px;
+    }
     /*Pull Quotes*/
     .feature2-pull-quote {
         grid-column: 3 / 9;
