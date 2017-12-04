@@ -438,12 +438,14 @@ i {
         border: 10px solid white;
         padding: 20px;
         margin-top: 20px;
+        transition: 0.5s;
     }
     .feat-article-3 .subscribe p {
         font-family: 'Roboto Condensed', sans-serif;
         text-transform: uppercase;
         font-weight: 900;
         font-size: 30px;
+        transition: 0.5s;
     }
     .feat-article-3 .subscribe div {
         background-color: white;
@@ -646,6 +648,14 @@ i {
     .feat-article-3 .subscribe-img {
         grid-column: 3 / span 4;
     }
+    .feat-article-3 .subscribe:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+    .feat-article-3 .subscribe:hover p {
+        color: black;
+        transition: 0.5s;
+    }
     /*Footer*/
     .footer {
         /*        height: 300px;*/
@@ -828,7 +838,7 @@ i {
 
 /* Super Large screens */
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 1920px) {
     .container-margin {
         padding: 0px 250px;
     }
@@ -841,15 +851,31 @@ i {
     }
     /*Featured Article*/
     .feat-article-1 {
-        height: 1100px;
+        height: 1200px;
     }
     .feat-article-2-header h4 a {
         font-size: 60px;
     }
     .layer-1 {
-        height: 100vh;
+        height: 1200px;
+        padding-top: 200px;
     }
     .layer-2 {
-        height: 100vh;
+        height: 1100px;
+    }
+    .feat-article-3-header {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: -150px;
+    }
+    .feat-article-3-header h4 {
+        font-size: 40px;
+    }
+    .feat-article-3-header .subscribe {
+        padding: 40px 80px;
+    }
+    .feat-article-3-header .subscribe p {
+        font-size: 40px;
     }
 }
