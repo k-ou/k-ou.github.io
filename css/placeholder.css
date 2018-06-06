@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+#placeholder {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    height: auto;
+    width: 60vw;
+}
+
+.animated {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 3.0s ease-in;
+}
+
+
+/*
+#Layer_1 .animated {
+    transition-delay: 0;
+}
+
+#Layer_2 .animated {
+    transition-delay: .05s;
+}
+
+#Layer_3 .animated {
+    transition-delay: .1s;
+}
+
+#Layer_4 .animated {
+    transition-delay: .15s;
+}
+
+#Layer_5 .animated {
+    transition-delay: .2s;
+    transition-duration: .2s;
+}
+
+#Layer_6 .animated {
+    transition-delay: .25s;
+}
+
+#Layer_7 .animated {
+    transition-delay: .3s;
+}
+
+#Layer_8 .animated {
+    transition-delay: .35s;
+}
+
+#Layer_9 .animated {
+    transition-delay: .4s;
+}
+
+#Layer_10 .animated {
+    transition-delay: .45s;
+}*/
