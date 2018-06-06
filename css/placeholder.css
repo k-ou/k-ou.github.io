@@ -13,52 +13,44 @@ body {
 svg {
     height: auto;
     width: 60vw;
+    position: relative;
 }
 
 .animated {
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 3.0s ease-in;
+    /*    transition: stroke-dashoffset 3.0s ease-in;*/
 }
-
 
 /*
-#Layer_1 .animated {
-    transition-delay: 0;
+#c,
+#n2,
+#m {
+    animation: hover-letter 2s infinite alternate;
 }
 
-#Layer_2 .animated {
-    transition-delay: .05s;
+
+@keyframes hover-letter {
+    100% {
+        transform-origin: center;
+        transform: translateY(10px);
+    }
+}
+*/
+
+#star-1,
+#star-2 {
+    /*    transition: 0.5 linear;*/
+    animation: star-move 1s infinite alternate linear;
 }
 
-#Layer_3 .animated {
-    transition-delay: .1s;
+#star-2 {
+    animation-delay: 0.5s;
 }
 
-#Layer_4 .animated {
-    transition-delay: .15s;
+@keyframes star-move {
+    100% {
+        transform-origin: center;
+        transform: rotate(1deg);
+        /*        transform: translateX(15px);*/
+    }
 }
-
-#Layer_5 .animated {
-    transition-delay: .2s;
-    transition-duration: .2s;
-}
-
-#Layer_6 .animated {
-    transition-delay: .25s;
-}
-
-#Layer_7 .animated {
-    transition-delay: .3s;
-}
-
-#Layer_8 .animated {
-    transition-delay: .35s;
-}
-
-#Layer_9 .animated {
-    transition-delay: .4s;
-}
-
-#Layer_10 .animated {
-    transition-delay: .45s;
-}*/
