@@ -3,7 +3,7 @@ var lastScrollTop = 0;
 // Sticky Header
 $(window).scroll(function () {
     var st = $(this).scrollTop();
-    if (st > lastScrollTop && $(window).scrollTop() > 500) {
+    if (st > lastScrollTop && $(window).scrollTop() > 400) {
         // downscroll code
         $('.navigation').removeClass('sticky');
     } else {

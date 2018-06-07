@@ -16,7 +16,8 @@ a:hover {
     /*    cursor: url(../img/cursor-10.png), auto;*/
 }
 
-.logo:hover {
+.logo:hover,
+#footer p:hover {
     cursor: url(../img/cursor-09.png) 0 46.5, auto;
 }
 
@@ -251,12 +252,22 @@ p {
 }
 
 .work-proj#extra {
-    background-color: purple;
+    background-image: url('../img/extra-01.jpg');
     /*TEMP*/
 }
 
 #footer {
-    height: 200px;
-    background-color: aqua;
+    height: 150px;
+    background-color: white;
     /*TEMP*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#footer p {
+    padding-bottom: 0px;
 }
