@@ -1,8 +1,41 @@
 body {
     --kelly-yellow: rgb(255, 212, 124);
-    --kelly-yellow-clear: rgba(255, 212, 124, 0.5);
+    --kelly-yellow-clear: rgba(255, 212, 124, 0.7);
     /*--kelly-yellow: #ffd47c;*/
     --kelly-grey: #414042;
+    --kelly-grey-light: #818083;
+}
+
+body {
+    padding-top: 100px;
+    cursor: url(../img/cursor-10.png), auto;
+}
+
+a:hover {
+    cursor: url(../img/cursor-11.png) 15.5 16.5, auto;
+    /*    cursor: url(../img/cursor-10.png), auto;*/
+}
+
+.logo:hover {
+    cursor: url(../img/cursor-09.png) 0 46.5, auto;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {
+    background: var(--kelly-yellow);
+}
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+p::-moz-selection {
+    background: var(--kelly-yellow);
 }
 
 body,
@@ -15,18 +48,44 @@ h2,
 h3,
 h4,
 h5 {
+    text-transform: uppercase;
+    color: var(--kelly-grey);
+}
+
+h1,
+h2 {
     font-family: 'futura-pt-bold', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+h3,
+h4,
+h5 {
+    font-family: 'futura-pt', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 h2 {
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
     font-size: 40px;
 }
 
-body {
-    padding-top: 100px;
+h3 {
+    font-weight: 500;
 }
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: var(--kelly-grey);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+}
+
 
 /*
 /* Hero
@@ -36,7 +95,7 @@ body {
 
 #hero {
     height: 40vh;
-    background-color: green;
+    /*    background-color: green;*/
 }
 
 #hero-message {
@@ -56,39 +115,117 @@ body {
 /*
 */
 
+#work {
+    padding: 25px;
+}
+
+/* general structure for portfolio grid */
+
 #work-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+
+/* clickable container for each project */
+
+#work-grid a {
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    #work {
+        padding: 30px;
+    }
+    #work-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #work {
+        padding: 40px;
+    }
+    #work-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+    }
 }
 
 .work-proj {
-    height: 400px;
-    flex-grow: 1;
-    flex-basis: 290px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .5s ease;
 }
 
-.work-proj#imbue {
-    background-image: url('../img/work-grid-imbue.jpg');
+.work-proj-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.work-proj-overlay p {
+    color: var(--kelly-grey-light);
+}
+
+.work-proj-overlay h3 {
+    /*    font-family: 'futura-pt-bold', sans-serif;*/
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 0.25em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .work-proj {
+        height: 400px;
+    }
+    .work-proj-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 80px;
+        opacity: 0;
+        background-color: var(--kelly-yellow-clear);
+    }
+    #work-grid a:hover .work-proj-overlay {
+        opacity: 1;
+    }
+    .work-proj-overlay h3 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .work-proj {
+        height: 500px;
+    }
 }
 
 .work-proj#nwirp {
     background-image: url('../img/work-grid-nwirp.jpg');
 }
 
-.work-proj-overlay {
-    display: none;
-    background-color: var(--kelly-yellow-clear);
-    height: 100%;
-    width: 100%;
-    transition: .5s ease;
+.work-proj#imbue {
+    background-image: url('../img/work-grid-imbue.jpg');
 }
 
-.work-proj#nwirp:hover .work-proj-overlay {
-    display: block;
+/*
+.work-proj#imbue {
+    cursor: url('../img/mouse-imbue-09.png'), move;
 }
+*/
 
 .work-proj#pou {
     background-image: url('../img/work-grid-pou.png');
