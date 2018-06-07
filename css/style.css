@@ -10,11 +10,22 @@ p {
     margin: 0px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'futura-pt-bold', sans-serif;
+}
+
 h2 {
-    font-family: "futura-pt-bold", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size: 40px;
+}
+
+body {
+    padding-top: 100px;
 }
 
 /*
@@ -24,7 +35,6 @@ h2 {
 */
 
 #hero {
-    margin-top: 100px;
     height: 40vh;
     background-color: green;
 }
