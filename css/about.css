@@ -1,3 +1,48 @@
+/*
+/* HERO IMAGE
+/*
+/*
+/*
+*/
+
+#about-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    #about-hero {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+#about-hero-img {
+    background-image: url('../img/hero-about-sm.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #about-hero-img {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #about-hero-img {
+        height: 80vh;
+    }
+}
+
+/*
 #about-hero {
     width: 100%;
     height: 85vh;
@@ -10,13 +55,8 @@
     box-sizing: border-box;
 }
 
-#about-hero-text {
-    width: 100%;
-}
-
 @media only screen and (min-width: 768px) {
     #about-hero {
-        height: 45vh;
         background-image: url('../img/hero-about-lg.jpg');
         background-position: left;
         background-repeat: no-repeat;
@@ -25,19 +65,62 @@
         padding-left: 0px;
         padding-right: 0px;
     }
-    #about-hero-text {
-        width: 40%;
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    #about-hero {
+        height: 45vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    #about-hero {
+        height: 75vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    #about-hero {
+        height: 45vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+    #about-hero {
+        height: 75vh;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     #about-hero {
         height: 85vh;
-        background-size: contain;
-        display: flex;
-        justify-content: flex-end;
     }
+}
+*/
+
+/*
+/* HERO TEXT
+/*
+/*
+/*
+*/
+
+#about-hero-text {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
     #about-hero-text {
-        width: 40%;
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #about-hero-text {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
