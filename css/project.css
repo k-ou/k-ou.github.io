@@ -3,15 +3,17 @@ body {
 }
 
 .container {
-    padding-left: 25px;
-    padding-right: 25px;
     margin-bottom: 35px;
+}
+
+.bg-img-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 1024px) {
     .container {
-        padding-left: 30px;
-        padding-right: 30px;
         margin-bottom: 60px;
     }
 }
@@ -28,24 +30,49 @@ body {
         grid-gap: 40px;
     }
     .proj-description {
-        width: 60%;
+        grid-column: 1 / 4;
+    }
+    .proj-description h2 {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 12px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .proj-summary {
+        grid-template-columns: 4fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+    .proj-description {
+        grid-column: auto;
+        width: 100%;
     }
 }
 
 .proj-full-img {
-    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    background-origin: content-box;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-#proj-pou-img-01 {
-    background-image: url('../img/work-grid-pou.png');
+@media only screen and (min-width: 768px) {
+    .proj-full-img {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
-#proj-pou-img-02 {
-    background-image: url('../img/work-grid-pou.png');
+@media only screen and (orientation:landscape) {
+    .proj-full-img {
+        height: 80vh;
+    }
+}
+
+@media only screen and (orientation:portrait) {
+    .proj-full-img {
+        height: 40vh;
+    }
 }
