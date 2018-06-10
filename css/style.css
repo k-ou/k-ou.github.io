@@ -13,6 +13,9 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a.text-link {
     border-bottom: 1.5px solid var(--kelly-yellow);
 }
 
