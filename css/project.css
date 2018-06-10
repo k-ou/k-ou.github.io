@@ -185,6 +185,9 @@ body {
         grid-auto-rows: 30vw;
         grid-gap: 20px;
     }
+    #proj-navigation .work-proj-overlay {
+        padding-bottom: 20px;
+    }
     .proj-nav-img {
         height: 100%;
         width: 100%;
@@ -255,7 +258,7 @@ body {
 }
 
 #proj-navigation-extra {
-    background-image: url('../img/extra-01.jpg');
+    background-image: url('../img/extra-mlk.jpg');
     /*TEMP*/
 }
 
@@ -289,6 +292,6 @@ body {
 
 @media only screen and (min-width: 1024px) {
     .work-proj-overlay {
-        padding: 25px;
+        padding: 20px;
     }
 }
