@@ -1,0 +1,59 @@
+.container-sm {
+    background-origin: content-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+
+#proj-mlk {
+    height: 45vw;
+    background-image: url('../img/extra-mlk.jpg');
+}
+
+#proj-japanese-breakfast {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#postcards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container-sm {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 30px;
+    }
+    #proj-japanese-breakfast {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #postcards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container-sm {
+        padding-left: 140px;
+        padding-right: 140px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container-sm {
+        padding-left: 200px;
+        padding-right: 200px;
+        margin-bottom: 60px;
+    }
+}
