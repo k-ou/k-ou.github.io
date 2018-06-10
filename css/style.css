@@ -81,6 +81,7 @@ h2 {
     letter-spacing: 0.15em;
 }
 
+h2.proj-name,
 h3,
 h4,
 h5 {
@@ -275,13 +276,13 @@ p {
 }
 
 .work-proj#sound-transit {
-    background-color: blue;
-    /*TEMP*/
+    background-image: url('../img/work-grid-sound-transit.jpg');
+    background-size: 125%;
 }
 
 .work-proj#odyssey {
-    background-color: forestgreen;
-    /*TEMP*/
+    background-image: url('../img/work-grid-odyssey.jpg');
+    background-size: 180%;
 }
 
 .work-proj#asam {
@@ -290,8 +291,7 @@ p {
 }
 
 .work-proj#extra {
-    background-image: url('../img/extra-01.jpg');
-    /*TEMP*/
+    background-image: url('../img/extra-mlk.jpg');
 }
 
 #footer {

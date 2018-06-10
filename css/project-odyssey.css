@@ -1,1 +1,37 @@
+#proj-odyssey-img-01 {
+    background-image: url('../img/work-grid-odyssey.jpg');
+    background-size: 360%;
+    height: 130vw;
+}
 
+@media only screen and (min-width: 768px) {
+    #proj-odyssey-img-01 {
+        height: 40vh;
+        background-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-odyssey-img-01 {
+        height: 80vh;
+        background-size: 120%;
+    }
+}
+
+#proj-odyssey-book-01 {
+    background-image: url('../img/odyssey-01.jpg');
+    background-size: 135%;
+}
+
+#proj-odyssey-book-02 {
+    background-image: url('../img/odyssey-02.jpg');
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-odyssey-02 {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-auto-rows: 35vw;
+        grid-gap: 20px;
+    }
+}

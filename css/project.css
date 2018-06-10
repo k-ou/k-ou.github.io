@@ -243,13 +243,12 @@ body {
 }
 
 #proj-navigation-sound-transit {
-    background-color: blue;
-    /*TEMP*/
+    background-image: url('../img/work-grid-sound-transit.jpg');
 }
 
 #proj-navigation-odyssey {
-    background-color: forestgreen;
-    /*TEMP*/
+    background-image: url('../img/work-grid-odyssey.jpg');
+    background-size: 190%;
 }
 
 #proj-navigation-asam {
