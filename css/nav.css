@@ -263,7 +263,8 @@ nav a:after {
 
 /**/
 
-a {
+.navigation a {
+    border: none;
     text-decoration: none;
 }
 
