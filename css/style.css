@@ -194,7 +194,7 @@ p {
 }
 
 .work-proj {
-    height: 300px;
+    height: 60vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,14 +228,14 @@ p {
 
 @media only screen and (min-width: 768px) {
     .work-proj {
-        height: 400px;
+        height: 30vw;
     }
     .work-proj-overlay {
         position: absolute;
         top: 0;
         left: 0;
         box-sizing: border-box;
-        padding: 80px;
+        padding: 30px;
         opacity: 0;
         background-color: var(--kelly-yellow-clear);
     }
@@ -243,13 +243,19 @@ p {
         opacity: 1;
     }
     .work-proj-overlay h3 {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .work-proj {
-        height: 500px;
+        height: 30vw;
+    }
+    .work-proj-overlay {
+        padding: 70px;
+    }
+    .work-proj-overlay h3 {
+        font-size: 30px;
     }
 }
 
