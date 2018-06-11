@@ -1,6 +1,6 @@
 body {
     --kelly-yellow: rgb(255, 212, 124);
-    --kelly-yellow-clear: rgba(255, 212, 124, 0.85);
+    --kelly-yellow-clear: rgba(255, 212, 124, 0.92);
     /*--kelly-yellow: #ffd47c;*/
     --kelly-grey: #414042;
     --kelly-grey-light: #818083;
@@ -171,6 +171,7 @@ p {
 #work-grid {
     display: grid;
     grid-template-columns: 1fr;
+    grid-auto-rows: 60vw;
     grid-gap: 50px;
 }
 
@@ -186,22 +187,23 @@ p {
     }
     #work-grid {
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 30vw;
         grid-gap: 20px;
     }
 }
 
 @media only screen and (min-width: 1800px) {
     #work {
-        padding: 40px;
+        padding: 100px;
     }
     #work-grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 40px;
+        grid-auto-rows: 20vw;
     }
 }
 
 .work-proj {
-    height: 60vw;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,9 +236,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-    .work-proj {
-        height: 30vw;
-    }
     .work-proj-overlay {
         position: absolute;
         top: 0;
@@ -255,9 +254,6 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
-    .work-proj {
-        height: 30vw;
-    }
     .work-proj-overlay {
         padding: 70px;
     }
