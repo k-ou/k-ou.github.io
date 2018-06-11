@@ -273,6 +273,16 @@ body {
     }
 }
 
+@media only screen and (min-width: 1800px) {
+    #proj-navigation {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #proj-navigation h2 {
+        font-size: 2.85vw;
+    }
+}
+
 #proj-navigation div {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
@@ -350,5 +360,11 @@ body {
 @media only screen and (min-width: 1024px) {
     .work-proj-overlay {
         padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .work-proj-overlay h3 {
+        font-size: 1.3vw;
     }
 }
