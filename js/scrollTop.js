@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 400) {
         $('#button-scroll-top').fadeIn();
     } else {
         $('#button-scroll-top').fadeOut();

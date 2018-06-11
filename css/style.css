@@ -292,8 +292,7 @@ p {
 }
 
 .work-proj#asam {
-    background-color: yellow;
-    /*TEMP*/
+    background-image: url('../img/work-grid-asam.png');
 }
 
 .work-proj#extra {
@@ -338,7 +337,6 @@ p {
 #footer {
     height: 150px;
     background-color: white;
-    /*TEMP*/
     display: flex;
     justify-content: flex-end;
     align-items: center;

@@ -39,6 +39,7 @@ body {
     }
     .proj-description {
         grid-column: 1 / 4;
+        max-width: 500px;
     }
     .proj-description h2 {
         -webkit-margin-before: 0;
@@ -63,7 +64,8 @@ body {
 
 @media only screen and (min-width: 1440px) {
     .proj-description {
-        width: 60%;
+        width: 65%;
+        max-width: 700px;
     }
 }
 
@@ -120,9 +122,48 @@ body {
     opacity: 0.5;
 }
 
+/*
+/* ROLES
+/*
+/*
+/*
+*/
+
 .proj-role p {
     color: var(--kelly-grey-light);
 }
+
+/*
+/* PROJECT NOTES
+/*
+/*
+/*
+*/
+
+.proj-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-text div {
+    width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+    .proj-text div {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .proj-text div {
+        width: 40%;
+        min-width: 600px;
+        max-width: 800px;
+    }
+}
+
 
 #proj-end {
     display: flex;
@@ -252,13 +293,11 @@ body {
 }
 
 #proj-navigation-asam {
-    background-color: yellow;
-    /*TEMP*/
+    background-image: url('../img/work-grid-asam.png');
 }
 
 #proj-navigation-extra {
     background-image: url('../img/extra-mlk.jpg');
-    /*TEMP*/
 }
 
 #proj-navigation .current {
@@ -274,7 +313,7 @@ body {
 .work-proj-overlay h3 {
     /*    font-family: 'futura-pt-bold', sans-serif;*/
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     -webkit-margin-before: 0.25em;
     -webkit-margin-after: 0.25em;
     text-align: center;

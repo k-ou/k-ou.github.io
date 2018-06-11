@@ -1,0 +1,80 @@
+/* FEATURED IMAGE */
+
+#proj-asam-img-01 {
+    background-image: url('../img/work-grid-asam.png');
+}
+
+/* MOODBOARD */
+
+#proj-asam-moodboard {
+    /*
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 20px;
+*/
+}
+
+#proj-asam-moodboard img {
+    max-width: 100%;
+}
+
+#proj-asam-moodboard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#proj-asam-moodboard p {
+    width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-asam-moodboard {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 20px;
+    }
+    #proj-asam-moodboard p {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-asam-moodboard p {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #proj-asam-moodboard p {
+        width: 70%;
+    }
+}
+
+/* SCREENSHOTS */
+
+#proj-asam-img-02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60vw;
+    grid-gap: 20px;
+}
+
+#proj-asam-history {
+    background-image: url('../img/asam-history.png');
+}
+
+#proj-asam-what-kind {
+    background-image: url('../img/asam-what-kind.png');
+}
+
+#proj-asam-stereotypes {
+    background-image: url('../img/asam-stereotypes.png');
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-asam-img-02 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 20vw;
+    }
+}
