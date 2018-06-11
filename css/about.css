@@ -156,6 +156,8 @@
     #about-me {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .about-me-column {
         display: flex;
@@ -170,6 +172,13 @@
     }
     .about-me-column p {
         font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #about-me {
+        padding-left: 150px;
+        padding-right: 150px;
     }
 }
 

@@ -2,6 +2,74 @@
     background-image: url('../img/NWIRP-book.jpg');
 }
 
+#proj-nwirp-logo-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+#proj-nwirp-logo-existing {
+    width: 85%;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-nwirp-logo-summary div {
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-nwirp-logo-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+    #proj-nwirp-logo-summary div {
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+#proj-nwirp-logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 80px;
+    padding-top: 20px;
+    /*    padding-bottom: 80px;*/
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-nwirp-logo {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-rows: 40vw 25vw;
+    }
+    #proj-nwirp-logo div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ececec;
+        height: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    #proj-nwirp-logo-lg {
+        grid-column: 1 / 3;
+    }
+}
+
+#proj-nwirp-02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
 #proj-nwirp-cap {
     background-image: url('../img/NWIRP-cap.jpg');
 }

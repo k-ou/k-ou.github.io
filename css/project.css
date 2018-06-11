@@ -13,11 +13,11 @@ body {
 }
 
 .img-landscape {
-    height: 240px;
+    height: 70vw;
 }
 
 .img-portrait {
-    height: 400px;
+    height: 110vw;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -144,6 +144,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .proj-text div {
@@ -151,12 +153,20 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+    .proj-text {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
     .proj-text div {
         width: 80%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
+    .proj-text {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
     .proj-text div {
         width: 40%;
         min-width: 600px;

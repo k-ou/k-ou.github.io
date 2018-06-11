@@ -11,6 +11,10 @@ body {
     cursor: url(../img/cursor-10.png), auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
 }
