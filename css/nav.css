@@ -212,11 +212,11 @@ nav a:after {
         align-items: center;
         height: 100%;
         width: 100%;
-        transition: background 0.5s;
+        /*        transition: background 0.5s ease;*/
     }
     nav a:hover {
         background-image: url('../img/highlight-1.png');
-        background-position: center;
+        /*        background-position: center;*/
         background-size: contain;
         background-repeat: no-repeat;
     }
