@@ -115,11 +115,20 @@ body {
 .proj-collab-img img {
     position: absolute;
     width: 300px;
+    max-width: none;
 }
 
 .proj-collab p:nth-of-type(n):hover + .proj-collab-img {
     display: block;
     opacity: 0.5;
+}
+
+.proj-collab p:nth-of-type(1):hover + .proj-collab-img {
+    top: -50%;
+}
+
+.proj-collab p:nth-of-type(2):hover + .proj-collab-img {
+    top: -75%;
 }
 
 /*
