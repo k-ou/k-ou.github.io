@@ -140,6 +140,8 @@ body {
 
 .proj-role p {
     color: var(--kelly-grey-light);
+    /*    line-height: normal;*/
+    margin-bottom: 0px;
 }
 
 /*

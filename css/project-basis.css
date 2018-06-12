@@ -44,7 +44,13 @@
 }
 
 .typeface-example {
-    font-size: 7.5vw;
+    font-size: 13vw;
+}
+
+@media only screen and (min-width: 1024px) {
+    .typeface-example {
+        font-size: 7.5vw;
+    }
 }
 
 #typography p:not(.typography-caption) {
@@ -96,6 +102,22 @@
     grid-gap: 20px;
 }
 
+#proj-basis-sections h4 {
+    -webkit-margin-before: 0;
+}
+
+#proj-basis-sections div:not(.bg-img-cover) {
+    max-width: 500px;
+    display: flex;
+    /*
+    justify-items: center;
+    align-content: center;
+*/
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 #proj-basis-sections div:nth-of-type(2) {
     order: 1;
 }
@@ -119,6 +141,7 @@
 
 #proj-basis-sections-img,
 #proj-basis-recommendations-img {
+    background-size: 140%;
     height: 50vw;
 }
 
@@ -135,6 +158,7 @@
     }
     #proj-basis-sections-img,
     #proj-basis-recommendations-img {
+        background-size: 140%;
         height: 30vw;
     }
 }
@@ -147,11 +171,9 @@
 /*
 */
 
-#proj-basis-issuu {
-    /*
-    padding-left: 200px;
-    padding-right: 200px;
-*/
+#proj-basis-issuu h4 {
+    font-size: 28px;
+    text-align: center;
 }
 
 #proj-basis-issuu div {
@@ -194,6 +216,10 @@
 /*
 */
 
+#proj-basis-website-summary {
+    margin-bottom: 50px;
+}
+
 #proj-basis-website {
     display: grid;
     grid-template-columns: 1fr;
@@ -206,39 +232,44 @@
     font-family: 'futura-pt', sans-serif;
     font-weight: 600;
     letter-spacing: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--kelly-grey);
+    background-color: var(--kelly-yellow-clear);
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+#proj-basis-website-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
     #proj-basis-website {
         grid-template-columns: repeat(2, 1fr);
     }
-    #proj-basis-website-button {
-        /*        grid-column: 1 / 3;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     #proj-basis-website div {
         position: relative;
     }
     .proj-basis-website-portal a {
         position: absolute;
-        box-sizing: border-box;
         height: 100%;
         width: 100%;
         left: 0;
         top: 0;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: 0.5s ease;
         background-color: var(--kelly-yellow-clear);
         opacity: 0.9;
+        margin-bottom: 0px;
     }
     #proj-basis-website div:hover a {
-        opacity: 1;
-        height: auto;
+        opacity: 0;
+        /*        height: auto;*/
     }
 }
 
