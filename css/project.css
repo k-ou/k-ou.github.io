@@ -343,6 +343,10 @@ body {
     position: relative;
 }
 
+#proj-navigation p {
+    margin-bottom: 0;
+}
+
 /* PROJ NAVIGATION OVERLAY */
 
 .work-proj-overlay h3 {

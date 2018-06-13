@@ -1,3 +1,194 @@
 #proj-sound-transit-img-01 {
     background-image: url('../img/work-grid-sound-transit.jpg');
 }
+
+/*
+/* LOGO
+/*
+/*
+/*
+*/
+
+#sound-transit-logo-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+#sound-transit-logo-summary div:nth-child(1) {
+    padding: 120px;
+    padding-top: 0;
+    box-sizing: content-box;
+}
+
+@media only screen and (min-width: 768px) {
+    #sound-transit-logo-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+#sound-transit-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sound-transit-logo div {
+    width: 80%;
+}
+
+/*
+/* COLOR
+/*
+/*
+/*
+*/
+
+#proj-sound-transit-color {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 20vw;
+    grid-gap: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#proj-sound-transit-color #blue {
+    background-color: #386fb5;
+}
+
+#proj-sound-transit-color #yellow {
+    background-color: #fdce07;
+}
+
+#proj-sound-transit-color #teal {
+    background-color: #069699;
+}
+
+#proj-sound-transit-color #red {
+    background-color: #ed5528;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-sound-transit-color {
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+}
+
+/*
+/* PATTERN
+/*
+/*
+/*
+*/
+
+#proj-sound-transit-pattern {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-sound-transit-pattern {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #proj-sound-transit-pattern {
+        /*        grid-template-columns: repeat(6, 1fr);*/
+    }
+}
+
+/*
+/* TYPOGRAPHY
+/*
+/*
+/*
+*/
+
+#typography {
+    flex-direction: column;
+}
+
+.typeface {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.typeface-example {
+    font-size: 13vw;
+}
+
+@media only screen and (min-width: 1024px) {
+    .typeface-example {
+        font-size: 7.5vw;
+    }
+}
+
+#typography p:not(.typography-caption) {
+    word-break: break-all;
+    letter-spacing: normal;
+    line-height: 1em;
+}
+
+#typography-rubik {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+#typography-lato {
+    font-family: 'Lato', sans-serif;
+    /*    font-size: 30px;*/
+}
+
+.typography-caption {
+    font-size: 12px;
+    color: var(--kelly-grey-light);
+}
+
+/*
+/* ISSUU
+/*
+/*
+/*
+*/
+
+#proj-sound-transit-issuu h4 {
+    font-size: 28px;
+    text-align: center;
+}
+
+#proj-sound-transit-issuu div {
+    height: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-sound-transit-issuu div {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-sound-transit-issuu div {
+        height: 640px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation:landscape) {
+    #proj-sound-transit-issuu {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #proj-sound-transit-issuu div {
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #proj-sound-transit-issuu {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
