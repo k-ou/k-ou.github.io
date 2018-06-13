@@ -72,3 +72,9 @@
         grid-auto-rows: 20vw;
     }
 }
+
+#proj-asam-website-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
