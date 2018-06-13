@@ -28,8 +28,13 @@
     #proj-imbue-logo-process {
         grid-template-columns: 2fr 1fr;
         grid-gap: 40px;
-        padding-left: 8vw;
-        padding-right: 8vw;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #proj-imbue-logo-process {
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }
 

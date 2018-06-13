@@ -10,15 +10,19 @@
     grid-template-columns: 1fr;
     width: 100%;
     box-sizing: border-box;
+/*
     padding-left: 25px;
     padding-right: 25px;
+*/
 }
 
 @media only screen and (min-width: 768px) {
     #about-hero {
         grid-template-columns: 1fr 1fr;
+/*
         padding-left: 30px;
         padding-right: 30px;
+*/
     }
 }
 
@@ -30,73 +34,17 @@
     height: 400px;
 }
 
-@media only screen and (min-width: 1024px) and (orientation:portrait) {
-    #about-hero-img {
-        height: 500px;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (orientation: landscape) {
-    #about-hero-img {
-        height: 80vh;
-    }
-}
-
-/*
-#about-hero {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../img/hero-about-sm.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
-
 @media only screen and (min-width: 768px) {
-    #about-hero {
-        background-image: url('../img/hero-about-lg.jpg');
-        background-position: left;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: flex-end;
-        padding-left: 0px;
-        padding-right: 0px;
+        #about-hero-img {
+        height: 60vw;
     }
 }
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {
-    #about-hero {
-        height: 45vh;
+@media only screen and (min-width: 1024px) {
+    #about-hero-img {
+        height: 40vw;
     }
 }
-
-@media only screen and (min-width: 768px) and (orientation: landscape) {
-    #about-hero {
-        height: 75vh;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (orientation: portrait) {
-    #about-hero {
-        height: 45vh;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (orientation: landscape) {
-    #about-hero {
-        height: 75vh;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    #about-hero {
-        height: 85vh;
-    }
-}
-*/
 
 /*
 /* HERO TEXT
@@ -122,6 +70,13 @@
         padding-bottom: 70px;
         padding-left: 100px;
         padding-right: 100px;
+    }
+}
+@media only screen and (min-width: 1800px) {
+        #about-hero-text {
+        display: flex;
+            justify-content: center;
+            align-items: center;
     }
 }
 
@@ -186,5 +141,12 @@
     #about-me {
         padding-left: 250px;
         padding-right: 250px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #about-me {
+        padding-left: 27vw;
+        padding-right: 27vw;
     }
 }

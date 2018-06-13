@@ -52,6 +52,11 @@
         font-size: 7.5vw;
     }
 }
+@media only screen and (min-width: 1800px) {
+    .typeface-example {
+        font-size: 140px;
+    }
+}
 
 #typography p:not(.typography-caption) {
     word-break: break-all;

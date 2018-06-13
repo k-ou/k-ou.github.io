@@ -148,3 +148,9 @@ h4 {
         grid-auto-rows: 40vw;
     }
 }
+
+@media only screen and (min-width: 1800px) {
+    #proj-pou-02 {
+        grid-auto-rows: 25vw 25vw 23vw 25vw;
+    }
+}
