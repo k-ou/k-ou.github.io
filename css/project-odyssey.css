@@ -1,3 +1,10 @@
+/*
+/* FEATURE IMAGE
+/*
+/*
+/*
+*/
+
 #proj-odyssey-img-01 {
     background-image: url('../img/work-grid-odyssey.jpg');
     background-size: 360%;
@@ -15,14 +22,40 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     #proj-odyssey-img-01 {
         height: 80vh;
         background-size: 120%;
     }
 }
 
-#proj-odyssey-users {}
+#proj-odyssey-whiteboard {}
+
+/*
+/* USERS
+/*
+/*
+/*
+*/
+
+#proj-odyssey-users {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-odyssey-users {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/*
+/* LOGO
+/*
+/*
+/*
+*/
 
 #proj-odyssey-logo {
     display: -webkit-box;
@@ -38,9 +71,52 @@
     height: 40vw;
 }
 
+/*
+/* MOODBOARD
+/*
+/*
+/*
+*/
+
+#proj-odyssey-moodboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    justify-items: center;
+}
+
+#proj-odyssey-moodboard div {
+    width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-odyssey-moodboard div {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-odyssey-moodboard {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+/*
+/* GRAPHIC ELEMENT
+/*
+/*
+/*
+*/
+
 #proj-odyssey-element {}
 
-/* BOOKLET */
+/*
+/* BOOKLET
+/*
+/*
+/*
+*/
 
 #proj-odyssey-02 {
     display: grid;
@@ -67,4 +143,17 @@
     #proj-odyssey-book-02 {
         height: auto;
     }
+}
+
+/*
+/* WEBSITE
+/*
+/*
+/*
+*/
+
+#proj-odyssey-website-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
