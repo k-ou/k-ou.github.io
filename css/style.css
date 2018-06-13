@@ -11,6 +11,61 @@ body {
     cursor: url(../img/cursor-10.png), auto;
 }
 
+/*
+/* LOADING
+/*
+/*
+/*
+*/
+
+@keyframes bounce {
+    from {
+        top: -0.5vw;
+    }
+    to {
+        top: 0.5vw;
+    }
+}
+
+#loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+}
+
+#loading p {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--kelly-grey);
+    font-family: 'futura-pt-bold', sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 20px;
+}
+
+#loading img {
+    position: relative;
+    animation: bounce 1s infinite alternate;
+}
+
+/*
+/* GENERAL STYLING
+/*
+/*
+/*
+*/
+
 img {
     max-width: 100%;
 }
