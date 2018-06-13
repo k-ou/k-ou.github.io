@@ -118,6 +118,10 @@ body {
     max-width: none;
 }
 
+.proj-collab p {
+    margin-bottom: 0;
+}
+
 .proj-collab p:nth-of-type(n):hover + .proj-collab-img {
     display: block;
     opacity: 0.5;
