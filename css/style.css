@@ -345,7 +345,9 @@ p {
 }
 
 .work-proj#nwirp {
-    background-image: url('../img/work-grid-nwirp.jpg');
+    background-image: url('../img/work-grid-nwirp.png');
+    background-size: 70%;
+    background-color: #ececec;
 }
 
 .work-proj#imbue {
