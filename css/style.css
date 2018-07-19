@@ -232,10 +232,29 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+    flex-direction: column;
+    /*    flex-wrap:wrap;*/
 }
 
 #hero-message h2 {
     color: var(--kelly-grey);
+    -webkit-margin-after: 0;
+}
+
+#hero-message h3 {
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    color: var(--kelly-grey-light);
+}
+
+@media only screen and (max-width: 768px) {
+    #hero-message h2 {
+        font-size: 32px;
+    }
+    #hero-message h2,
+    #hero-message h3 {
+        text-align: center;
+    }
 }
 
 /*
@@ -290,6 +309,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .5s ease;
+    overflow: hidden;
 }
 
 .work-proj-overlay {
@@ -354,12 +374,6 @@ p {
     background-image: url('../img/work-grid-imbue.jpg');
 }
 
-/*
-.work-proj#imbue {
-    cursor: url('../img/mouse-imbue-09.png'), move;
-}
-*/
-
 .work-proj#pou {
     background-image: url('../img/work-grid-pou.png');
 }
@@ -372,6 +386,33 @@ p {
     background-image: url('../img/work-grid-sound-transit.jpg');
     background-size: 125%;
 }
+
+/*
+.work-proj#sound-transit {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 70% 30%;
+    grid-gap: 25px;
+    grid-row-gap: 6%;
+    grid-column-gap: 3.75%;
+    box-sizing: border-box;
+}
+
+.work-proj#sound-transit div {
+    background-color: #ececec;
+}
+
+.work-proj#sound-transit div:nth-child(2) {
+    background-color: #386fb5;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../img/work-grid-sound-transit.png');
+    background-repeat: no-repeat;
+    background-size: 75%;
+    padding: 20px;
+    background-position: 75% 10%;
+}
+*/
 
 .work-proj#odyssey {
     background-image: url('../img/work-grid-odyssey.jpg');
