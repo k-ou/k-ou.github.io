@@ -229,7 +229,7 @@ nav a {
 .open-nav {
     max-height: 400px !important;
     /*    transition: 0.5s ease-in;*/
-    background-color: #e7e7e7;
+    background-color: rgba(231, 231, 231, .9);
 }
 
 .open-nav .mobile-toggle span {
