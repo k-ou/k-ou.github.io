@@ -20,7 +20,8 @@ img {
     max-width: 100%;
 }
 
-#postcards {
+#postcards,
+#workers {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -32,13 +33,17 @@ img {
         padding-right: 100px;
         margin-bottom: 30px;
     }
+
     #proj-japanese-breakfast {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
     }
+
     #postcards {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
+    }
+
+    #workers {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -47,6 +52,10 @@ img {
         padding-left: 140px;
         padding-right: 140px;
         margin-bottom: 50px;
+    }
+
+    #workers {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
