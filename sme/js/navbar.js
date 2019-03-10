@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $("#navbar-container").load("/navbar.html", navState);
-    $("#footer-container").load("/footer.html");
+    $("#navbar-container").load("navbar.html", navState);
+    $("#footer-container").load("footer.html");
 });
 
 var lastScrollTop = 0;
