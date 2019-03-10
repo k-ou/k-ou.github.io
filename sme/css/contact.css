@@ -1,0 +1,61 @@
+body {
+    background-image: url('../img/gradient.png');
+}
+
+.container-fluid {
+    min-height: 100vh;
+    margin-bottom: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.address {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 45px;
+}
+
+.address p,
+.email p {
+    margin: 0;
+}
+
+#footer-social-media img {
+    filter: invert(1.0);
+}
+
+.circle {
+    border-radius: 100%;
+    border: 2px white solid;
+    position: absolute;
+    height: 100vw;
+    width: 100vw;
+    right: -10vw;
+    bottom: -70vw;
+    z-index: -1;
+}
+
+.line {
+    border: 1px white solid;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 3000px;
+    bottom: -70vh;
+    right: -100vw;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+    .circle {
+        height: 50vw;
+        width: 50vw;
+        bottom: -10vw;
+    }
+
+    .line {
+        bottom: 100vh;
+    }
+}

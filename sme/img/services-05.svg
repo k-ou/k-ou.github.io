@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 834 330" style="enable-background:new 0 0 834 330;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#1D3E68;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#E8B637;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#E8B637;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M470.34,327H39.66C19.41,327,3,310.59,3,290.34V43.5h504v246.84C507,310.59,490.59,327,470.34,327z"/>
+			<path class="st0" d="M507,43.5H3v-3.84C3,19.41,19.41,3,39.66,3h430.68C490.59,3,507,19.41,507,39.66V43.5z"/>
+		</g>
+		<g>
+			<polyline class="st1" points="327,147 363,183 327,219 			"/>
+			<polyline class="st1" points="183,147 147,183 183,219 			"/>
+			<line class="st1" x1="291" y1="147" x2="255" y2="219"/>
+		</g>
+	</g>
+	<g>
+		<polygon class="st0" points="543,327 585.25,327 543,284.75 		"/>
+		
+			<rect x="520.37" y="170.36" transform="matrix(0.7071 -0.7071 0.7071 0.7071 54.5773 532.2408)" class="st0" width="298.78" height="59.76"/>
+		<g>
+			<path class="st0" d="M754.27,73.48l42.25,42.25l28.98-28.98c7.33-7.33,7.33-19.21,0-26.54L809.79,44.5
+				c-7.33-7.33-19.21-7.33-26.54,0L754.27,73.48z"/>
+		</g>
+	</g>
+</g>
+</svg>

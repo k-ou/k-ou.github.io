@@ -1,0 +1,556 @@
+body {
+    --sme-grey-light: #cbd3d2;
+    --sme-grey-dark: #ababab;
+    --sme-blue-light: #1e3e68;
+    --sme-blue-dark: #1f2f48;
+    --sme-black: #2a2b2d;
+    --sme-teal: #428e8d;
+    --sme-orange: #ec7733;
+    --sme-yellow: #e8b637;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: var(--sme-black);
+}
+
+ul {
+    padding-left: 12px;
+    list-style-image: url('../img/bullet.svg');
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--sme-blue-light);
+}
+
+a.underline {
+    text-decoration: underline;
+}
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ */
+
+button,
+input {
+    overflow: visible;
+}
+
+/*Remove the inheritance of text transform in Firefox.*/
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/* TYPOGRAPHY */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+}
+
+h1 {
+    font-size: 36px;
+    /*    font-size: 3.5vw;*/
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+h5 {
+    color: var(--sme-grey-dark);
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.3em;
+    letter-spacing: 0.02em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+p,
+li {
+    font-size: 17px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-teal {
+    color: var(--sme-teal);
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {}
+
+/* LAYOUT */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    flex: 1;
+    overflow: hidden;
+}
+
+.container,
+.container-fluid {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding-bottom: 5px;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+
+    .container,
+    .container-fluid {
+        margin-bottom: 120px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 1400px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.col-flex,
+.col-6-mid,
+.col-6-start,
+.col-6-end,
+.col-12 {
+    grid-column: 1 / span 12;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .col-6-mid {
+        grid-column: 2 / span 10;
+    }
+
+    .col-6-start {
+        grid-column: 1 / span 6;
+    }
+
+    .col-6-end {
+        grid-column: 7 / span 6;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-6-mid {
+        grid-column: 3 / span 8;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .col-6-mid {
+        grid-column: 4 / span 6;
+    }
+}
+
+.hero {
+    padding-top: 200px;
+    /*    padding-bottom: 50px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    grid-column: 1 / span 12;
+    color: white;
+}
+
+.hero-p {
+    font-weight: 300;
+}
+
+h2.summary-h {
+    font-size: 20px;
+}
+
+.content-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.cta {
+    background-image: url("../img/gradient.png");
+    background-size: cover;
+    padding-top: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 90px;
+    border-radius: 10px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 200px;
+        /*        padding-bottom: 5px;*/
+    }
+
+    .hero-text {
+        grid-column: 1 / span 10;
+    }
+
+    .content-container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .cta {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cta {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero {
+        padding-top: 250px;
+    }
+
+    .hero-text {
+        grid-column: 1 / span 6;
+    }
+}
+
+/* BUTTON */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+button {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 100px;
+    /*    padding-top: 10px;*/
+    padding-right: 20px;
+    /*    padding-bottom: 10px;*/
+    padding-left: 20px;
+    background-color: transparent;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+button,
+.arrow-line,
+.arrow-head {
+    -webkit-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+}
+
+.button-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button p {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+}
+
+@media only screen and (min-width: 768px) {
+    button p {
+        font-size: 16px;
+        letter-spacing: 0.1em;
+    }
+}
+
+.button-dark {
+    color: var(--sme-blue-light);
+    border: 2px solid var(--sme-blue-light);
+}
+
+.button-dark:hover {
+    background-color: var(--sme-blue-light);
+    color: white;
+}
+
+.button-teal {
+    color: var(--sme-teal);
+    border: 2px solid var(--sme-teal);
+}
+
+.button-teal:hover {
+    background-color: var(--sme-teal);
+    color: white;
+}
+
+.button-white {
+    color: white;
+    border: 2px solid white;
+}
+
+.button-white:hover {
+    background-color: white;
+    color: var(--sme-blue-light);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* ARROWS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.arrow-full {
+    width: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.arrow-line {
+    width: 100%;
+    height: 0;
+}
+
+.arrow-head {
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.arrow-white .arrow-line {
+    border: 1px white solid;
+}
+
+.arrow-white .arrow-head {
+    border-top: 2px white solid;
+    border-right: 2px white solid;
+}
+
+button:hover .arrow-white .arrow-line {
+    border: 1px var(--sme-blue-light) solid;
+}
+
+button:hover .arrow-white .arrow-head {
+    border-top: 2px var(--sme-blue-light) solid;
+    border-right: 2px var(--sme-blue-light) solid;
+}
+
+.arrow-dark .arrow-line {
+    border: 1px var(--sme-blue-light) solid;
+}
+
+.arrow-dark .arrow-head {
+    border-top: 2px var(--sme-blue-light) solid;
+    border-right: 2px var(--sme-blue-light) solid;
+}
+
+button:hover .arrow-dark .arrow-line {
+    border: 1px white solid;
+}
+
+button:hover .arrow-dark .arrow-head {
+    border-top: 2px white solid;
+    border-right: 2px white solid;
+}
+
+.arrow-teal .arrow-line {
+    border: 1px var(--sme-teal) solid;
+}
+
+.arrow-teal .arrow-head {
+    border-top: 2px var(--sme-teal) solid;
+    border-right: 2px var(--sme-teal) solid;
+}
+
+button:hover .arrow-teal .arrow-line {
+    border: 1px white solid;
+}
+
+button:hover .arrow-teal .arrow-head {
+    border-top: 2px white solid;
+    border-right: 2px white solid;
+}
+
+@media only screen and (max-width: 768px) {
+    .arrow-sm {
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .arrow-full {
+        width: 100px;
+    }
+}
+
+/* GENERAL STYLING */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.border-grey {
+    border: 2px solid var(--sme-grey-light);
+}
+
+.background-grey {
+    background-color: var(--sme-grey-light);
+}
+
+.circle {
+    border-radius: 100%;
+    border: 2px white solid;
+}
+
+
+@media only screen and (min-width: 1800px) {}

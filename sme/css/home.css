@@ -1,0 +1,21 @@
+.hero {
+    background-image: linear-gradient(rgba(200, 200, 255, 0.3), rgba(20, 35, 80, 0.4)), url('../img/plane.jpg');
+    background-size: 200%;
+    background-position: 0% 10%;
+}
+
+.makers-doers h3 {
+    font-size: 30px;
+}
+
+.makers-doers h3 span {
+    font-weight: 300;
+}
+
+.makers-doers button {
+    margin-top: 25px;
+}
+
+.makers-doers {
+    margin-bottom: 25px;
+}

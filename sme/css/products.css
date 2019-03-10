@@ -1,0 +1,80 @@
+.hero {
+    background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url('../img/wireframe.jpg');
+    background-size: cover;
+    background-position: 0% 10%;
+}
+
+.product {
+    padding-bottom: 50px;
+    grid-column: 1 / span 12;
+}
+
+.products-col-venom-img {
+    position: relative;
+}
+
+.venom-img-sm {
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 20px;
+    width: 40vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .product {
+        padding-bottom: 100px;
+    }
+
+    .products-col-venom {
+        grid-column: 1 / span 12;
+    }
+
+    .venom-img-sm {
+        width: 20vw;
+    }
+
+    .products-col-1 {
+        grid-column: 1 / span 5;
+    }
+
+    .products-col-2 {
+        grid-column: 8 / span 5;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .products-col-venom {
+        grid-column: 1 / span 6;
+        grid-row: 2;
+    }
+
+    .products-col-venom-img {
+        grid-column: 7 / span 6;
+    }
+
+    .venom-img-sm {
+        width: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .products-col-venom {
+        grid-column: 2 / span 5;
+        grid-row: 2;
+    }
+
+    .products-col-venom-img {
+        grid-column: 7 / span 6;
+    }
+
+    .products-col-1 {
+        grid-column: 2 / span 4;
+    }
+
+    .products-col-2 {
+        grid-column: 8 / span 4;
+    }
+}
+
+@media only screen and (min-width: 1800px) {}

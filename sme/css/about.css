@@ -1,0 +1,57 @@
+.hero {
+    background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/robot.jpg");
+    background-position: 50% 100%;
+}
+
+.value {
+    /*    padding-bottom: 50px;*/
+    /*    height: 100px;*/
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.border-grey {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.value img {
+    width: 70%;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/robot.jpg");
+        background-position: 0% 100%;
+    }
+
+    .value {
+        padding-top: 0;
+        width: 32%;
+    }
+
+    .value img {
+        width: 50%;
+    }
+
+    .border-grey {
+        height: 75%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1800px) {}

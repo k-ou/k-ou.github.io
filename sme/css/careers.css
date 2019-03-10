@@ -1,0 +1,185 @@
+.hero {
+    background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/handshake.jpg");
+    background-position: 0% 35%;
+}
+
+.position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--sme-grey-light);
+    margin-bottom: 12px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+}
+
+.position p {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.position p:nth-child(1) {
+    font-weight: 900;
+    width: 80%;
+}
+
+#position-information span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1400px) {
+    .position p {
+        font-size: 20px;
+    }
+}
+
+#buttons {
+    height: 40px;
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#buttons a {
+    padding-left: 10px;
+}
+
+#buttons a,
+.button-expand,
+.button-email {
+    height: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+    #buttons {
+        height: 50px;
+    }
+}
+
+#career-modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#career-modal {
+    background-color: white;
+    width: 95vw;
+    height: 95vh;
+    overflow-x: scroll;
+}
+
+#position-information {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 50px;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#position-information .position-section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.circle {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #career-modal {
+        width: 85vw;
+        height: 90vh;
+    }
+
+    #position-information {
+        justify-content: space-between;
+    }
+
+    #position-information .position-section {
+        width: 48%;
+        margin-bottom: 0;
+        /*    flex: 1;*/
+    }
+
+    .position p:nth-child(1) {
+        width: 50%;
+    }
+
+    .position p:nth-child(2) {
+        width: 20%;
+    }
+
+    .position p:nth-child(3) {
+        width: 15%;
+    }
+
+    .circle {
+        display: block;
+        position: absolute;
+        height: 100vw;
+        width: 100vw;
+        bottom: 0vw;
+        right: 15vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #career-modal {
+        width: 75vw;
+        height: 85vh;
+    }
+
+    #position-information {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .circle {
+        height: 80vw;
+        width: 80vw;
+        bottom: -10vw;
+        right: 40vw;
+    }
+}
+
+#career-modal .position {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--sme-grey-light);
+    margin-bottom: 0px;
+}
+
+#career-modal h6 {
+    color: var(--sme-teal);
+}
+
+.content-container {
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#position-information p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#modalCTA {
+    height: 100%;
+    box-sizing: border-box;
+}

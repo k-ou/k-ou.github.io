@@ -1,0 +1,57 @@
+#footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+#footer-info img {
+    width: 300px;
+}
+
+#footer-info p {
+    margin: 0;
+    padding-left: 48px;
+    font-size: 17px;
+}
+
+#footer-social-media {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 30px;
+}
+
+.facebook-logo,
+.linkedin-logo {
+    padding-left: 10px;
+    transition: 0.2s ease-out;
+}
+
+.facebook-logo:hover,
+.linkedin-logo:hover {
+    filter: invert(0.5) saturate(5) hue-rotate(175deg);
+}
+
+.linkedin-logo img {
+    width: 40px;
+    fill: green;
+}
+
+.facebook-logo img {
+    width: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    #footer-container {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-top: 40px;
+    }
+
+    #footer-social-media {
+        padding-top: 0px;
+    }
+}
