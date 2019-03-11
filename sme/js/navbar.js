@@ -43,7 +43,9 @@ function mobileState() {
 }
 
 function currentPage() {
-    var current = location.pathname.substring(1);
+    var path = location.pathname;
+    var n = path.lastIndexOf('/');
+    var current = path.substring(n + 1);
     $('#navbar-menu li a').each(function () {
         var $this = $(this);
         // if the current path is like this link, make it active

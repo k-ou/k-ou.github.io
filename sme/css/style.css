@@ -383,7 +383,7 @@ button {
     padding-left: 20px;
     background-color: transparent;
     margin-top: 40px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     width: 100%;
     max-width: 300px;
