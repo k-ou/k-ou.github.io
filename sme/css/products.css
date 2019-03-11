@@ -4,9 +4,30 @@
     background-position: 0% 10%;
 }
 
+.cta {
+    background-image: url("../img/products-cta-bg-sm.svg"), url("../img/gradient.png");
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-image: url("../img/products-bg.svg"), linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url('../img/wireframe.jpg');
+        background-position: bottom, center, 0% 10%;
+    }
+
+    .cta {
+        background-image: url("../img/products-cta-bg.svg"), url("../img/gradient.png");
+    }
+}
+
 .product {
     padding-bottom: 50px;
     grid-column: 1 / span 12;
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 2.1em;
+    }
 }
 
 .products-col-venom-img {

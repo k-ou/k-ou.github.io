@@ -19,3 +19,8 @@
 .makers-doers {
     margin-bottom: 25px;
 }
+
+.cta {
+    background-image: url("../img/home-cta-bg.svg"), url("../img/gradient.png");
+    background-position: bottom, bottom;
+}

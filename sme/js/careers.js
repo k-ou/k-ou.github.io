@@ -136,7 +136,7 @@ function renderModal(row, otherRows) {
     }
     positionInformation.append(roleDescription);
     // CTA
-    const cta = $('<div id="modalCTA" class="position-section border-grey content-container"><h5>Interested in this position?</h5><p>Send us an email with the Job ID as the subject, and attach your resume, optional cover letter, and any other relevant documents.</p><a href="mailto:careers@strategicmissionelements.com?subject=Interested in Job ' + otherRows['JobID'] + '" target="_blank"><button class="button-teal button-center"><p>SEND YOUR RESUME</p><div class="arrow-full arrow-teal arrow-sm"><div class="arrow-line"></div><div class="arrow-head"></div></div></button></a></div>');
+    const cta = $('<div id="modalCTA" class="position-section border-grey content-container"><h5>Interested in this position?</h5><p>Send us an email with the Job ID as the subject, and attach your resume, optional cover letter, and any other relevant documents.</p><a href="mailto:careers@strategicmissionelements.com?subject=Interested in Job ' + otherRows['JobID'] + '" target="_blank"><button class="button-teal button-center"><p>SEND YOUR RESUME</p><div class="arrow-full arrow-teal"><div class="arrow-line"></div><div class="arrow-head"></div></div></button></a></div>');
     positionInformation.append(cta);
     // PARSE BASICQUAL for bullets
     if (otherRows.hasOwnProperty('BasicQualifications')) {

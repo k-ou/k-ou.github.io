@@ -98,13 +98,12 @@ h6 {
 }
 
 h1 {
-    font-size: 36px;
-    /*    font-size: 3.5vw;*/
+    font-size: 40px;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 h3 {
@@ -132,7 +131,7 @@ p {
 
 p,
 li {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .center {
@@ -161,12 +160,7 @@ li {
     }
 }
 
-@media only screen and (min-width: 1024px) {
-
-    p {
-        font-size: 20px;
-    }
-}
+@media only screen and (min-width: 1024px) {}
 
 @media only screen and (min-width: 1800px) {}
 
@@ -212,7 +206,7 @@ li {
 
     .container,
     .container-fluid {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
 }
 
@@ -220,14 +214,19 @@ li {
     .container {
         padding-left: 5%;
         padding-right: 5%;
-        max-width: 1400px;
+        max-width: 1250px;
+    }
+
+    .container,
+    .container-fluid {
+        margin-bottom: 100px;
     }
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1400px) {
     .container {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -324,10 +323,10 @@ h2.summary-h {
     }
 
     .content-container {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .cta {
@@ -339,6 +338,17 @@ h2.summary-h {
 }
 
 @media only screen and (min-width: 1024px) {
+    .hero-text {
+        grid-column: 1 / span 8;
+    }
+
+    .content-container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .cta {
         padding-left: 20vw;
         padding-right: 20vw;
@@ -372,9 +382,11 @@ button {
     /*    padding-bottom: 10px;*/
     padding-left: 20px;
     background-color: transparent;
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 button,
@@ -390,12 +402,18 @@ button,
 }
 
 button p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.15em;
+    white-space: nowrap;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
+    button {
+        /*        width: auto;*/
+        margin-top: 50px;
+    }
+
     button p {
         font-size: 16px;
         letter-spacing: 0.1em;
@@ -445,7 +463,8 @@ button:hover {
 /**/
 
 .arrow-full {
-    width: 50px;
+    width: 100%;
+    max-width: 200px;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -463,6 +482,12 @@ button:hover {
     height: 8px;
     transform: rotate(45deg);
     position: absolute;
+}
+
+@media only screen and (min-width: 600px) {
+    .arrow-full {
+        /*        width: 100px;*/
+    }
 }
 
 .arrow-white .arrow-line {
@@ -517,18 +542,6 @@ button:hover .arrow-teal .arrow-line {
 button:hover .arrow-teal .arrow-head {
     border-top: 2px white solid;
     border-right: 2px white solid;
-}
-
-@media only screen and (max-width: 768px) {
-    .arrow-sm {
-        width: 40px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .arrow-full {
-        width: 100px;
-    }
 }
 
 /* GENERAL STYLING */

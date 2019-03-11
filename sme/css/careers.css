@@ -1,6 +1,42 @@
 .hero {
     background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/handshake.jpg");
-    background-position: 0% 35%;
+    background-position: 70% 100%;
+    background-size: 380%;
+    background-repeat: no-repeat;
+}
+
+.cta {
+    background-image: url("../img/careers-cta-bg.svg"), url("../img/gradient.png");
+    background-position: center, center;
+}
+
+@media screen and (min-width: 360px) {
+    .hero {
+        background-position: 70% 80%;
+        background-size: 340%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url("../img/careers-bg.svg"), linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/handshake.jpg");
+        background-position: 0% 0%, center, 0% 35%;
+        background-size: 150%, cover, cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        background-position: 40% 0%, center, 0% 35%;
+        background-size: 150%, cover, cover;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero {
+        background-position: 0% 0%, center, 0% 35%;
+        background-size: 130%, cover, cover;
+    }
 }
 
 .position {
@@ -9,9 +45,9 @@
     justify-content: space-between;
     border: 2px solid var(--sme-grey-light);
     margin-bottom: 12px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-right: 25px;
 }
 
@@ -27,12 +63,12 @@
     width: 80%;
 }
 
-#position-information span {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 @media screen and (min-width: 1400px) {
+    .position {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .position p {
         font-size: 20px;
     }
@@ -79,6 +115,7 @@
     width: 95vw;
     height: 95vh;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 #position-information {
@@ -97,8 +134,15 @@
     margin-bottom: 25px;
 }
 
-.circle {
-    display: none;
+#position-information p,
+#position-information li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#position-information span {
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1024px) {
@@ -128,15 +172,6 @@
     .position p:nth-child(3) {
         width: 15%;
     }
-
-    .circle {
-        display: block;
-        position: absolute;
-        height: 100vw;
-        width: 100vw;
-        bottom: 0vw;
-        right: 15vw;
-    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -148,13 +183,6 @@
     #position-information {
         padding-left: 10vw;
         padding-right: 10vw;
-    }
-
-    .circle {
-        height: 80vw;
-        width: 80vw;
-        bottom: -10vw;
-        right: 40vw;
     }
 }
 
@@ -174,10 +202,6 @@
     border-radius: 15px;
 }
 
-#position-information p {
-    font-size: 16px;
-    font-weight: 400;
-}
 
 #modalCTA {
     height: 100%;

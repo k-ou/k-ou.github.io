@@ -50,7 +50,7 @@ nav li {
     nav ul {
         text-align: center;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 25px;
     }
 
     nav li {
@@ -109,32 +109,30 @@ nav li {
     /*    transition: 0.5s ease-in;*/
     background-color: rgba(50, 50, 50, .85);
     -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 
 .open-nav .mobile-toggle span {
     -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 
 .open-nav .mobile-toggle span:nth-child(1) {
-    -webkit-transform: translateY(4px) rotate(135deg);
-    transform: translateY(4px) rotate(135deg);
-    /*
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-*/
+    -webkit-transform: translateY(8px) rotate(135deg);
+    transform: translateY(8px) rotate(135deg);
 }
 
 .open-nav .mobile-toggle span:nth-child(2) {
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(12.5px);
+    transform: translateX(12.5px);
     width: 1px;
 }
 
 .open-nav .mobile-toggle span:nth-child(3) {
-    -webkit-transform: translateY(-4px) rotate(-135deg);
-    transform: translateY(-4px) rotate(-135deg);
+    -webkit-transform: translateY(-8px) rotate(-135deg);
+    transform: translateY(-8px) rotate(-135deg);
 }
 
 .mobile-toggle {
@@ -167,6 +165,7 @@ nav li {
     .mobile-toggle {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         align-content: center;
         /*        height: 50%;*/
     }

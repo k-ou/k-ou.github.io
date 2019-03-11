@@ -4,17 +4,22 @@
     flex-direction: column;
     padding-top: 0px;
     padding-bottom: 40px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+#footer-info {
     padding-right: 40px;
 }
 
 #footer-info img {
-    width: 300px;
+    width: 270px;
 }
 
 #footer-info p {
     margin: 0;
-    padding-left: 48px;
-    font-size: 17px;
+    padding-left: 40px;
+    font-size: 15px;
 }
 
 #footer-social-media {
@@ -23,9 +28,12 @@
     padding-top: 30px;
 }
 
+.facebook-logo {
+    padding-right: 10px
+}
+
 .facebook-logo,
 .linkedin-logo {
-    padding-left: 10px;
     transition: 0.2s ease-out;
 }
 
@@ -49,6 +57,15 @@
         align-items: flex-start;
         flex-direction: row;
         padding-top: 40px;
+    }
+
+    #footer-info img {
+        width: 300px;
+    }
+
+    #footer-info p {
+        padding-left: 48px;
+        font-size: 17px;
     }
 
     #footer-social-media {

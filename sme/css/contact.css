@@ -1,5 +1,22 @@
 body {
-    background-image: url('../img/gradient.png');
+    background-image: url("../img/contact-bg.svg"), url('../img/gradient.png');
+    background-size: 500%, cover;
+    background-position: 95% 100%, bottom;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-size: cover, cover;
+        background-position: 50% 0%, bottom;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-size: cover, cover;
+        background-position: 50% 0%, bottom;
+    }
 }
 
 .container-fluid {
@@ -23,39 +40,14 @@ body {
     margin: 0;
 }
 
+@media only screen and (max-width: 411px) {
+
+    .address p,
+    .email p {
+        font-size: 5vw;
+    }
+}
+
 #footer-social-media img {
     filter: invert(1.0);
-}
-
-.circle {
-    border-radius: 100%;
-    border: 2px white solid;
-    position: absolute;
-    height: 100vw;
-    width: 100vw;
-    right: -10vw;
-    bottom: -70vw;
-    z-index: -1;
-}
-
-.line {
-    border: 1px white solid;
-    transform: rotate(-45deg);
-    position: absolute;
-    width: 3000px;
-    bottom: -70vh;
-    right: -100vw;
-    z-index: -1;
-}
-
-@media only screen and (min-width: 768px) {
-    .circle {
-        height: 50vw;
-        width: 50vw;
-        bottom: -10vw;
-    }
-
-    .line {
-        bottom: 100vh;
-    }
 }

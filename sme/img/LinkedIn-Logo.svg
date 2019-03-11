@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1"
 	 id="svg3070" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75.8 76.2"
-	 style="enable-background:new 0 0 75.8 76.2;" xml:space="preserve">
-<path d="M70.2-0.1H5.6C2.5-0.1,0,2.4,0,5.4v65.3c0,3.1,2.5,5.5,5.6,5.5h64.6c3.1,0,5.6-2.4,5.6-5.5V5.4C75.8,2.4,73.3-0.1,70.2-0.1z
-	 M22.9,63.8H11.5V29.4h11.4V63.8z M17.2,24.7c-3.9,0-6.4-2.6-6.4-5.9c0-3.4,2.6-5.9,6.5-5.9c4,0,6.3,2.5,6.4,5.9
-	C23.7,22.1,21.2,24.7,17.2,24.7z M64.3,63.8H52.9V45.4c0-4.6-1.6-7.7-5.8-7.7c-3.2,0-5.1,2.1-5.9,4.2c-0.3,0.7-0.4,1.7-0.4,2.8v19.3
-	H29.3c0,0,0.1-31.2,0-34.4h11.5v4.8c1.5-2.3,4.2-5.7,10.3-5.7c7.5,0,13.1,4.9,13.1,15.5V63.8z"/>
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 76 76"
+	 style="enable-background:new 0 0 76 76;" xml:space="preserve">
+<path d="M70.4,0H5.6C2.5,0,0,2.5,0,5.5v65C0,73.6,2.5,76,5.6,76h64.8c3.1,0,5.6-2.4,5.6-5.5v-65C76,2.5,73.5,0,70.4,0z M23,63.6
+	H11.5V29.4H23V63.6z M17.2,24.7c-3.9,0-6.4-2.6-6.4-5.9c0-3.4,2.6-5.9,6.5-5.9c4,0,6.3,2.5,6.4,5.9C23.8,22.1,21.3,24.7,17.2,24.7z
+	 M64.5,63.6H53V45.3c0-4.6-1.6-7.7-5.8-7.7c-3.2,0-5.1,2.1-5.9,4.2c-0.3,0.7-0.4,1.7-0.4,2.8v19.2H29.4c0,0,0.1-31.1,0-34.3h11.5
+	v4.8c1.5-2.3,4.2-5.7,10.3-5.7c7.5,0,13.1,4.9,13.1,15.4v19.5H64.5z"/>
 </svg>
