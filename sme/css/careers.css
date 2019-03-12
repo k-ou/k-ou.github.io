@@ -1,3 +1,5 @@
+/* BACKGROUND IMAGE */
+
 .hero {
     background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/handshake.jpg");
     background-position: 70% 100%;
@@ -38,6 +40,28 @@
         background-size: 130%, cover, cover;
     }
 }
+
+/* HEADING */
+
+.line {
+    width: 100%;
+    height: 0px;
+    border: 1px var(--sme-teal) solid;
+}
+
+.header {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h3 {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* JOB LISTINGS */
 
 .position {
     display: flex;
@@ -83,7 +107,7 @@
 }
 
 #buttons a {
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 #buttons a,
@@ -97,6 +121,8 @@
         height: 50px;
     }
 }
+
+/* MODAL */
 
 #career-modal-container {
     background-color: rgba(0, 0, 0, 0.5);
@@ -202,8 +228,11 @@
     border-radius: 15px;
 }
 
-
 #modalCTA {
     height: 100%;
     box-sizing: border-box;
+}
+
+#modalCTA {
+    margin-top: 20px;
 }

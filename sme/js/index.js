@@ -1,14 +1,18 @@
-function isMobile() {
-    return ($(window).width() < 768);
-}
+let winWidth = isMobile();
 
-$(document).ready(function () {
-    if (isMobile()) {
-        if ($('.arrow').hasClass('arrow-white')) {
-            $('.arrow').attr('src', 'img/arrow-white-mobile.svg');
-        } else if ($('.arrow').hasClass('arrow-dark')) {
-            $('.arrow').attr('src', 'img/arrow-dark-mobile.svg');
-            console.log('bacon');
+$(window).on('resize', function () {
+    if (winWidth != isMobile()) {
+        winWidth = isMobile();
+        if ($('img').hasClass('dashes')) {
+            $('.divider img').attr('src', 'img/divider-01-sm.svg');
+            $('.divider img').removeClass('dashes').addClass('dashes-sm');
+        } else if ($('img').hasClass('dashes-sm')) {
+            $('.divider img').attr('src', 'img/divider-01.svg');
+            $('.divider img').removeClass('dashes-sm').addClass('dashes');
         }
     }
 });
+
+function isMobile() {
+    return ($(window).width() < 768);
+}

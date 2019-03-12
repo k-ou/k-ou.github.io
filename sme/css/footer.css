@@ -34,12 +34,13 @@
 
 .facebook-logo,
 .linkedin-logo {
+    -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
 }
 
 .facebook-logo:hover,
 .linkedin-logo:hover {
-    filter: invert(0.5) saturate(5) hue-rotate(175deg);
+    filter: invert(0.3) saturate(5) hue-rotate(175deg);
 }
 
 .linkedin-logo img {

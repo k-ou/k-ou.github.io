@@ -24,3 +24,15 @@
     background-image: url("../img/home-cta-bg.svg"), url("../img/gradient.png");
     background-position: bottom, bottom;
 }
+
+@media screen and (min-width: 1024px) {
+    .makers-doers h3 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .makers-doers h3 {
+        font-size: 3em;
+    }
+}

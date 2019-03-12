@@ -36,6 +36,13 @@ function deleteRows(row) {
     $('.position').remove();
 }
 
+// when mobile, only show title
+// when tablet/desktop, show title, location, clearance
+// if row has non-empty other cols (not shown in main view)
+// then show expand button and enable expand-to-modal
+
+// if click event occurs on an expandable row
+// then create modal
 function renderRow(row) {
     var container = $('<div></div>').addClass('position');
     const allKeys = Object.keys(row);
@@ -64,7 +71,6 @@ function renderRow(row) {
     }
     container.append(buttons);
     return container;
-    //    $('#careers-positions').append(container);
 }
 
 function filterObjectByKeys(obj, predicate) {
@@ -81,14 +87,6 @@ function filterObjectByKeys(obj, predicate) {
             }), {}
         )
 }
-
-// when mobile, only show title
-// when tablet/desktop, show title, location, clearance
-// if row has non-empty other cols (not shown in main view)
-// then show expand button and enable expand-to-modal
-
-// if click and is-expandable
-// then create modal thing
 
 function getKeys() {
     const keys = ['Position'];
@@ -116,7 +114,7 @@ function renderModal(row, otherRows) {
     const roleDescription = $('<div class="position-section description"></div>');
 
     const jobID = $('<p><span>JOB ID: </span> </p>').append(otherRows['JobID']);
-    // ROLE DESCRIPTION
+    // if mobile, showcase LOCATION, CLEARANCE, AND JOB ID at the beginning of the modal
     if (isMobile()) {
         const location = $('<p><span>Location: </span> </p>').append(row['Location']);
         const clearance = $('<p><span>Clearance: </span> </p>').append(row['Clearance']);
@@ -124,8 +122,8 @@ function renderModal(row, otherRows) {
         roleDescription.append(clearance);
         roleDescription.append(jobID);
     }
+    // ROLE DESCRIPTION
     if (otherRows.hasOwnProperty('RoleDescription')) {
-        // console.log(row);
         const roleDescriptionValue = $('<p></p>').append(otherRows['RoleDescription']);
         const roleDescriptionHeader = $('<h6>Role Description</h6>');
         roleDescription.append(roleDescriptionHeader);
@@ -135,10 +133,10 @@ function renderModal(row, otherRows) {
         }
     }
     positionInformation.append(roleDescription);
-    // CTA
+    // MODAL CTA
     const cta = $('<div id="modalCTA" class="position-section border-grey content-container"><h5>Interested in this position?</h5><p>Send us an email with the Job ID as the subject, and attach your resume, optional cover letter, and any other relevant documents.</p><a href="mailto:careers@strategicmissionelements.com?subject=Interested in Job ' + otherRows['JobID'] + '" target="_blank"><button class="button-teal button-center"><p>SEND YOUR RESUME</p><div class="arrow-full arrow-teal"><div class="arrow-line"></div><div class="arrow-head"></div></div></button></a></div>');
     positionInformation.append(cta);
-    // PARSE BASICQUAL for bullets
+    // parse BASICQUALIFICATIONS for bullets
     if (otherRows.hasOwnProperty('BasicQualifications')) {
         const basicQualificationsContainer = $('<div id="basicQualificationsContainer" class="position-section"><h6>Basic Qualifications</h6></div>');
         const basicQualifications = $('<ul></ul>').attr('id', 'basicQualifications');
@@ -150,8 +148,8 @@ function renderModal(row, otherRows) {
         basicQualificationsContainer.append(basicQualifications);
         positionInformation.append(basicQualificationsContainer);
     }
-    // PARSE ADDQUAL for bullets
-    if (otherRows.hasOwnProperty('BasicQualifications')) {
+    // parse ADDITIONALQUALIFICATIONS for bullets
+    if (otherRows.hasOwnProperty('AdditionalQualifications')) {
         const additionalQualificationsContainer = $('<div id="additionalQualificationsContainer" class="position-section"><h6>Additional Qualifications</h6></div>');
         const additionalQualifications = $('<ul></ul>').attr('id', 'additionalQualifications');
         const additionalFullStr = row['AdditionalQualifications'];
@@ -167,20 +165,21 @@ function renderModal(row, otherRows) {
     $('body').append(container);
 }
 
+// render HEADER for MODAL
 function renderHeader(row) {
     var container = $('<div></div>').addClass('position');
     const allKeys = Object.keys(row);
     var renderedKeys = ['Position'];
+    // if not mobile, show additional initial information
     if (!isMobile()) {
         renderedKeys = [...renderedKeys, 'Location', 'Clearance'];
     }
     const renderedRows = renderedKeys.map(k => $('<p></p>').append(row[k]));
     container.append(renderedRows);
     const buttons = $('<div id="buttons"></div>');
-    // for everything in renderedKeys, add to <p>
-    // if (!isMobile()) render email button
     var otherKeys = allKeys.filter(k => !renderedKeys.includes(k));
     otherKeys = otherKeys.filter(k => row[k] !== '');
+    //    if there's additional information besides what's already been listed, + jobID, then indicate that element is clickable
     if (otherKeys.length > 1) {
         container.addClass('clickable');
         // show expand button
@@ -188,7 +187,7 @@ function renderHeader(row) {
         // on click, delete modal
         container.click(deleteModal);
     }
-    // show email button
+    // if not mobile, show email button
     if (!isMobile()) {
         buttons.append('<a href="mailto:careers@strategicmissionelements.com?subject=Interested in Job ' + row['JobID'] + '" target="_blank"><img src="img/expand-03.svg" alt="email" class="button-email"></a>')
     }
