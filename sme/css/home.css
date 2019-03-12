@@ -1,7 +1,17 @@
 .hero {
+    /*
     background-image: linear-gradient(rgba(200, 200, 255, 0.3), rgba(20, 35, 80, 0.4)), url('../img/plane.jpg');
     background-size: 200%;
-    background-position: 0% 10%;
+*/
+    background-image: linear-gradient(rgba(20, 35, 80, 0.4), rgba(20, 30, 60, 0.9)), url('../img/office.jpeg');
+    background-size: cover;
+    background-position: 60% 0%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-position: 0% 10%;
+    }
 }
 
 .makers-doers h3 {

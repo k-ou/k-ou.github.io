@@ -1,7 +1,7 @@
 /* BACKGROUND IMAGE */
 
 .hero {
-    background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/handshake.jpg");
+    background-image: linear-gradient(rgba(30, 60, 100, 0.4), rgba(10, 20, 40, 0.4)), url("../img/handshake.jpg");
     background-position: 70% 100%;
     background-size: 380%;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url("../img/careers-bg.svg"), linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/handshake.jpg");
+        background-image: url("../img/careers-bg.svg"), linear-gradient(rgba(30, 60, 100, 0.4), rgba(10, 20, 40, 0.4)), url("../img/handshake.jpg");
         background-position: 0% 0%, center, 0% 35%;
         background-size: 150%, cover, cover;
     }

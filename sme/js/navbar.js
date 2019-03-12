@@ -44,6 +44,9 @@ function mobileState() {
 
 function currentPage() {
     var path = location.pathname;
+    if (path.length <= 1) {
+        return;
+    }
     var n = path.lastIndexOf('/');
     var current = path.substring(n + 1);
     $('#navbar-menu li a').each(function () {

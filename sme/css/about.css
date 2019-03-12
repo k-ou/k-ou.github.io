@@ -1,5 +1,5 @@
 .hero {
-    background-image: linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/robot.jpg");
+    background-image: linear-gradient(rgba(30, 30, 50, 0.3), rgba(20, 40, 70, 0.8)), url("../img/robot.jpg");
     background-position: 85% 100%;
     background-size: cover;
 }
@@ -37,7 +37,7 @@
 
 @media only screen and (min-width: 768px) {
     .hero {
-        background-image: url("../img/about-bg.svg"), linear-gradient(rgba(200, 200, 255, 0.2), rgba(20, 40, 80, 0.8)), url("../img/robot.jpg");
+        background-image: url("../img/about-bg.svg"), linear-gradient(rgba(30, 30, 50, 0.3), rgba(20, 40, 70, 0.8)), url("../img/robot.jpg");
         background-position: 0% 100%, center, 0% 45%;
         background-size: cover;
     }

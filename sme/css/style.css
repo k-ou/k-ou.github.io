@@ -273,9 +273,10 @@ li {
 
 .hero {
     padding-top: 200px;
-    /*    padding-bottom: 50px;*/
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .hero-text {

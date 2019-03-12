@@ -1,8 +1,8 @@
-let winWidth = isMobile();
+let windowWidth = isMobile();
 
 $(window).on('resize', function () {
-    if (winWidth != isMobile()) {
-        winWidth = isMobile();
+    if (windowWidth != isMobile()) {
+        windowWidth = isMobile();
         if ($('img').hasClass('dashes')) {
             $('.divider img').attr('src', 'img/divider-01-sm.svg');
             $('.divider img').removeClass('dashes').addClass('dashes-sm');
