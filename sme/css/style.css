@@ -134,6 +134,10 @@ li {
     font-size: 20px;
 }
 
+.p-bold {
+    font-weight: 700;
+}
+
 .center {
     text-align: center;
 }
@@ -234,6 +238,7 @@ li {
 .col-6-mid,
 .col-6-start,
 .col-6-end,
+.col-8-mid,
 .col-12 {
     grid-column: 1 / span 12;
 }
@@ -262,6 +267,10 @@ li {
 @media only screen and (min-width: 1024px) {
     .col-6-mid {
         grid-column: 3 / span 8;
+    }
+
+    .col-8-mid {
+        grid-column: 2 / span 10;
     }
 }
 

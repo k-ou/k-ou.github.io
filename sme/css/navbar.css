@@ -24,12 +24,12 @@ nav {
 }
 
 #navbar-logo {
-    width: 250px;
+    width: 275px;
 }
 
 @media only screen and (min-width: 768px) {
     #navbar-logo {
-        width: 300px;
+        width: 325px;
     }
 }
 

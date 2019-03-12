@@ -20,6 +20,16 @@
     padding-bottom: 12px;
 }
 
+.service-p p {
+    padding: 20px;
+}
+
+.summary .content-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
 .cta {
     background-image: url("../img/services-cta-bg.svg"), url("../img/gradient.png");
     background-position: 30% 100%, center center;
