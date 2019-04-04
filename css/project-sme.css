@@ -1,0 +1,121 @@
+/*
+/* HERO
+/*
+/*
+/*
+*/
+
+#proj-sme-img-01 {
+    background-image: url('../img/work-grid-sme.jpg');
+}
+
+/*
+/* LOGO
+/*
+/*
+/*
+*/
+
+#proj-sme-logo-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+#proj-sme-logo-existing {
+    width: 85%;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-sme-logo-summary div {
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-sme-logo-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #proj-sme-logo-summary div {
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+#proj-sme-style {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 80px;
+    padding-top: 20px;
+    /*    padding-bottom: 80px;*/
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-sme-style {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #proj-sme-style div {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        /* NEW, Spec - Firefox, Chrome, Opera */
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        background-color: #ececec;
+    }
+}
+
+#proj-sme-web-summary {}
+
+
+/*
+/* WEBSITE
+/*
+/*
+/*
+*/
+
+#proj-sme-web {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-sme-web {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*
+#proj-sme-web img {
+    display: none;
+}
+*/
+
+
+#proj-sme-website-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
