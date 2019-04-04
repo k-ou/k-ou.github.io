@@ -83,9 +83,6 @@
     }
 }
 
-#proj-sme-web-summary {}
-
-
 /*
 /* WEBSITE
 /*
@@ -106,13 +103,6 @@
         grid-template-columns: 1fr 1fr;
     }
 }
-
-/*
-#proj-sme-web img {
-    display: none;
-}
-*/
-
 
 #proj-sme-website-button {
     display: flex;
