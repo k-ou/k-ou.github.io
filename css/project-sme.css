@@ -84,7 +84,7 @@
 }
 
 /*
-/* WEBSITE
+/* WIREFRAMES
 /*
 /*
 /*
@@ -103,6 +103,42 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* SCREENSHOTS */
+
+#proj-sme-img-02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60vw;
+    grid-gap: 20px;
+}
+
+#proj-sme-01 {
+    background-image: url('../img/sme-careers-01.png');
+}
+
+#proj-sme-02 {
+    background-image: url('../img/sme-careers-02.png');
+}
+
+#proj-sme-03 {
+    background-image: url('../img/sme-careers-modal.png');
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-sme-img-02 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 20vw;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #proj-sme-img-02 {
+        grid-auto-rows: 15vw;
+    }
+}
+
+/* WEBSITE */
 
 #proj-sme-website-button {
     display: flex;
