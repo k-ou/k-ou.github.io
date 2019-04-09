@@ -20,8 +20,8 @@ img {
     max-width: 100%;
 }
 
-#postcards,
-#workers {
+.container-3,
+.container-4 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -38,11 +38,11 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
-    #postcards {
+    .container-3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #workers {
+    .container-4 {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -54,7 +54,7 @@ img {
         margin-bottom: 50px;
     }
 
-    #workers {
+    .container-4 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
