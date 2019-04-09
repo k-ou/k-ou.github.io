@@ -3,12 +3,28 @@ body {
     background-size: 500%, cover;
     background-position: 95% 100%, bottom;
     background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.hero {
+    align-items: flex-end;
+    padding-top: 0px;
 }
 
 @media only screen and (min-width: 768px) {
     body {
         background-size: cover, cover;
         background-position: 50% 0%, bottom;
+    }
+
+    .hero {
+        align-items: flex-start;
+        padding-top: 200px;
     }
 }
 
@@ -17,13 +33,6 @@ body {
         background-size: cover, cover;
         background-position: 50% 0%, bottom;
     }
-}
-
-.container-fluid {
-    min-height: 100vh;
-    margin-bottom: 0px;
-    overflow: hidden;
-    padding: 0;
 }
 
 .address {

@@ -25,58 +25,6 @@ img {
     max-width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: var(--sme-blue-light);
-}
-
-a.underline {
-    text-decoration: underline;
-}
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-}
-
-/**
- * Show the overflow in IE.
- */
-
-button,
-input {
-    overflow: visible;
-}
-
-/*Remove the inheritance of text transform in Firefox.*/
-
-button,
-select {
-    text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
-
 /* TYPOGRAPHY */
 /**/
 /**/
@@ -106,8 +54,13 @@ h2 {
     font-size: 32px;
 }
 
+h2.summary-h {
+    font-size: 20px;
+    color: var(--sme-grey-dark);
+}
+
 h3 {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.05em;
 }
@@ -129,16 +82,28 @@ p {
     margin-bottom: 12px;
 }
 
-p,
-li {
+p {
     font-size: 20px;
 }
 
-.p-bold {
+li {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--sme-blue-light);
+}
+
+a.underline {
+    text-decoration: underline;
+}
+
+.text-bold {
     font-weight: 700;
 }
 
-.center {
+.text-center {
     text-align: center;
 }
 
@@ -160,13 +125,9 @@ li {
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 40px;
     }
 }
-
-@media only screen and (min-width: 1024px) {}
-
-@media only screen and (min-width: 1800px) {}
 
 /* LAYOUT */
 /**/
@@ -200,6 +161,8 @@ li {
 .container-fluid {
     padding-bottom: 5px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 
 @media only screen and (min-width: 768px) {
@@ -280,8 +243,17 @@ li {
     }
 }
 
+
+/* HERO */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
 .hero {
-    padding-top: 200px;
+    padding-top: 175px;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-transition: all 200ms ease-in-out;
@@ -297,10 +269,48 @@ li {
     font-weight: 300;
 }
 
-h2.summary-h {
-    font-size: 20px;
-    color: var(--sme-grey-dark);
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0px;
+        height: 475px;
+    }
+
+    .hero-lg {
+        height: 600px;
+    }
+
+    .hero-text {
+        grid-column: 1 / span 12;
+    }
 }
+
+@media only screen and (min-width: 1024px) {
+    .hero-text {
+        grid-column: 1 / span 8;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero-lg {
+        height: 700px;
+    }
+
+    .hero-text {
+        grid-column: 1 / span 6;
+    }
+}
+
+/* OTHER CONTAINERS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 
 .content-container {
     padding-top: 40px;
@@ -324,15 +334,6 @@ h2.summary-h {
 }
 
 @media only screen and (min-width: 768px) {
-    .hero {
-        padding-top: 200px;
-        /*        padding-bottom: 5px;*/
-    }
-
-    .hero-text {
-        grid-column: 1 / span 10;
-    }
-
     .content-container {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -349,10 +350,6 @@ h2.summary-h {
 }
 
 @media only screen and (min-width: 1024px) {
-    .hero-text {
-        grid-column: 1 / span 8;
-    }
-
     .content-container {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -366,23 +363,56 @@ h2.summary-h {
     }
 }
 
-@media only screen and (min-width: 1400px) {
-    .hero {
-        padding-top: 250px;
-    }
+/* BUTTONS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 
-    .hero-text {
-        grid-column: 1 / span 6;
-    }
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
 
-/* BUTTON */
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+/**
+ * Show the overflow in IE.
+ */
+
+button,
+input {
+    overflow: visible;
+}
+
+/*Remove the inheritance of text transform in Firefox.*/
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
 
 button {
     -webkit-border-radius: 30px;
@@ -465,7 +495,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* ARROWS */
+/* BUTTON ARROWS */
 /**/
 /**/
 /**/
@@ -493,12 +523,6 @@ button:hover {
     height: 8px;
     transform: rotate(45deg);
     position: absolute;
-}
-
-@media only screen and (min-width: 600px) {
-    .arrow-full {
-        /*        width: 100px;*/
-    }
 }
 
 .arrow-white .arrow-line {
@@ -563,20 +587,14 @@ button:hover .arrow-teal .arrow-head {
 /**/
 /**/
 
-.divider {
+.line {
     width: 100%;
+    height: 0px;
+    border: 1px var(--sme-grey-light) solid;
+    max-width: 600px;
     margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 35px;
-}
-
-@media only screen and (min-width: 768px) {
-    .divider {
-        width: 82%;
-        max-width: 1250px;
-        padding-top: 15px;
-        padding-bottom: 55px;
-    }
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* GENERAL STYLING */
@@ -591,9 +609,10 @@ button:hover .arrow-teal .arrow-head {
     border: 2px solid var(--sme-grey-light);
 }
 
+.border-blue {
+    border: 2px solid var(--sme-blue-light);
+}
+
 .background-grey {
     background-color: var(--sme-grey-light);
 }
-
-
-@media only screen and (min-width: 1800px) {}

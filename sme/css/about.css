@@ -1,8 +1,24 @@
+/* HERO */
 .hero {
-    background-image: linear-gradient(rgba(30, 30, 50, 0.3), rgba(20, 40, 70, 0.8)), url("../img/robot.jpg");
+    background-image: linear-gradient(rgba(30, 30, 50, 0.3), rgba(20, 40, 70, 0.8)), url("../img/about-hero.jpg");
     background-position: 85% 100%;
     background-size: cover;
 }
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-position: center, 0% 45%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero {
+        background-image: url("../img/about-bg.svg"), linear-gradient(rgba(30, 30, 50, 0.3), rgba(20, 40, 70, 0.8)), url("../img/about-hero.jpg");
+        background-position: 0% 100%, center, 0% 45%;
+    }
+}
+
+/* VALUES */
 
 .value {
     position: relative;
@@ -47,12 +63,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .hero {
-        background-image: url("../img/about-bg.svg"), linear-gradient(rgba(30, 30, 50, 0.3), rgba(20, 40, 70, 0.8)), url("../img/robot.jpg");
-        background-position: 0% 100%, center, 0% 45%;
-        background-size: cover;
-    }
-
     .value {
         padding-top: 0;
         width: 32%;
@@ -66,7 +76,3 @@
         height: 75%;
     }
 }
-
-@media only screen and (min-width: 1024px) {}
-
-@media only screen and (min-width: 1800px) {}

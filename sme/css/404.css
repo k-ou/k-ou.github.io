@@ -1,8 +1,23 @@
 body {
     background-image: url('../img/gradient.png');
+    background-size: cover;
+    overflow: auto;
 }
 
-@media only screen and (min-width: 768px) {}
+.container-fluid {
+    margin-bottom: 0;
+    height: auto;
+}
+
+.hero {
+    padding-top: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 200px;
+    }
+}
 
 @media only screen and (min-width: 1024px) {}
 

@@ -8,10 +8,14 @@ function renderRows() {
         url: "careers.csv",
         dataType: "text",
         success: function (response) {
-            const rows = $.csv.toObjects(response);
-            rows.forEach(row => {
-                $('#careers-positions').append(renderRow(row))
-            })
+            const rows = $.csv.toObjects(response).filter(r => !isEmptyRow(r));
+            if (rows.length !== 0) {
+                $('.careers-container').css('display', 'grid');
+                $('.cta-container').css('display', 'grid');
+                rows.forEach(row => {
+                    $('#careers-positions').append(renderRow(row))
+                })
+            }
         }
     });
 }
@@ -88,6 +92,16 @@ function filterObjectByKeys(obj, predicate) {
         )
 }
 
+function isEmptyRow(rowObj) {
+    for (k in rowObj) {
+        const property = rowObj[k];
+        if (property !== "" && property !== undefined) {
+            return false;
+        }
+    }
+    return true;
+}
+
 function getKeys() {
     const keys = ['Position'];
     return isMobile() ? keys : [...keys, 'Location', 'Clearance'];
@@ -131,6 +145,9 @@ function renderModal(row, otherRows) {
         if (!isMobile()) {
             roleDescription.append(jobID);
         }
+    }
+    if (!isMobile() && !otherRows.hasOwnProperty('RoleDescription')) {
+        roleDescription.append(jobID);
     }
     positionInformation.append(roleDescription);
     // MODAL CTA

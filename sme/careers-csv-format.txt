@@ -1,0 +1,11 @@
+The following document explains how "careers.csv" should be formatted in order to be displayed correctly at the url www.strategicmissionelements.com/careers. The spreadsheet should be exported as a csv file, and the csv file should be named "careers". Names of headers for columns SHOULD NOT be changed.
+
+Location: City, ST
+
+Clearance: Use acronyms
+
+JobID: Within the website drafts, I've been randomly assigning four digit numbers, which can be referred back to through the spreadsheet when applicants inquire about a position. Although simplistic, I think this solution should suffice. You can work with sequential numbers to minimize the possibility of repeating numbers or to reduce ambiguity, or if you're keeping an archive of positions you've offered.
+
+RoleDescription, BasicQualifications, AdditionalQualifications: Optional.
+
+BasicQualifications, AdditionalQualifications: Qualifications should be bulleted. Separate bullets with "*". (e.g. *3+ years experience with C# *Experience with Unity3D *Experience with dissecting large data sets) The "*" character SHOULD NOT be used within these descriptions.

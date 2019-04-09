@@ -1,5 +1,5 @@
 #navbar-container {
-    z-index: 100;
+    z-index: 1;
     position: relative;
 }
 
@@ -24,7 +24,7 @@ nav {
 }
 
 #navbar-logo {
-    width: 275px;
+    width: 260px;
 }
 
 @media only screen and (min-width: 768px) {
