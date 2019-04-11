@@ -490,7 +490,7 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*    flex-wrap: wrap;*/
 }
 
 #footer h4,
