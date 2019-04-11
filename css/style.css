@@ -381,6 +381,10 @@ p {
     }
 }
 
+.work-proj#sme {
+    background-image: url('../img/work-grid-sme.jpg');
+}
+
 .work-proj#nwirp {
     background-image: url('../img/work-grid-nwirp.png');
     background-size: 70%;
