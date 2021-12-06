@@ -34,36 +34,6 @@
 /*
 */
 
-#typography {
-    flex-direction: column;
-}
-
-.typeface {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.typeface-example {
-    font-size: 13vw;
-}
-
-@media only screen and (min-width: 1024px) {
-    .typeface-example {
-        font-size: 7.5vw;
-    }
-}
-@media only screen and (min-width: 1800px) {
-    .typeface-example {
-        font-size: 140px;
-    }
-}
-
-#typography p:not(.typography-caption) {
-    word-break: break-all;
-    letter-spacing: normal;
-    line-height: 1em;
-}
-
 #typography-roboto-cond,
 #typography-roboto-cond-b {
     font-family: 'Roboto Condensed', sans-serif;
@@ -86,11 +56,6 @@
 #typography-baskerville {
     font-family: 'Libre Baskerville', sans-serif;
     /*    font-size: 14px;*/
-}
-
-.typography-caption {
-    font-size: 12px;
-    color: var(--kelly-grey-light);
 }
 
 /*
@@ -155,12 +120,15 @@
         grid-template-columns: 1fr 1fr;
         /*        grid-auto-rows: 30vw;*/
     }
+
     #proj-basis-sections div:nth-of-type(2) {
         order: 2;
     }
+
     #proj-basis-sections-img {
         order: 1;
     }
+
     #proj-basis-sections-img,
     #proj-basis-recommendations-img {
         background-size: 140%;
@@ -202,6 +170,7 @@
         padding-left: 100px;
         padding-right: 100px;
     }
+
     #proj-basis-issuu div {
         height: 800px;
     }
@@ -258,9 +227,11 @@
     #proj-basis-website {
         grid-template-columns: repeat(2, 1fr);
     }
+
     #proj-basis-website div {
         position: relative;
     }
+
     .proj-basis-website-portal a {
         position: absolute;
         height: 100%;
@@ -272,6 +243,7 @@
         opacity: 0.9;
         margin-bottom: 0px;
     }
+
     #proj-basis-website div:hover a {
         opacity: 0;
         /*        height: auto;*/
@@ -282,6 +254,7 @@
     #proj-basis-website {
         grid-template-columns: repeat(4, 1fr);
     }
+
     #proj-basis-website-button {
         grid-column: 1 / 5;
     }

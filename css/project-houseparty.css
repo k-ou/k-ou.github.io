@@ -1,0 +1,119 @@
+#proj-wlm-img-01 {
+    background-image: url("../img/wlm/HouseParty2021/proj-wlm-img-01.png");
+}
+
+/*
+/* INSPIRATION
+/*
+/*
+/*
+*/
+
+#wlmhp2021-inspo {
+    text-align: center
+}
+
+#wlmhp2021-inspo-img {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+#wlmhp2021-inspo-img div {
+    flex: 1;
+}
+
+/*
+/* FINAL ASSETS
+/*
+/*
+/*
+*/
+
+#gridexamplescontainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#gridexamplescontainer > * {
+    max-height: 40vh;
+    flex-shrink: 10;
+    width: auto;
+    object-fit: contain;
+}
+
+.assetcolumn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    flex: 1 0 100%;
+}
+
+.assetcolumn img {
+    height: auto !important;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 0;
+    min-width: 0;
+}
+
+/*
+#proj-wlmhp2021-examples {
+    display: grid;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-wlmhp2021-examples {
+        display: grid;
+        grid-template-columns: 2.5fr 6.1fr 4.2fr;
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        gap: 20px;
+    }
+
+}
+
+.gridexamplescontainer {
+    display: flex;
+}
+
+.gridexamples {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#proj-wlmhp2021-examples img {
+    width: 100%;
+}
+
+
+.gridexamples {
+    display: flex;
+    align-items: flex-start;
+    height: 40vh;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.exflex img {
+    height: 100%;
+    width: auto;
+    flex-shrink: 10;
+    min-height: 0;
+    min-width: 0;
+    object-fit: contain;
+}
+*/

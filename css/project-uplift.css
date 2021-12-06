@@ -1,0 +1,234 @@
+#proj-uplift-img-01 {
+    background-image: url("../img/uplift-banner.jpg");
+}
+
+/*
+/* LOGO
+/*
+/*
+/*
+*/
+
+#proj-uplift-logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #proj-uplift-logo {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*
+/* LOGO NEW
+/*
+/*
+/*
+*/
+
+#proj-uplift-logo1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*    grid-auto-rows: 50vw;*/
+    grid-gap: 20px;
+}
+
+#proj-uplift-logo1 h4 {
+    -webkit-margin-before: 0;
+}
+
+#proj-uplift-logo1 div:not(.bg-img-cover) {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#proj-uplift-logo-01 {
+    background-image: url('../img/uplift/uplift_logo_01.png');
+    order: 2;
+}
+
+#proj-uplift-logo-02 {
+    background-image: url('../img/uplift/uplift_logo_02.png');
+}
+
+#proj-uplift-logo-01,
+#proj-uplift-logo-02 {
+    background-size: 140%;
+    height: 50vw;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-uplift-logo1 {
+        grid-template-columns: 1fr 1fr;
+        /*        grid-auto-rows: 30vw;*/
+    }
+
+    #proj-uplift-logo-01,
+    #proj-uplift-logo-02 {
+        background-size: 140%;
+        height: 30vw;
+    }
+}
+
+/*
+/* BRAND
+/*
+/*
+/*
+*/
+
+#proj-uplift-brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#proj-uplift-brand div {
+    width: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-uplift-brand {
+        flex-wrap: nowrap;
+    }
+}
+
+/*
+/* TYPOGRAPHY
+/*
+/*
+/*
+*/
+
+#uplift-typography {
+    flex-direction: column;
+}
+
+.typeface {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.typeface-example {
+    font-size: 13vw;
+}
+
+.typography-caption {
+    font-size: 12px;
+    color: var(--kelly-grey-light);
+}
+
+@media only screen and (min-width: 1024px) {
+    .typeface-example {
+        font-size: 7.5vw;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .typeface-example {
+        font-size: 140px;
+    }
+}
+
+#typography-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+#typography-din-2014 {
+    font-family: 'din 2014', sans-serif;
+    font-weight: 600;
+}
+
+
+/*
+/* COLOR
+/*
+/*
+/*
+*/
+
+#uplift-color {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(4, 20vw);
+    grid-template-columns: calc(35vw-10px) calc(35vw-10px);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-auto-flow: column;
+}
+
+#uplift-color #blue-dark {
+    background-color: #2b408a;
+}
+
+#uplift-color #yellow-dark {
+    background-color: #ffba08;
+}
+
+#uplift-color #green-dark {
+    background-color: #12664f;
+}
+
+#uplift-color #red-dark {
+    background-color: #d84f3c;
+}
+
+#uplift-color #blue-light {
+    background-color: #6e8fb5;
+}
+
+#uplift-color #yellow-light {
+    background-color: #ffddac;
+}
+
+#uplift-color #green-light {
+    background-color: #96d0a3;
+}
+
+#uplift-color #red-light {
+    background-color: #f19d8a;
+}
+
+#uplift-feed {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 31%);
+    grid-template-rows: auto;
+    padding-left: 0;
+    padding-right: 0;
+    grid-auto-flow: row;
+}
+
+@media only screen and (min-width: 768px) {
+    #uplift-color {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 15vh 15vh;
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+
+    #uplift-feed {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        grid-gap: 8px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #uplift-feed {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}

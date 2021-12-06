@@ -98,9 +98,11 @@
 
 @media only screen and (min-width: 1800px) {
     #about-hero-info {
+/*
         display: flex;
         justify-content: center;
         align-items: center;
+*/
     }
 }
 
@@ -179,7 +181,15 @@ p.strikethrough {
 
 @media only screen and (min-width: 1800px) {
     #about-me {
-        padding-left: 27vw;
-        padding-right: 27vw;
+        padding-left: 25vw;
+        padding-right: 25vw;
     }
 }
+
+/*
+#aboutme-sidenote {
+    font-size: 10px;
+    color: var(--kelly-grey-light);
+    padding-top: 10px;
+}
+*/

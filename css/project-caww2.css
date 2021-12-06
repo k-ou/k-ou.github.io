@@ -1,0 +1,62 @@
+/*
+/* TYPOGRAPHY
+/*
+/*
+/*
+*/
+
+#typography-futura {
+    font-family: futura-pt, sans-serif;
+}
+
+#typography-gill-sans-nova {
+    font-family: gill-sans-nova, sans-serif;
+}
+
+#proj-caww2-img-01 {
+    background-image: url('/img/caww2/proj-caww2-img-01.jpg');
+}
+
+/*
+/* INSPIRATION
+/*
+/*
+/*
+*/
+
+#proj-caww2-inspo {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#proj-caww2-inspo-img {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#proj-caww2-inspo-img img {
+    flex: 0 1 50%;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    #proj-caww2-inspo {
+        text-align: center;
+    }
+
+    #proj-caww2-inspo-img {
+        flex-wrap: nowrap;
+        height: 300px;
+    }
+
+    #proj-caww2-inspo-img img {
+        flex: 0 1 auto;
+    }
+}
+
+#proj-caww2-showcase h4 {
+    text-align: center;
+}

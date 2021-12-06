@@ -321,8 +321,8 @@ body {
     background-color: #ececec;
 }
 
-#proj-navigation-imbue {
-    background-image: url('../img/work-grid-imbue.jpg');
+#proj-navigation-upliftapa {
+    background-image: url('../img/uplift-banner.jpg');
 }
 
 #proj-navigation-pou {
@@ -333,17 +333,25 @@ body {
     background-image: url('../img/work-grid-basis-1.png');
 }
 
-#proj-navigation-sound-transit {
-    background-image: url('../img/work-grid-sound-transit.jpg');
+#proj-navigation-caww2 {
+    background-image: url('../img/work-grid-caww2.jpg');
 }
 
+/*
 #proj-navigation-odyssey {
     background-image: url('../img/work-grid-odyssey.jpg');
     background-size: 190%;
 }
+*/
 
 #proj-navigation-asam {
     background-image: url('../img/work-grid-asam.jpg');
+}
+
+#proj-navigation-houseparty {
+    background-image: url('../img/work-grid-wlm.png');
+    background-size: 90%;
+    background-color: #f4f4f4;
 }
 
 #proj-navigation-extra {

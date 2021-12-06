@@ -108,37 +108,6 @@
 /*
 */
 
-#typography {
-    flex-direction: column;
-}
-
-.typeface {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.typeface-example {
-    font-size: 13vw;
-}
-
-@media only screen and (min-width: 1024px) {
-    .typeface-example {
-        font-size: 7.5vw;
-    }
-}
-
-@media only screen and (min-width: 1800px) {
-    .typeface-example {
-        font-size: 140px;
-    }
-}
-
-#typography p:not(.typography-caption) {
-    word-break: break-all;
-    letter-spacing: normal;
-    line-height: 1em;
-}
-
 #typography-rubik {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
@@ -147,11 +116,6 @@
 #typography-lato {
     font-family: 'Lato', sans-serif;
     /*    font-size: 30px;*/
-}
-
-.typography-caption {
-    font-size: 12px;
-    color: var(--kelly-grey-light);
 }
 
 /*
@@ -187,6 +151,7 @@
         padding-left: 100px;
         padding-right: 100px;
     }
+
     #proj-sound-transit-issuu div {
         height: 800px;
     }
