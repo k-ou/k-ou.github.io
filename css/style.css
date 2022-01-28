@@ -292,8 +292,13 @@ p {
 
     #work-grid {
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 30vw;
+        grid-template-rows: repeat(4, 30vw) 15vw;
         grid-gap: 20px;
+    }
+
+    #work-grid a:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 
@@ -304,7 +309,12 @@ p {
 
     #work-grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 20vw;
+        grid-template-rows: repeat(2, 20vw) 10vw;
+    }
+
+    #work-grid a:last-child {
+        grid-column-start: 1;
+        grid-column-end: 5;
     }
 }
 
@@ -396,8 +406,8 @@ p {
     background-image: url('../img/work-grid-imbue.jpg');
 }
 
-.work-proj#pou {
-    background-image: url('../img/work-grid-pou.png');
+.work-proj#wlm {
+    background-image: url('../img/wlm/ads/040120%20Seattle%20Times%20Digital%20Ads%20-%20300x250.jpg');
 }
 
 .work-proj#basis {
@@ -420,6 +430,11 @@ p {
 
 .work-proj#asam {
     background-image: url('../img/work-grid-asam.jpg');
+}
+
+.work-proj#extra {
+    background-image: url('../img/work-grid-pou.png');
+    background-position: 100% 80%;
 }
 
 /*
@@ -460,12 +475,6 @@ p {
 .work-proj#odyssey {
     background-image: url('../img/work-grid-odyssey.jpg');
     background-size: 180%;
-}
-*/
-
-/*
-.work-proj#extra {
-    background-image: url('../img/extra-mlk.jpg');
 }
 */
 
