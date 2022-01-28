@@ -5,31 +5,26 @@
     margin-bottom: 30px;
 }
 
-#proj-mlk {
-    height: 45vw;
-    background-image: url('../img/extra-mlk.jpg');
-}
-
 img {
     max-width: 100%;
 }
 
-/*
-.container-3,
-.container-4,
-.container-5,
-.container-1-1,
-.container-2-3 {
+.container-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
-*/
 
-.container-sm {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+.container-flex {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container-flex img {
+    max-height: 400px;
 }
 
 @media only screen and (min-width: 768px) {
