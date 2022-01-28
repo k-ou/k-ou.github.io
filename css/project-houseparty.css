@@ -36,60 +36,14 @@
 }
 
 /*
-/* FINAL ASSETS
+/* PRODUCTION
 /*
 /*
 /*
 */
 
-#gridexamplescontainer {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-#gridexamplescontainer > * {
-    flex-shrink: 10;
-    width: 100%;
-    object-fit: contain;
-}
-
-.assetcolumn {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 10px;
-    flex: 1 0 auto;
-    height: auto;
-}
-
-.assetcolumn img {
-    height: auto !important;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    min-height: 0;
-    min-width: 0;
-    object-fit: contain;
-}
-
-@media only screen and (min-width: 768px) {
-    #gridexamplescontainer {
-        gap: 20px;
-    }
-
-    #gridexamplescontainer > * {
-        max-height: 40vh;
-        width: auto;
-    }
-
-    .assetcolumn {
-        height: 40vh;
+@media (min-width: 1200px) {
+    .masonry {
+        column-count: 3;
     }
 }
