@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.mItem img {
+    min-width: 100%;
+}
+
 @media (max-width: 1199px) {
     .masonry {
         column-count: 3;
@@ -50,7 +54,7 @@
 
 /* Caption slide full width and height */
 .slideDescription {
-/*
+    /*
     height: 100%;
     width: 100%;
 */
