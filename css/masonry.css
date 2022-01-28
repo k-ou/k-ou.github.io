@@ -1,7 +1,6 @@
 /* masonry */
 
 .masonry {
-    /*column-count: 4;*/
     column-count: 4;
     column-gap: 16px;
 }
