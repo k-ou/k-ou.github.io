@@ -15,17 +15,6 @@ img {
     grid-gap: 20px;
 }
 
-.container-divider {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.container-divider img {
-    width: 200px;
-}
-
 .container-flex {
     display: flex;
     flex-flow: wrap;

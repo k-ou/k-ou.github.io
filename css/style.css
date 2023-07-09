@@ -48,10 +48,11 @@ body {
 
 #loading p {
     text-align: center;
-    text-transform: uppercase;
+    /*    text-transform: uppercase;*/
     color: var(--kelly-grey);
-    font-family: 'futura-pt-bold', sans-serif;
-    letter-spacing: 0.15em;
+    /*    font-family: 'futura-pt-bold', sans-serif;*/
+    font-family: 'lexend', sans-serif;
+    /*    letter-spacing: 0.15em;*/
     font-size: 20px;
 }
 
@@ -131,22 +132,24 @@ h2,
 h3,
 h4,
 h5 {
-    text-transform: uppercase;
+    /*    text-transform: uppercase;*/
     color: var(--kelly-grey);
 }
 
 h1,
 h2 {
-    font-family: 'futura-pt-bold', sans-serif;
-    letter-spacing: 0.15em;
+    /*    font-family: 'futura-pt-bold', sans-serif;*/
+    font-family: 'lexend', sans-serif;
+    font-weight: 600;
+    /*    letter-spacing: 0.15em;*/
 }
 
 h2.proj-name,
 h3,
 h4,
 h5 {
-    font-family: 'futura-pt', sans-serif;
-    letter-spacing: 0.1em;
+    font-family: 'lexend', sans-serif;
+    /*    letter-spacing: 0.1em;*/
 }
 
 h2 {
@@ -161,7 +164,7 @@ p {
     font-family: 'Bilo', sans-serif;
     color: var(--kelly-grey);
     font-size: 14px;
-    letter-spacing: 0.02em;
+    /*    letter-spacing: 0.02em;*/
     line-height: 1.5em;
     margin-bottom: 11px;
 }
@@ -207,14 +210,32 @@ p {
     transition: 0.5s ease-in-out;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: 'futura-pt', sans-serif;
+    /*    font-family: 'futura-pt', sans-serif;*/
+    font-family: 'lexend', sans-serif;
     font-weight: 600;
-    letter-spacing: .2em;
+    /*    letter-spacing: .2em;*/
 }
 
 .website-button:hover a {
     background-color: var(--kelly-yellow);
     color: white;
+}
+
+/*
+/* Divider
+/*
+/*
+*/
+
+.container-divider {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container-divider img {
+    width: 200px;
 }
 
 
@@ -245,7 +266,7 @@ p {
 
 #hero-message h3 {
     font-weight: 400;
-    letter-spacing: 0.25em;
+    /*    letter-spacing: 0.1em;*/
     color: var(--kelly-grey-light);
 }
 
@@ -325,12 +346,14 @@ p {
     background-size: cover;
     transition: all .5s ease;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .work-proj-overlay {
     position: relative;
     height: 100%;
     width: 100%;
+    border-radius: 20px;
     transition: all .5s ease;
 }
 
@@ -412,6 +435,16 @@ p {
 
 .work-proj#basis {
     background-image: url('../img/work-grid-basis-1.png');
+}
+
+.work-proj#cl-resources {
+    /*    background-image: url('../img/cultivate-learning/hero-print.jpg');*/
+    background-image: url('../img/cultivate-learning/MockUp_1.jpg');
+    background-size: 125%;
+}
+
+.work-proj#cl-logos {
+    background-image: url('../img/cultivate-learning/hero-logos.jpg');
 }
 
 .work-proj#caww2 {

@@ -119,10 +119,11 @@
 nav {
     float: right;
     width: 100%;
-    font-family: 'futura-pt', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: .2em;
+    /*    font-family: 'futura-pt', sans-serif;*/
+    font-family: 'lexend', sans-serif;
+    /*    font-weight: 400;*/
+    /*    text-transform: uppercase;*/
+    /*    letter-spacing: .2em;*/
     /*    transition: 0.5s ease;*/
 }
 

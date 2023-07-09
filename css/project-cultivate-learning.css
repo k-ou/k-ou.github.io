@@ -1,0 +1,72 @@
+/* LOGOS */
+
+#proj-cecpe,
+#proj-parallel-play,
+#proj-ssrsyaab {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #proj-cecpe div,
+    #proj-parallel-play div,
+    #proj-ssrsyaab div {
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #proj-cecpe,
+    #proj-parallel-play,
+    #proj-ssrsyaab {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #proj-cecpe div,
+    #proj-parallel-play div,
+    #proj-ssrsyaab div {
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #logo-cecpe {
+        order: 2;
+    }
+
+    #proj-cecpe div:not(#logo-cecpe) {
+        order: 1;
+    }
+}
+
+/* HERO */
+
+#proj-cl-logos-img-01 {
+    background-image: url("/img/cultivate-learning/hero-logos.jpg")
+}
+
+/* EMBEDDED FLIP BOOKS */
+#proj-cl-layout-showcase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#proj-cl-layout-showcase iframe {
+    padding: 10px;
+    max-height: 600px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #proj-cl-layout-showcase iframe {
+        flex: 1;
+        flex-basis: 100%;
+        padding: 10px;
+        max-height: 600px;
+    }
+}

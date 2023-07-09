@@ -246,6 +246,10 @@ body {
     height: 60vw;
 }
 
+#proj-navigation div {
+    border-radius: 20px;
+}
+
 #proj-navigation .work-proj-overlay {
     padding-bottom: 40px;
 }
